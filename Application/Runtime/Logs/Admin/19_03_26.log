@@ -1,0 +1,585 @@
+[ 2019-03-26T21:59:08+08:00 ] 127.0.0.1 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T21:59:16+08:00 ] 127.0.0.1 /Admin/Login/index?act=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `user` WHERE `username` = '123456' AND `password` = '123456' LIMIT 1   [ RunTime:0.0390s ]
+
+[ 2019-03-26T21:59:16+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0870s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0790s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-03-26T21:59:19+08:00 ] 127.0.0.1 /Admin/Blog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0800s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0480s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.3540s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-03-26T21:59:22+08:00 ] 127.0.0.1 /Admin/Blog/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0970s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0530s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0610s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0440s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 8,8   [ RunTime:0.2590s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2019-03-26T21:59:26+08:00 ] 127.0.0.1 /Admin/Blog/add/aid/45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0530s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 45 LIMIT 1   [ RunTime:0.0790s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2019-03-26T22:01:12+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0380s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0530s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `article` SET `title`='《巧克力杯子蛋糕》',`author`='大花花西瓜瓜',`category`='美食',`content`='&lt;p style=&quot;margin-left: 200px;&quot;&gt;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564493bc61.jpg&quot; width=&quot;490&quot; height=&quot;735&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;快过年了，为表欢快之心，做了些杯子蛋糕，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;用的黄油蛋糕底胚，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;顶层裱了些奶油奶酪霜，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;再用饼干、威化什么的装饰了一下，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;一下就网红蛋糕起来了。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;2.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55646a857b2.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;3.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55646f4de23.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黄油蛋糕底胚，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;大冬天的，还是偏干了些，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;如果天气不那么冷，应该口感不错的，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;杯子蛋糕，本身就比较偏这么厚重口感。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;4.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55648584e1a.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;img alt=&quot;5.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556488ba64a.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪霜，减少了些黄油量，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;相对加大淡奶油量，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;好造型，同时也比较适合冬天。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;6.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564b21a14f.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;img alt=&quot;7.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564b6c588c.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;后来，又做了戚风版的，在后记中也写的，没拍照。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;我们家还是更偏爱威风版的，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;搭配的顶层奶油也要更清爽些。&lt;/span&gt;&lt;img alt=&quot;8.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564cbf2c08.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;材料：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;蛋糕体：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黄油：180克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;牛奶：270ML&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;鸡蛋：3个&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;低筋面粉：240克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖（应用糖粉）：200克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;可可粉：3大勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;泡打粉：1小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;小苏打：1/2小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;盐：1/2小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;巧克力奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;无盐黄油：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;淡奶油：50克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黑巧克力：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奥利奥奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;无盐黄油：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;淡奶油：50克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奥利奥碎：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;（份量（油淋膜纸杯底5CM，高度4CM） ：&amp;nbsp;16个）&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;备注：方子偏干，修改见后记。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;9.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564fdb242c.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、所有材料恢复室温。黄油室温软化，用打蛋器打发至颜色变白；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;2&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、加入白糖打发至体积变大且蓬松；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;3&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、鸡蛋分3-4次加入黄油中。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;4&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、搅打均匀再加下一次；&lt;br&gt;5、用刮刀刮下容器壁上的黄油，倒入牛奶；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;6&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、等待3分钟左右；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、筛入面粉、可可粉、泡打粉、小苏打粉的混合粉；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;8&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、拌至无颗粒；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;9&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、面糊装入模具7分满；&lt;br&gt;10、160度烤箱，中层，25分钟左右，后10分钟，可把上火调至150度。取出待凉。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;10.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55653a50f67.jpg&quot; width=&quot;490&quot; height=&quot;919&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;11&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、奶油奶酪、黄油提前室温软化；&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;12&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、加入白糖，打发均匀；&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;13、加入淡奶油；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;14&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、继续打发均匀；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;15&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、做奥利奥奶油奶酪霜的，把奥利奥捏碎放入，拌均匀就可以了，待用；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;16&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、做巧克力奶油奶酪霜的，先重复以上1-4步，再加入隔热水化开的黑巧克力；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;17&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、打发均匀，待用；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;18&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、将巧克力奶油奶酪霜挤在完全冷却了的杯子蛋糕上；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;19&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、将奥利奥奶油奶酪霜挤在完全冷却了的杯子蛋糕上；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;20&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、在奶油奶酪霜上摆上喜欢的装饰就可以了。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;12.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55656b681bf.jpg&quot; width=&quot;490&quot; height=&quot;735&quot;&gt;&lt;img alt=&quot;11.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556547554b7.jpg&quot; width=&quot;490&quot; height=&quot;919&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;后记：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;感觉大冬天的用这个方子做的蛋糕，蛋糕口感都偏干。后来又做了一炉绵软的，改了一下平常戚风的方子；顶层也做了些修改，觉得还不错哈。记录一下第二炉的方子：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;蛋糕体：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;低筋面粉：150克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;牛奶：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;鸡蛋：&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;个(较大)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;糖：130克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;油：80克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;可可粉：3大勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;奶油奶酪：&amp;nbsp;180克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;无盐黄油：&amp;nbsp;30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;淡奶油：&amp;nbsp;100克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧克力：&amp;nbsp;40克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;白糖：40克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;（淡奶油加白糖先打发7成；奶油奶酪、黄油另行打发均匀，加入融化的&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧打发均匀；奶油奶酪黄油黑巧克加入打发的淡奶油打发均匀就可以）&lt;/span&gt;&lt;/p&gt;',`updatetime`='1553608871' WHERE `aid` = 45 [ RunTime:0.1510s ]
+
+[ 2019-03-26T22:01:13+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0600s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0610s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0430s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.3660s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2019-03-26T22:01:34+08:00 ] 127.0.0.1 /Admin/Blog/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0530s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0440s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0340s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 8,8   [ RunTime:0.1520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T22:01:38+08:00 ] 127.0.0.1 /Admin/Blog/add/aid/45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 45 LIMIT 1   [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-03-26T22:02:34+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0610s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0520s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `article` SET `title`='《巧克力杯子蛋糕》',`author`='大花花西瓜瓜',`category`='美食',`content`='&lt;p style=&quot;margin-left: 200px;&quot;&gt;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564493bc61.jpg&quot; width=&quot;490&quot; height=&quot;735&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;快过年了，为表欢快之心，做了些杯子蛋糕，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;用的黄油蛋糕底胚，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;顶层裱了些奶油奶酪霜，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;再用饼干、威化什么的装饰了一下，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;一下就网红蛋糕起来了。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;2.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55646a857b2.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;3.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55646f4de23.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黄油蛋糕底胚，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;大冬天的，还是偏干了些，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;如果天气不那么冷，应该口感不错的，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;杯子蛋糕，本身就比较偏这么厚重口感。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;4.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55648584e1a.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;img alt=&quot;5.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556488ba64a.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪霜，减少了些黄油量，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;相对加大淡奶油量，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;好造型，同时也比较适合冬天。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;6.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564b21a14f.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;img alt=&quot;7.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564b6c588c.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;后来，又做了戚风版的，在后记中也写的，没拍照。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;我们家还是更偏爱威风版的，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;搭配的顶层奶油也要更清爽些。&lt;/span&gt;&lt;img alt=&quot;8.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564cbf2c08.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;材料：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;蛋糕体：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黄油：180克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;牛奶：270ML&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;鸡蛋：3个&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;低筋面粉：240克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖（应用糖粉）：200克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;可可粉：3大勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;泡打粉：1小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;小苏打：1/2小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;盐：1/2小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;巧克力奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;无盐黄油：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;淡奶油：50克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黑巧克力：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奥利奥奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;无盐黄油：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;淡奶油：50克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奥利奥碎：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;（份量（油淋膜纸杯底5CM，高度4CM） ：&amp;nbsp;16个）&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;备注：方子偏干，修改见后记。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;9.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564fdb242c.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、所有材料恢复室温。黄油室温软化，用打蛋器打发至颜色变白；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;2&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、加入白糖打发至体积变大且蓬松；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;3&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、鸡蛋分3-4次加入黄油中。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;4&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、搅打均匀再加下一次；&lt;br&gt;5、用刮刀刮下容器壁上的黄油，倒入牛奶；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;6&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、等待3分钟左右；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、筛入面粉、可可粉、泡打粉、小苏打粉的混合粉；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;8&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、拌至无颗粒；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;9&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、面糊装入模具7分满；&lt;br&gt;10、160度烤箱，中层，25分钟左右，后10分钟，可把上火调至150度。取出待凉。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;10.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55653a50f67.jpg&quot; width=&quot;490&quot; height=&quot;919&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;11&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、奶油奶酪、黄油提前室温软化；&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;12&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、加入白糖，打发均匀；&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;13、加入淡奶油；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;14&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、继续打发均匀；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;15&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、做奥利奥奶油奶酪霜的，把奥利奥捏碎放入，拌均匀就可以了，待用；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;16&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、做巧克力奶油奶酪霜的，先重复以上1-4步，再加入隔热水化开的黑巧克力；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;17&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、打发均匀，待用；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;18&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、将巧克力奶油奶酪霜挤在完全冷却了的杯子蛋糕上；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;19&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、将奥利奥奶油奶酪霜挤在完全冷却了的杯子蛋糕上；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;20&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、在奶油奶酪霜上摆上喜欢的装饰就可以了。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;12.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55656b681bf.jpg&quot; width=&quot;490&quot; height=&quot;735&quot;&gt;&lt;img alt=&quot;11.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556547554b7.jpg&quot; width=&quot;490&quot; height=&quot;919&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;后记：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;感觉大冬天的用这个方子做的蛋糕，蛋糕口感都偏干。后来又做了一炉绵软的，改了一下平常戚风的方子；顶层也做了些修改，觉得还不错哈。记录一下第二炉的方子：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;蛋糕体：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;低筋面粉：150克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;牛奶：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;鸡蛋：&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;个(较大)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;糖：130克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;油：80克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;可可粉：3大勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;奶油奶酪：&amp;nbsp;180克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;无盐黄油：&amp;nbsp;30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;淡奶油：&amp;nbsp;100克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧克力：&amp;nbsp;40克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;白糖：40克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;（淡奶油加白糖先打发7成；奶油奶酪、黄油另行打发均匀，加入融化的&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧打发均匀；奶油奶酪黄油黑巧克加入打发的淡奶油打发均匀就可以）&lt;/span&gt;&lt;/p&gt;',`updatetime`='1553608953' WHERE `aid` = 45 [ RunTime:0.1500s ]
+
+[ 2019-03-26T22:02:34+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0820s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0760s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.2600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-03-26T22:02:48+08:00 ] 127.0.0.1 /Admin/Blog/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0460s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0380s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 8,8   [ RunTime:0.1540s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-03-26T22:02:50+08:00 ] 127.0.0.1 /Admin/Blog/add/aid/45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 45 LIMIT 1   [ RunTime:0.0730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-03-26T22:03:11+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0510s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `article` SET `title`='《巧克力杯子蛋糕》',`author`='大花花西瓜瓜',`category`='美食',`content`='&lt;p style=&quot;&quot;&gt;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564493bc61.jpg&quot; width=&quot;490&quot; height=&quot;735&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;快过年了，为表欢快之心，做了些杯子蛋糕，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;用的黄油蛋糕底胚，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;顶层裱了些奶油奶酪霜，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;再用饼干、威化什么的装饰了一下，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;一下就网红蛋糕起来了。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;2.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55646a857b2.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;3.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55646f4de23.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黄油蛋糕底胚，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;大冬天的，还是偏干了些，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;如果天气不那么冷，应该口感不错的，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;杯子蛋糕，本身就比较偏这么厚重口感。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;4.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55648584e1a.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;img alt=&quot;5.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556488ba64a.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪霜，减少了些黄油量，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;相对加大淡奶油量，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;好造型，同时也比较适合冬天。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;6.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564b21a14f.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;img alt=&quot;7.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564b6c588c.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;后来，又做了戚风版的，在后记中也写的，没拍照。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;我们家还是更偏爱威风版的，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;搭配的顶层奶油也要更清爽些。&lt;/span&gt;&lt;img alt=&quot;8.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564cbf2c08.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;材料：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;蛋糕体：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黄油：180克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;牛奶：270ML&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;鸡蛋：3个&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;低筋面粉：240克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖（应用糖粉）：200克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;可可粉：3大勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;泡打粉：1小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;小苏打：1/2小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;盐：1/2小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;巧克力奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;无盐黄油：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;淡奶油：50克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黑巧克力：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奥利奥奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;无盐黄油：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;淡奶油：50克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奥利奥碎：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;（份量（油淋膜纸杯底5CM，高度4CM） ：&amp;nbsp;16个）&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;备注：方子偏干，修改见后记。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;9.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564fdb242c.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、所有材料恢复室温。黄油室温软化，用打蛋器打发至颜色变白；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;2&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、加入白糖打发至体积变大且蓬松；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;3&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、鸡蛋分3-4次加入黄油中。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;4&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、搅打均匀再加下一次；&lt;br&gt;5、用刮刀刮下容器壁上的黄油，倒入牛奶；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;6&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、等待3分钟左右；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、筛入面粉、可可粉、泡打粉、小苏打粉的混合粉；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;8&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、拌至无颗粒；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;9&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、面糊装入模具7分满；&lt;br&gt;10、160度烤箱，中层，25分钟左右，后10分钟，可把上火调至150度。取出待凉。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;10.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55653a50f67.jpg&quot; width=&quot;490&quot; height=&quot;919&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;11&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、奶油奶酪、黄油提前室温软化；&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;12&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、加入白糖，打发均匀；&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;13、加入淡奶油；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;14&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、继续打发均匀；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;15&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、做奥利奥奶油奶酪霜的，把奥利奥捏碎放入，拌均匀就可以了，待用；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;16&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、做巧克力奶油奶酪霜的，先重复以上1-4步，再加入隔热水化开的黑巧克力；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;17&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、打发均匀，待用；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;18&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、将巧克力奶油奶酪霜挤在完全冷却了的杯子蛋糕上；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;19&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、将奥利奥奶油奶酪霜挤在完全冷却了的杯子蛋糕上；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;20&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、在奶油奶酪霜上摆上喜欢的装饰就可以了。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;12.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55656b681bf.jpg&quot; width=&quot;490&quot; height=&quot;735&quot;&gt;&lt;img alt=&quot;11.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556547554b7.jpg&quot; width=&quot;490&quot; height=&quot;919&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;后记：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;感觉大冬天的用这个方子做的蛋糕，蛋糕口感都偏干。后来又做了一炉绵软的，改了一下平常戚风的方子；顶层也做了些修改，觉得还不错哈。记录一下第二炉的方子：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;蛋糕体：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;低筋面粉：150克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;牛奶：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;鸡蛋：&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;个(较大)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;糖：130克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;油：80克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;可可粉：3大勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;奶油奶酪：&amp;nbsp;180克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;无盐黄油：&amp;nbsp;30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;淡奶油：&amp;nbsp;100克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧克力：&amp;nbsp;40克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;白糖：40克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;（淡奶油加白糖先打发7成；奶油奶酪、黄油另行打发均匀，加入融化的&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧打发均匀；奶油奶酪黄油黑巧克加入打发的淡奶油打发均匀就可以）&lt;/span&gt;&lt;/p&gt;',`updatetime`='1553608991' WHERE `aid` = 45 [ RunTime:0.1740s ]
+
+[ 2019-03-26T22:03:12+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0460s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0330s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.2450s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-03-26T22:03:48+08:00 ] 127.0.0.1 /Admin/Blog/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0490s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0320s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 8,8   [ RunTime:0.1550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-03-26T22:03:51+08:00 ] 127.0.0.1 /Admin/Blog/add/aid/45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0690s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 45 LIMIT 1   [ RunTime:0.0940s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T22:04:05+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0470s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `article` SET `title`='《巧克力杯子蛋糕》',`author`='大花花西瓜瓜',`category`='美食',`content`='&lt;p style=&quot;margin-left: 200px;&quot;&gt;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564493bc61.jpg&quot; width=&quot;490&quot; height=&quot;735&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;快过年了，为表欢快之心，做了些杯子蛋糕，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;用的黄油蛋糕底胚，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;顶层裱了些奶油奶酪霜，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;再用饼干、威化什么的装饰了一下，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;一下就网红蛋糕起来了。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;2.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55646a857b2.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;3.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55646f4de23.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黄油蛋糕底胚，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;大冬天的，还是偏干了些，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;如果天气不那么冷，应该口感不错的，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;杯子蛋糕，本身就比较偏这么厚重口感。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;4.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55648584e1a.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;img alt=&quot;5.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556488ba64a.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪霜，减少了些黄油量，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;相对加大淡奶油量，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;好造型，同时也比较适合冬天。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;6.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564b21a14f.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;img alt=&quot;7.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564b6c588c.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;后来，又做了戚风版的，在后记中也写的，没拍照。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;我们家还是更偏爱威风版的，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;搭配的顶层奶油也要更清爽些。&lt;/span&gt;&lt;img alt=&quot;8.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564cbf2c08.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;材料：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;蛋糕体：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黄油：180克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;牛奶：270ML&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;鸡蛋：3个&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;低筋面粉：240克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖（应用糖粉）：200克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;可可粉：3大勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;泡打粉：1小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;小苏打：1/2小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;盐：1/2小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;巧克力奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;无盐黄油：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;淡奶油：50克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黑巧克力：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奥利奥奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;无盐黄油：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;淡奶油：50克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奥利奥碎：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;（份量（油淋膜纸杯底5CM，高度4CM） ：&amp;nbsp;16个）&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;备注：方子偏干，修改见后记。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;9.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564fdb242c.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、所有材料恢复室温。黄油室温软化，用打蛋器打发至颜色变白；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;2&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、加入白糖打发至体积变大且蓬松；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;3&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、鸡蛋分3-4次加入黄油中。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;4&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、搅打均匀再加下一次；&lt;br&gt;5、用刮刀刮下容器壁上的黄油，倒入牛奶；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;6&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、等待3分钟左右；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、筛入面粉、可可粉、泡打粉、小苏打粉的混合粉；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;8&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、拌至无颗粒；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;9&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、面糊装入模具7分满；&lt;br&gt;10、160度烤箱，中层，25分钟左右，后10分钟，可把上火调至150度。取出待凉。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;10.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55653a50f67.jpg&quot; width=&quot;490&quot; height=&quot;919&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;11&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、奶油奶酪、黄油提前室温软化；&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;12&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、加入白糖，打发均匀；&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;13、加入淡奶油；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;14&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、继续打发均匀；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;15&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、做奥利奥奶油奶酪霜的，把奥利奥捏碎放入，拌均匀就可以了，待用；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;16&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、做巧克力奶油奶酪霜的，先重复以上1-4步，再加入隔热水化开的黑巧克力；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;17&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、打发均匀，待用；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;18&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、将巧克力奶油奶酪霜挤在完全冷却了的杯子蛋糕上；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;19&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、将奥利奥奶油奶酪霜挤在完全冷却了的杯子蛋糕上；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;20&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、在奶油奶酪霜上摆上喜欢的装饰就可以了。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;12.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55656b681bf.jpg&quot; width=&quot;490&quot; height=&quot;735&quot;&gt;&lt;img alt=&quot;11.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556547554b7.jpg&quot; width=&quot;490&quot; height=&quot;919&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;后记：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;感觉大冬天的用这个方子做的蛋糕，蛋糕口感都偏干。后来又做了一炉绵软的，改了一下平常戚风的方子；顶层也做了些修改，觉得还不错哈。记录一下第二炉的方子：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;蛋糕体：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;低筋面粉：150克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;牛奶：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;鸡蛋：&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;个(较大)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;糖：130克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;油：80克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;可可粉：3大勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;奶油奶酪：&amp;nbsp;180克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;无盐黄油：&amp;nbsp;30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;淡奶油：&amp;nbsp;100克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧克力：&amp;nbsp;40克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;白糖：40克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;（淡奶油加白糖先打发7成；奶油奶酪、黄油另行打发均匀，加入融化的&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧打发均匀；奶油奶酪黄油黑巧克加入打发的淡奶油打发均匀就可以）&lt;/span&gt;&lt;/p&gt;',`updatetime`='1553609045' WHERE `aid` = 45 [ RunTime:0.1390s ]
+
+[ 2019-03-26T22:04:06+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0420s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0310s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.2450s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T22:04:35+08:00 ] 127.0.0.1 /Admin/Blog/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0640s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0450s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 8,8   [ RunTime:0.2430s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T22:04:38+08:00 ] 127.0.0.1 /Admin/Blog/add/aid/45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0380s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 45 LIMIT 1   [ RunTime:0.0690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T22:05:16+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0500s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `article` SET `title`='《巧克力杯子蛋糕》',`author`='大花花西瓜瓜',`category`='美食',`content`='&lt;p style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564493bc61.jpg&quot; width=&quot;490&quot; height=&quot;735&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;快过年了，为表欢快之心，做了些杯子蛋糕，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;用的黄油蛋糕底胚，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;顶层裱了些奶油奶酪霜，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;再用饼干、威化什么的装饰了一下，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;一下就网红蛋糕起来了。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;2.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55646a857b2.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;3.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55646f4de23.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黄油蛋糕底胚，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;大冬天的，还是偏干了些，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;如果天气不那么冷，应该口感不错的，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;杯子蛋糕，本身就比较偏这么厚重口感。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;4.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55648584e1a.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;img alt=&quot;5.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556488ba64a.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪霜，减少了些黄油量，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;相对加大淡奶油量，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;好造型，同时也比较适合冬天。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;6.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564b21a14f.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;img alt=&quot;7.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564b6c588c.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;后来，又做了戚风版的，在后记中也写的，没拍照。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;我们家还是更偏爱威风版的，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;搭配的顶层奶油也要更清爽些。&lt;/span&gt;&lt;img alt=&quot;8.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564cbf2c08.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;材料：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;蛋糕体：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黄油：180克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;牛奶：270ML&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;鸡蛋：3个&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;低筋面粉：240克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖（应用糖粉）：200克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;可可粉：3大勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;泡打粉：1小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;小苏打：1/2小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;盐：1/2小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;巧克力奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;无盐黄油：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;淡奶油：50克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黑巧克力：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奥利奥奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;无盐黄油：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;淡奶油：50克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奥利奥碎：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;（份量（油淋膜纸杯底5CM，高度4CM） ：&amp;nbsp;16个）&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;备注：方子偏干，修改见后记。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;9.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564fdb242c.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、所有材料恢复室温。黄油室温软化，用打蛋器打发至颜色变白；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;2&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、加入白糖打发至体积变大且蓬松；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;3&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、鸡蛋分3-4次加入黄油中。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;4&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、搅打均匀再加下一次；&lt;br&gt;5、用刮刀刮下容器壁上的黄油，倒入牛奶；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;6&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、等待3分钟左右；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、筛入面粉、可可粉、泡打粉、小苏打粉的混合粉；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;8&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、拌至无颗粒；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;9&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、面糊装入模具7分满；&lt;br&gt;10、160度烤箱，中层，25分钟左右，后10分钟，可把上火调至150度。取出待凉。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;10.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55653a50f67.jpg&quot; width=&quot;490&quot; height=&quot;919&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;11&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、奶油奶酪、黄油提前室温软化；&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;12&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、加入白糖，打发均匀；&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;13、加入淡奶油；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;14&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、继续打发均匀；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;15&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、做奥利奥奶油奶酪霜的，把奥利奥捏碎放入，拌均匀就可以了，待用；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;16&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、做巧克力奶油奶酪霜的，先重复以上1-4步，再加入隔热水化开的黑巧克力；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;17&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、打发均匀，待用；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;18&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、将巧克力奶油奶酪霜挤在完全冷却了的杯子蛋糕上；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;19&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、将奥利奥奶油奶酪霜挤在完全冷却了的杯子蛋糕上；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;20&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、在奶油奶酪霜上摆上喜欢的装饰就可以了。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;12.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55656b681bf.jpg&quot; width=&quot;490&quot; height=&quot;735&quot;&gt;&lt;img alt=&quot;11.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556547554b7.jpg&quot; width=&quot;490&quot; height=&quot;919&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;后记：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;感觉大冬天的用这个方子做的蛋糕，蛋糕口感都偏干。后来又做了一炉绵软的，改了一下平常戚风的方子；顶层也做了些修改，觉得还不错哈。记录一下第二炉的方子：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;蛋糕体：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;低筋面粉：150克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;牛奶：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;鸡蛋：&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;个(较大)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;糖：130克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;油：80克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;可可粉：3大勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;奶油奶酪：&amp;nbsp;180克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;无盐黄油：&amp;nbsp;30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;淡奶油：&amp;nbsp;100克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧克力：&amp;nbsp;40克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;白糖：40克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;（淡奶油加白糖先打发7成；奶油奶酪、黄油另行打发均匀，加入融化的&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧打发均匀；奶油奶酪黄油黑巧克加入打发的淡奶油打发均匀就可以）&lt;/span&gt;&lt;/p&gt;',`updatetime`='1553609116' WHERE `aid` = 45 [ RunTime:0.1620s ]
+
+[ 2019-03-26T22:05:17+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0450s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0350s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.2690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-03-26T22:23:30+08:00 ] 127.0.0.1 /Admin/Blog/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0460s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0370s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 8,8   [ RunTime:0.1220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-03-26T22:23:34+08:00 ] 127.0.0.1 /Admin/Blog/add/aid/49
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0480s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 49 LIMIT 1   [ RunTime:0.0390s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+

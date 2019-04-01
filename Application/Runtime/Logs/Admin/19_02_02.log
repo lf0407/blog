@@ -1,0 +1,1924 @@
+[ 2019-02-02T16:36:52+08:00 ] 127.0.0.1 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-02-02T16:37:00+08:00 ] 127.0.0.1 /Admin/Login/index?act=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.1040s ]
+SQL: SELECT * FROM `user` WHERE `username` = '123456' AND `password` = '123456' LIMIT 1   [ RunTime:0.0780s ]
+
+[ 2019-02-02T16:37:01+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0810s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-02-02T16:37:05+08:00 ] 127.0.0.1 /Admin/Blog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0800s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0600s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0540s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0410s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.1370s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T16:37:15+08:00 ] 127.0.0.1 /Admin/Blog/add/aid/41
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0840s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0850s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 41 LIMIT 1   [ RunTime:0.0580s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2019-02-02T16:37:23+08:00 ] 127.0.0.1 /Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0530s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0850s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: aid D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T16:43:05+08:00 ] 127.0.0.1 /Admin/Blog/images/image.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T16:43:13+08:00 ] 127.0.0.1 /Admin/Blog/%E5%90%84%E4%B8%89%E4%B8%AA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0590s ]
+ERR: 非法操作:各三个
+
+[ 2019-02-02T16:43:51+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0430s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:45:54+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0380s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:46:21+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0380s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:46:32+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0630s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0590s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:47:05+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0640s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0550s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:53:48+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0600s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0420s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:54:02+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0420s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:54:07+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0430s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:54:12+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0600s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:54:17+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0660s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0480s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:54:26+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0530s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:54:33+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0630s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0520s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:54:51+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0620s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0430s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:54:59+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0660s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0420s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:55:07+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0810s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0540s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:55:35+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0410s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:55:47+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0390s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:56:10+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0420s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:56:21+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0390s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:56:35+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0540s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0500s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:56:47+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0600s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:56:58+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.1040s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0440s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:57:08+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0630s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0460s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:57:16+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0490s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:57:25+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0600s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0540s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T16:57:52+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0600s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('斯里兰卡之高跷海钓','鹿慧儿','旅游','&lt;p&gt;1、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555a9cadb70.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 由于我们包的车迟迟不来，我们决定找旅馆老板重新找一辆车。几分钟后，车来了，比我们那辆更宽敞。放好了行李，向加勒开去。&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;原计划八点半出发，先让帅哥带我们看高跷海钓，然后去Weligama小镇和肯克拉(Koggala)小镇转转。那天出发时已经十点过了，想着加勒古堡是我们的重点之一，就放弃了一切计划，直奔加勒。&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;车沿着海边公路飞奔着，忽然瞥见车窗外有一群人站在插在海里木桩上，手里拿着钓鱼竿。“快看，高跷海钓”，几个人同时喊了起来。我赶紧跟司机说停车。司机停好车，问我们发生什么事了，我们解释说想看看高跷海钓，拍几张照片。司机说那个要付费的。我赶紧问同伴，你们想下去看看拍拍吗，同伴很给力，都表示要去拍拍。&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;一下车，有几个人迎了上来，我们问要多少钱可以拍照，说是你们四人一共1000卢比（合人民币50元）。我们也没有讨价还价，走到岸边一通按快门。我的两个同伴还爬上木桩体会了一把，下来直说真是不易。&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;海浪很大，不敢走太近，可还是湿了裙子。上车后，才发现海边有不少这样“景点”，想着赶路，没敢再停留。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;2、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;2.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555aaa88110.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;3、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;3.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555aaf810e4.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;4、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;4.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555ab4867f4.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;5、&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;5.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555ab94abfc.jpg&quot; width=&quot;600&quot; height=&quot;690&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;6、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;6.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555ac2c89d4.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;7、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;7.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555ac9e7b84.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;8、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;8.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555adbb89ae.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;9、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;9.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555ae39ce21.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;10、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;10.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555aeb4bb10.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;/p&gt;&lt;p&gt;11、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;11.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555b0727371.jpg&quot; width=&quot;600&quot; height=&quot;690&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;12、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;12.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555b13a9846.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;13、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;13.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555b2a580be.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;14、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;14.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555b35ade5f.jpg&quot; width=&quot;600&quot; height=&quot;690&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;15、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;15.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555b4355f43.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;16、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;16.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555b4f68306.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;17、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;17.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555b5a116c7.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;18、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;18.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555b6477603.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;19、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;19.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555b6ce9437.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;20、&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;20.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555b753c489.jpg&quot; width=&quot;690&quot; height=&quot;600&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;补充资料一（来自穷游锦囊）：&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;font&gt;&lt;font&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;高跷渔夫可以在南部Weligama小镇到肯克拉(Koggala)小镇一&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;&lt;font&gt;带看到。非常幸运的情况下可以看到真实的打渔。不过现在大多渔&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;&lt;font&gt;夫并不以打渔为生，而是表演性质的打渔收费。拍照的每个渔夫喊&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;font&gt;&lt;font&gt;&lt;font&gt;价500卢比，真想看到钓鱼需要1500卢比。&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;补充材料二（来自百度百科）：&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在斯里兰卡这个被誉为“印度洋泪滴”的最南端加勒Koggala一带，是印度洋沿岸温暖、宁静、惬意的美丽港湾。2月正是最好的旱季旅游季节。自从2009年《孤独星球旅游者》手册的封面刊登了一张海边钓鱼者的照片，替代了以往斯里兰卡驯象人和采茶女的人文标识。高跷钓鱼这种当地传统的捕鱼方法被谑称为“世界上最牛钓鱼方式”，也成为来到加勒游客必看的一道风景。&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;他们历史悠久，是斯里兰卡西南海岸边独特的人文景观。所以连最新09年版的LP（孤独星球旅行者手册）斯里兰卡封面都是一张海边钓鱼人的照片&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;斯里兰卡高跷钓鱼人主要集中在西南海岸的浅海区，从Galle到Mirissa沿岸都可以看到。渔民基本就是涉水到达浸泡在海水中的木桩那里，爬上去，坐在简陋的木架上，架开鱼竿，接下来就是钓鱼时刻了，他们的目标就是大量游弋在浅海区的沙丁鱼。有时候运气好，每分钟都有鱼上钩，要知道他们的鱼竿可是没有鱼饵的，所以不得不称奇。&lt;/p&gt;','1549097872','1549097872') [ RunTime:0.1070s ]
+
+[ 2019-02-02T16:57:53+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0530s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0550s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0460s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.1110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T17:01:16+08:00 ] 127.0.0.1 /Admin/Blog/index/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0550s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0530s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 24,8   [ RunTime:0.1370s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-02-02T17:01:20+08:00 ] 127.0.0.1 /Admin/Blog/index/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0520s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0520s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0510s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 32,8   [ RunTime:0.1420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-02-02T17:01:59+08:00 ] 127.0.0.1 /Admin/Blog/delete?aid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0620s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0600s ]
+SQL: DELETE FROM `article` WHERE `aid` = 7 [ RunTime:0.0470s ]
+
+[ 2019-02-02T17:02:00+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0600s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0620s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0590s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0570s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.1260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T17:02:11+08:00 ] 127.0.0.1 /Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0860s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0720s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0840s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: aid D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T17:06:50+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0400s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:07:04+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0440s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:07:08+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0430s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:07:12+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0440s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:07:15+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0790s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0430s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:07:19+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0600s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:07:23+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0640s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0440s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:07:26+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0410s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:07:31+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0590s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0400s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:07:39+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0590s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0540s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:07:42+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0440s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:07:48+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0470s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:08:18+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0790s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0640s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.1010s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('帕劳火山口水母湖群戏黄金水母','洋光摄客','旅游','&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(50, 62, 50); font-size: 14px;&quot;&gt;&amp;nbsp; &amp;nbsp; 早听说帕劳国有一个国宝级景点叫“水母湖”，因里面生活着成千上万的“黄金水母”而得名，四周被大小岛屿围绕，，形成非常独特的“内陆咸水湖”，该湖原为海底火山口，“湖水”通过石头与珊瑚缝隙与外海连通，因此流动的海水带来了水母们赖以生存的养分，同时也隔绝了宿敌的入侵，这里成了水母们的世外桃源。游人必须爬行一段崎岖的“山路”才能靠近，因水母的神经毒素已退化，因此游客跳入湖中与水母近距离尽情嬉戏。导游说该湖是二战期间美军在空中侦察日军军舰时无意发现的，当时这里经常有日军军舰藏匿，美空军在空中侦察时无意发现在群岛中有一内陆湖面上泛着金光，以为是日军的藏宝处，后来派了特种兵乘机潜入，这才让这个神秘的“水母湖”暴露于世人眼中。&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(50, 62, 50); font-size: 14px;&quot;&gt;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555daa34989.jpg&quot; width=&quot;690&quot; height=&quot;460&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(50, 62, 50); font-size: 14px;&quot;&gt;&lt;img alt=&quot;2.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555db81d98d.jpg&quot; width=&quot;690&quot; height=&quot;460&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(50, 62, 50); font-size: 14px;&quot;&gt;&lt;img alt=&quot;3.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555dbc800c1.jpg&quot; width=&quot;690&quot; height=&quot;460&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(50, 62, 50); font-size: 14px;&quot;&gt;&lt;img alt=&quot;4.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555dc0021e8.jpg&quot; width=&quot;690&quot; height=&quot;460&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(50, 62, 50); font-size: 14px;&quot;&gt;&lt;img alt=&quot;5.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555dc3c28e1.jpg&quot; width=&quot;690&quot; height=&quot;460&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(50, 62, 50); font-size: 14px;&quot;&gt;&lt;img alt=&quot;6.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555dc74fdbb.jpg&quot; width=&quot;690&quot; height=&quot;460&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(50, 62, 50); font-size: 14px;&quot;&gt;&lt;img alt=&quot;7.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555dcb11a79.jpg&quot; width=&quot;690&quot; height=&quot;460&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(50, 62, 50); font-size: 14px;&quot;&gt;&lt;img alt=&quot;8.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555dce98b6c.jpg&quot; width=&quot;690&quot; height=&quot;518&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(50, 62, 50); font-size: 14px;&quot;&gt;&lt;img alt=&quot;9.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555dd3788e2.jpg&quot; width=&quot;690&quot; height=&quot;518&quot;&gt;&lt;img alt=&quot;10.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555ddb62eff.jpg&quot; width=&quot;460&quot; height=&quot;690&quot;&gt;&lt;img alt=&quot;11.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555dded4ffd.jpg&quot; width=&quot;518&quot; height=&quot;690&quot;&gt;&lt;img alt=&quot;12.jpg&quot; src=&quot;/Uploads/2019-02-02/5c555de4ec08a.jpg&quot; width=&quot;690&quot; height=&quot;518&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;简介：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;帕劳共和国（The Republic of Palau），台湾称帛琉共和国，位于西太平洋，属大洋洲，是太平洋进入东南亚的门户之一，由200多个火山岛和珊瑚岛组成，也是至目前为止少数未与中国建交的国家之一，为保护该国的海洋资源，该国不允许以拖网的形式捕鱼，所以渔获有限，因此该国主要以旅游业为主，2013年开始面向我国开放旅游业，&lt;/p&gt;&lt;p&gt;&lt;strong&gt;签证：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;入境免签，目前不支持自由行，国人必须跟团才能进入帕劳旅游，能承接帕劳旅游的旅行社为数不多，&amp;nbsp;&lt;a href=&quot;http://weibo.com/airprice?from=feed&amp;amp;loc=at&amp;amp;nick=%E7%BE%8E%E4%BA%9A%E6%97%85%E8%A1%8C%E7%BD%91%E5%AE%98%E6%96%B9%E5%BE%AE%E5%8D%9A&quot; target=&quot;_blank&quot;&gt;@美亚旅行网官方微博&lt;/a&gt;&amp;nbsp;是其中一个。&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;入境免费，离境需缴纳50美金的离境税。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;流通货币：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;美元。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;信用卡：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;目前不支持银联，使用双币卡根据不同银行，需要缴纳汇率转换手续费1%~2%&amp;nbsp;&amp;nbsp;。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;租赁（个人觉得不便宜）&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;水下照相机：&lt;/strong&gt;35美元/日，离境时帮你刻录成视频。&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;浮潜眼罩：&lt;/strong&gt;免费。&lt;strong&gt;近视用浮潜眼罩：&lt;/strong&gt;8美元/日。&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;划水脚蹼：&lt;/strong&gt;6美元/日。&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;strong&gt;水母衣：&lt;/strong&gt;10美元/日。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;导游小费：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;7美元/日。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;防晒：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;防晒必须做全，即使阴天，这里的紫外线依然是我们平时所遇见的3-4倍，非常容易晒伤。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;餐饮：&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;岛上生活有不少华人、台湾人，所以中西餐均有。&lt;/p&gt;','1549098498','1549098498') [ RunTime:0.1900s ]
+
+[ 2019-02-02T17:08:19+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0520s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0910s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0800s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0920s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0370s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.1010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T17:28:37+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0590s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0680s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0420s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2019-02-02T17:28:39+08:00 ] 127.0.0.1 /Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0660s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0560s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: aid D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-02-02T17:31:12+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0590s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0420s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:31:54+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0600s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0600s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:31:56+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0540s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('【大黄鱼烧年糕】年夜饭必备菜','随心煮意','美食','&lt;p&gt;&lt;font&gt;还有几天就年三十了，这几天大家一定都在忙着采购年货了吧。各种各样的年货怎么少得了年糕呀，&lt;/font&gt;&lt;font&gt;过年是一定要吃年糕的，年糕年糕，年年高。&lt;/font&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;接下来的两天，我会分享以年糕为主题的两道江浙风味年菜。这两道菜用到的年糕都是宁波的水磨年糕，其实跟我们广西的粉利外观和口感都非常像，都是用大米制作的，只是宁波年糕口感更有韧性更筋道一些。用&lt;/span&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;大黄鱼搭配水磨年糕一同烧制，年糕吸足了鱼肉的汤汁，口感软糯Q弹筋道，根本停不下口，年糕成了主角，大黄鱼肉质滑嫩味道鲜美。菜品大气，寓意吉祥，是年夜饭必备的一道菜哟！&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&lt;b&gt;用料&lt;/b&gt;：大黄鱼一条(约500g)、宁波水磨年糕125g、小葱3棵、姜1小块、大蒜半头、料酒20ml、生抽15ml、老抽2.5ml、淀粉5g、白糖2g、盐少许、油适量&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&lt;b&gt;做法:&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin-left: 18pt; text-align: left;&quot;&gt;&lt;font&gt;1、&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;大黄鱼去鳞、去鳃、去除内脏并冲洗干净，在鱼身两面剞上一字刀，抹上盐和料酒腌制入味；&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin-left: 18pt; text-align: left;&quot;&gt;&lt;font&gt;2、&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;小葱洗净，两棵打成葱结，留一棵切碎，姜切片，大蒜去皮；&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin-left: 18pt; text-align: left;&quot;&gt;&lt;font&gt;3、&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;锅中倒入适量清水烧开，放入年糕煮软，捞出泡入冷水中备用；&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin-left: 18pt; text-align: left;&quot;&gt;&lt;font&gt;4、&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;锅中倒入适量油加热，在鱼身两面拍上一层薄薄的干淀粉，油温7成热时，将黄鱼放入油锅炸至两面金黄后捞出；&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin-left: 18pt; text-align: left;&quot;&gt;&lt;font&gt;5、&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;将炸鱼的油倒出，锅入底油，下葱结、姜片和蒜瓣小火煸香，放入炸好的大黄鱼，烹入料酒、生抽、老抽、白糖调味，倒入开水和黄鱼持平，大火烧开后转小火焖煮5分钟；&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin-left: 18pt; text-align: left;&quot;&gt;&lt;font&gt;6、&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;最后放入煮好的年糕，煮至汤汁浓稠即可出锅，最后撒上葱花即可。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;img alt=&quot;2.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55636044ecb.jpg&quot; width=&quot;687&quot; height=&quot;942&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&lt;b&gt;随心得&lt;/b&gt;：&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;**大黄鱼可油煎也可油炸，如果觉得大黄鱼不好煎炸，也可以换小黄鱼。如果用普通锅煎鱼，在煎之前锅头最好做一下防粘处理，先把锅彻底刷洗干净，空锅烧热后，用生姜切面擦几下锅内，再倒入油，油热后再放入鱼，这样煎鱼会好很多。同时煎鱼的油温可以高一些，这样鱼下锅表皮可以快速定型，煎的过程中千万不要急于翻动，必须要等一面煎至足够时间定型了，才能翻另一面再煎。&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;**大黄鱼在烧煮的过程中尽量不要翻动太多，否则鱼肉很容易碎，一般中途翻个面就可以了。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55638a1e412.jpg&quot; width=&quot;550&quot; height=&quot;825&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;','1549099916','1549099916') [ RunTime:0.1280s ]
+
+[ 2019-02-02T17:31:57+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0670s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0750s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0970s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2019-02-02T17:32:46+08:00 ] 127.0.0.1 /Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0780s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0670s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: aid D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-02-02T17:35:05+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0850s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0480s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:35:38+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0800s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0450s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:35:43+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0450s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:36:05+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0600s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0500s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:36:08+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0650s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:36:50+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0640s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0450s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:36:54+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.1100s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0450s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:37:16+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0420s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:38:05+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0590s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0440s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:39:06+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0540s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:39:19+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0600s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0450s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:39:55+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0630s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0400s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:40:42+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0760s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('大花花西瓜瓜的博客','大花花西瓜瓜','美食','&lt;p style=&quot;margin-left: 200px;&quot;&gt;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564493bc61.jpg&quot; width=&quot;490&quot; height=&quot;735&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;快过年了，为表欢快之心，做了些杯子蛋糕，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;用的黄油蛋糕底胚，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;顶层裱了些奶油奶酪霜，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;再用饼干、威化什么的装饰了一下，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;一下就网红蛋糕起来了。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;2.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55646a857b2.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;3.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55646f4de23.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黄油蛋糕底胚，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;大冬天的，还是偏干了些，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;如果天气不那么冷，应该口感不错的，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;杯子蛋糕，本身就比较偏这么厚重口感。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;4.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55648584e1a.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;img alt=&quot;5.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556488ba64a.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪霜，减少了些黄油量，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;相对加大淡奶油量，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;好造型，同时也比较适合冬天。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;6.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564b21a14f.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;img alt=&quot;7.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564b6c588c.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;后来，又做了戚风版的，在后记中也写的，没拍照。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;我们家还是更偏爱威风版的，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;搭配的顶层奶油也要更清爽些。&lt;/span&gt;&lt;img alt=&quot;8.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564cbf2c08.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;材料：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;蛋糕体：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黄油：180克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;牛奶：270ML&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;鸡蛋：3个&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;低筋面粉：240克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖（应用糖粉）：200克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;可可粉：3大勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;泡打粉：1小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;小苏打：1/2小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;盐：1/2小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;巧克力奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;无盐黄油：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;淡奶油：50克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黑巧克力：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奥利奥奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;无盐黄油：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;淡奶油：50克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奥利奥碎：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;（份量（油淋膜纸杯底5CM，高度4CM） ：&amp;nbsp;16个）&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;备注：方子偏干，修改见后记。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;9.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564fdb242c.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、所有材料恢复室温。黄油室温软化，用打蛋器打发至颜色变白；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;2&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、加入白糖打发至体积变大且蓬松；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;3&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、鸡蛋分3-4次加入黄油中。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;4&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、搅打均匀再加下一次；&lt;br&gt;5、用刮刀刮下容器壁上的黄油，倒入牛奶；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;6&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、等待3分钟左右；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、筛入面粉、可可粉、泡打粉、小苏打粉的混合粉；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;8&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、拌至无颗粒；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;9&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、面糊装入模具7分满；&lt;br&gt;10、160度烤箱，中层，25分钟左右，后10分钟，可把上火调至150度。取出待凉。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;10.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55653a50f67.jpg&quot; width=&quot;490&quot; height=&quot;919&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;11&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、奶油奶酪、黄油提前室温软化；&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;12&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、加入白糖，打发均匀；&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;13、加入淡奶油；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;14&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、继续打发均匀；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;15&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、做奥利奥奶油奶酪霜的，把奥利奥捏碎放入，拌均匀就可以了，待用；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;16&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、做巧克力奶油奶酪霜的，先重复以上1-4步，再加入隔热水化开的黑巧克力；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;17&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、打发均匀，待用；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;18&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、将巧克力奶油奶酪霜挤在完全冷却了的杯子蛋糕上；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;19&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、将奥利奥奶油奶酪霜挤在完全冷却了的杯子蛋糕上；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;20&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、在奶油奶酪霜上摆上喜欢的装饰就可以了。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;12.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55656b681bf.jpg&quot; width=&quot;490&quot; height=&quot;735&quot;&gt;&lt;img alt=&quot;11.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556547554b7.jpg&quot; width=&quot;490&quot; height=&quot;919&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;后记：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;感觉大冬天的用这个方子做的蛋糕，蛋糕口感都偏干。后来又做了一炉绵软的，改了一下平常戚风的方子；顶层也做了些修改，觉得还不错哈。记录一下第二炉的方子：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;蛋糕体：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;低筋面粉：150克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;牛奶：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;鸡蛋：&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;个(较大)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;糖：130克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;油：80克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;可可粉：3大勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;奶油奶酪：&amp;nbsp;180克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;无盐黄油：&amp;nbsp;30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;淡奶油：&amp;nbsp;100克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧克力：&amp;nbsp;40克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;白糖：40克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;（淡奶油加白糖先打发7成；奶油奶酪、黄油另行打发均匀，加入融化的&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧打发均匀；奶油奶酪黄油黑巧克加入打发的淡奶油打发均匀就可以）&lt;/span&gt;&lt;/p&gt;','1549100442','1549100442') [ RunTime:0.1470s ]
+
+[ 2019-02-02T17:40:42+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0660s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0540s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.1110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-02-02T17:43:25+08:00 ] 127.0.0.1 /Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0580s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: aid D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-02-02T17:46:49+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0620s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0600s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:47:32+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0850s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0770s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0910s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('在哈佛“裸奔”的中国女孩','意林','教育','&lt;p&gt;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556709ab366.jpg&quot; width=&quot;690&quot; height=&quot;293&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;登机起航，一切从“三点全裸”开始&lt;/p&gt;&lt;p&gt;　　李亦雨是我最要好的姐妹，对她好奇，是因为她身上总能冒出许多新鲜点子，让我的神经兴奋。&lt;/p&gt;&lt;p&gt;　　兔年快到春节时，这个“鬼丫头”又开始不安分起来。她故作神秘地凑到我耳边：“这次冒险非同一般，去闻名遐迩的哈佛大学，当一回赤身裸体的裸奔商人！”我的天，我刚要尖叫，“鬼丫头”又抛出重磅炸弹：“既然要裸，就要裸个彻底，飞机一落地，我们就三点全裸，不准遮遮掩掩！”&lt;/p&gt;&lt;p&gt;　　我这边目瞪口呆，李亦雨却哈哈大笑：“你以为裸奔，就是厚着脸皮一丝不挂？告诉你，要想在哈佛大学内裸奔，而且还要把那些天之骄子的钱给赚了，不仅赚了钱，还要让所有人叫好，还要让自己开心，可不是件容易的事。所以我们必须要有一裸到底，不留退路的决心！不仅身体要裸，一言一行上也要裸！这些信用卡、电话本、钱包、手机……统统给我扔在家里，不准带在身上！飞机一到波士顿，就不准再花一分钱，吃、住、行，就必须靠智慧去解决！”&lt;/p&gt;&lt;p&gt;　　原来，“三点全裸”指的是“吃、住、行”这三点不能花钱啊。&lt;/p&gt;&lt;p&gt;　　可，我们真的能做到“三点全裸”吗？钱包、信用卡、手机……一样都没在身上，兜里只有两张从上海到波士顿剑桥城的双程往返机票，我心里开始不安起来。&lt;/p&gt;&lt;p&gt;　　经过12个小时的颠簸，终于到了波士顿。走出机场，摆在面前的第一个问题是，机场距离哈佛大学还有两小时的车程，走着去？根本不可能。我偷偷看了李亦雨一眼，这丫头竟然不急不慌，四处张望着什么，突然，她没打招呼就向远处一角停着的一辆大巴跑去，和车门处的一位年轻导游叽叽咕咕地聊了一阵，然后朝我招招手：“赶快，有免费车坐了！”为何对方毫不犹豫地答应让我们免费坐车？&lt;/p&gt;&lt;p&gt;　　上了车，刚坐好，我就迫不及待地追问，李亦雨耸了耸肩膀：“你看看这大巴的车标，这可是哈佛大学的校车。那导游是哈佛学生会的义务导游，我告诉她，我们俩不远万里从中国来波士顿，目的地只有一个，就是哈佛，我们要把哈佛的方方面面介绍给在中国的家人、朋友、同事……这可是向中国人宣传哈佛的好机会，对方二话不说就答应让我们搭车了。反正，大巴也要回学校去。”怪不得在飞机场她不慌不忙，原来早有准备。&lt;/p&gt;&lt;p&gt;　　接下来的事情就顺利多了，在学生导游的帮助下，我们向哈佛教导处递交了临时入住申请，晚上总算有了落脚的地方，虽然这落脚地只是一间仓库，却是免费的，如果帮忙整理仓库杂物，还能得到一份免费早餐，“三点全裸”，成功！&lt;/p&gt;&lt;p&gt;　　终于，我在哈佛裸奔了&lt;/p&gt;&lt;p&gt;　　躺在哈佛仓库的地毯上，裹着睡袋，虽困倦来袭，我却辗转难眠。按照李亦雨的计划，明天可是货真价实的赤身裸体啊，还当着所有哈佛学子的面！为了让我安心，李亦雨告诉我，哈佛校风开化，每年冬假，学校都会在校园内举行集体裸奔，让所有的哈佛学子，赤裸着身子尽情尖叫狂欢，肆意奔跑，以便尽情放松整个学期以来那已绷得极度紧张的大脑神经。所以，哈佛裸奔已经成为了一项传统。&lt;/p&gt;&lt;p&gt;　　第二天，我被李亦雨生拉硬拽地拖到了哈佛园广场。&lt;/p&gt;&lt;p&gt;　　一声哨响，三百多号人的裸奔队伍就从哈佛园的那头尖叫着冲了过来，有男有女，只见白花花的一大片人影从眼前快速闪过。看得出来，参加裸奔的学生都很兴奋，虽然都是一丝不挂，但不少学生还是像出席一次盛大的舞会那样，把自己打扮得很有个性：有的戴着黑色的礼帽，有的只在脖子上扎着红色的丝巾，有的手里还拿着根拐杖。一旁的我心思早就跌宕起伏了无数次，李亦雨却大叫一声，迅速脱光衣服，跑进裸奔的队伍中。&lt;/p&gt;&lt;p&gt;　　轰——我的脑神经仿佛被注射了兴奋剂，照相机、摄像机、旁人的眼光……统统靠边站，我张萌萌，也是个张大胆！&lt;/p&gt;&lt;p&gt;　　哈佛，我来了，我赤裸着身子来了！&lt;/p&gt;&lt;p&gt;　　我是独一无二的“裸奔商人”&lt;/p&gt;&lt;p&gt;　　“现在，重头戏正式登场！”李亦雨拍了拍我的肩膀。我明白，最困难的时候到了，我们要赤裸着身子去赚那些同样赤裸学子的钱，而且必须赚得精彩！&lt;/p&gt;&lt;p&gt;　　脱下衣服裸奔，需要胆量；但，裸体与裸体相对，还要像平常一样融洽交流，还要在交流中赚回大把大把的钞票，不光要胆量，更要智慧！最关键的，我和李亦雨根本就没有东西可卖！&lt;/p&gt;&lt;p&gt;　　我彷徨了，李亦雨也放慢脚步紧锁眉头。我放眼望了一下四周，改跑为走的裸奔学生越来越多，甚至有不少裸奔学生把哈佛园当成了展露才艺的Ｔ台，一群裸男手拉手跳起了天鹅舞，赢得众人捧腹大笑；有三个裸奔女生则踱着方步，频频摆出各种淑女的姿势……我灵光一闪，一个奇异的想法冒了出来。&lt;/p&gt;&lt;p&gt;　　“熊猫，我要在这里卖熊猫！还有中国龙、八达岭长城、颐和园的柳树……”美院毕业的我突发奇想。&lt;/p&gt;&lt;p&gt;　　我来不及跟李亦雨解释，而是拖着她急匆匆地跑到了哈佛学生会管理处，拿到了话筒、颜料和画笔，我要让这次的哈佛裸奔成为经典！&lt;/p&gt;&lt;p&gt;　　回到广场，我拿起话筒，心里暗自鼓劲，拼了！我是最勇敢的商人！&lt;/p&gt;&lt;p&gt;　　“各位哈佛学子，我叫张萌萌，我来自神秘而美丽的中国！我去过熊猫的故乡；我玩耍过中国龙的花灯；我登上过蜿蜒的长城；我凝望过随风轻摆的杨柳……今天，我会将这些所见所闻一一展现出来，就展现在你们美丽的身体上！”我从没想过，我的声音如此激情，我的话语如此富有感染力。&lt;/p&gt;&lt;p&gt;　　一个帅气的高个子男生率先走到我面前，指了指自己宽厚结实的胸脯：“中国龙，我要一条火红的中国龙在我身体上跳舞！”&lt;/p&gt;&lt;p&gt;　　“熊猫是我的大爱，每次在电视上看到，都喜欢得不行！”&lt;/p&gt;&lt;p&gt;　　……&lt;/p&gt;&lt;p&gt;　　一个个单调的身体变成了一幅幅五彩斑斓的激情画卷，整个哈佛园重新点燃活力，那些因狂奔而疲倦的身体全都再次兴奋，再次狂奔起来……由于都是赤身裸体，所以我都是在活动结束后才陆陆续续收到了报酬。一幅身体油画也就10美元。但当一张张钞票汇集起来时，我还是大吃了一惊，足足2000美元！&lt;/p&gt;&lt;p&gt;　　我突然发现，原来，我也拥有能创造奇迹的胆量和智慧。&lt;/p&gt;','1549100852','1549100852') [ RunTime:0.1590s ]
+
+[ 2019-02-02T17:47:33+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0540s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0690s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0740s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.1070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-02-02T17:48:54+08:00 ] 127.0.0.1 /Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: aid D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2019-02-02T17:50:02+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0620s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:50:29+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0450s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:50:54+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0620s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0560s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:51:08+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0400s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T17:52:14+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0630s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0680s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0860s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('考研中年人：30岁辞职，逃离现实的最后可能','真实故事计划','教育','&lt;p&gt;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5567caed24c.jpg&quot; width=&quot;640&quot; height=&quot;360&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;blockquote&gt;如果考研生是电饭锅中的一粒粒米饭，那么考上的人就是被盛出来那一碗。一锅米饭大概有29000粒，今年的考生有290万，是它的100倍。越来越多的年轻人，在工作之后决定考研，成为其中的一粒，而且是一粒回锅饭。工作意味着日常的琐屑、办公室政治以及KPI的颈箍咒。考研就像是不远处的诺亚方舟，可以暂时拯救这一切，逃离庸碌而疲惫的生活。这是人们在30多岁，毅然加入考研大军，虎口夺食的原因。&lt;/blockquote&gt;&lt;h1 style=&quot;text-align: center;&quot;&gt;01 考研是只猫&lt;/h1&gt;&lt;p&gt;2018年12月21日，晚上8点30分，距离第一科开考还有12小时。我放下手里的“政治红宝书”，抱起我的猫去宠物医院。&lt;/p&gt;&lt;p&gt;它已经连续三天不吃不喝了，这几天我们俩一个废寝，一个忘食。&lt;/p&gt;&lt;p&gt;我本来指望猫能够自然好起来，至少在我考研结束前再坚持一下。就像我现在这样，再坚持一下。但猫毕竟没有什么信念。&lt;/p&gt;&lt;p&gt;我只能把它抱起来，带到宠物医院检查身体。在此之前的几天，我都没有出过门，我家看起来更像是猫窝。&lt;/p&gt;&lt;p&gt;我是一个医学生。在复习毕业考试的一个晚上，我上厕所时翻看过期的《人物》杂志，被一篇标题为《北京零点后》的特稿击中了。读完，我在卫生间愣了两分钟，决定要转行。第一步就是考新闻系的研究生。&lt;/p&gt;&lt;p&gt;那一年我没考上，但依然决定留在北京。我在一家青旅住下，一边找房子，一边找工作。&lt;/p&gt;&lt;p&gt;北漂三年，我在工作中不断碰壁，换了三份工作，始终没有明确的职业方向，也没有攒下钱。直到今年六月，我发现自己怀孕了，而那时，我已经跟男朋友分手。我只好辞职，借钱做了手术。&lt;/p&gt;&lt;p&gt;手术后，我在家里躺了两个月，始终提不起劲来找工作。事到如今，我再想找工作几乎不可能。于是，我又有了考研的想法。为了省钱，我买了很多挂面和速冻饺子。我几乎没有社交，尽量不出门，每天逼自己学习，背书背到崩溃，只有这只猫陪着我。&lt;/p&gt;&lt;p&gt;我给它取了一个名字，叫“考得上”。&lt;/p&gt;&lt;p&gt;抽血化验后，医生怀疑考得上得了白血病。我要把在考场附近定的宾馆退掉，才有钱给考得上输液。&lt;/p&gt;&lt;p&gt;那个晚上，我只睡了两个小时。等待考得上看病的时间里，我一直在背政治。&lt;/p&gt;&lt;p&gt;第二天，也就是考研当天早上6点，闹钟并没有叫醒我。“考得上”跳上床，用小爪子拼命拍我的脸，把我拍醒了。&lt;/p&gt;&lt;p&gt;“考得上”好了，考得上就好了。&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;2.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5567e553f29.jpg&quot; width=&quot;464&quot; height=&quot;352&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;作者图｜带考得上打针&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;h1 style=&quot;text-align: center;&quot;&gt;02 考研是牛角尖&lt;/h1&gt;&lt;p&gt;我的前两次考研都失败了。&lt;/p&gt;&lt;p&gt;我有点认命，听从家人的建议，找了份行政的工作。在公司，主管说我细心。认真就会细心，两年备战考研，我已经能每天列出计划，做好时间管理。&lt;/p&gt;&lt;p&gt;半年后，我还是厌倦了这份工作。在参加一次心理沙盘培训之后，我辞职报了考研辅导班，每天八点去图书馆学习。心里想，无论如何，这次是最后一次。&lt;/p&gt;&lt;p&gt;因为长期熬夜，脸上长了很多痘，研友每次见面，对话中都会有一句“你脸上痘又多了”，“how do you 痘”。&lt;/p&gt;&lt;p&gt;第三次考研，我终于成功了。因为来之不易，即使已经研二，我依然每天会在课余时间自学。&lt;/p&gt;&lt;p&gt;小时候每个假期，我都会在精神病院里写作业，妈妈在这里工作。&lt;/p&gt;&lt;p&gt;大铁门紧闭着，里面的病人们其实很温和。妈妈说，这些人只是想问题钻牛角尖出不来，所以来这里治疗。&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;3.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5567fe64a7a.jpg&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;图 | 考研教室&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;h1 style=&quot;text-align: center;&quot;&gt;03 考研是不吃屎&lt;/h1&gt;&lt;p&gt;广告公司太屎了。&lt;/p&gt;&lt;p&gt;毕业后，我进了一家4A广告公司。我的职位是品牌战略规划，其实就是想尽办法满足客户的需求。但现在大部分广告从业者实际上和销售没什么区别。每天就是客户，打款。&lt;/p&gt;&lt;p&gt;当所有行业的实习生工资都在100-200的时候，我们这里还是50爱来不来。就这，这个行业就聚集不到什么聪明人。&lt;/p&gt;&lt;p&gt;在广告公司熬过了一年，我发现自己太想当老师了。这个职业能满足我对工作的一切想象：成就感，踏实。&lt;/p&gt;&lt;p&gt;完美。&lt;/p&gt;&lt;p&gt;回去之后压力太大了。同龄人都有条不紊的走在自己的路上，一想到自己还在这里没有出发，就觉得时间太重要了，现在这样太恐怖了。&lt;/p&gt;&lt;p&gt;我有比较严重的失眠，复习的时候也没什么规律的作息，醒来就看书。有时候10点累，有时候是一两点，有时候一直看到第二天早上8、9点。想啥时候睡就啥时候睡，感觉自己回到了婴儿时代。&lt;/p&gt;&lt;p&gt;昨天考完之后，我觉得自己肯定凉了。我考的专业今年刚好换了院长，题型都变了。&lt;/p&gt;&lt;p&gt;明天开始就找找教育机构的工作吧，教教英语、史地政啥的，我还是想当老师。&lt;/p&gt;&lt;h1 style=&quot;text-align: center;&quot;&gt;04 考研是暂停&lt;/h1&gt;&lt;p&gt;2013年的最后一天，北京的雾霾很严重。一个人坐在机场，零点整，耳机的广播里传来倒数新年的声音，我发了条微博：再见北京。&lt;/p&gt;&lt;p&gt;那年，媒体行业整体下行，我也碰到了职业天花板。身边很多行业内的朋友都就此转行，我有些心动，但直接转行对我来说非常困难。&lt;/p&gt;&lt;p&gt;我一边工作，一边申请新加坡国立大学的社会学研究生，想通过学习来过渡。面试很顺利，我打定主意离开北京，奔赴新生活，兴奋又忐忑。那个时候我还不知道，等待我的两年读研生活是什么样子。&lt;/p&gt;&lt;p&gt;事实上，读研期间课业很重，在新加坡的学费和生活费支出又高。我断了收入来源，经济压力非常大。&lt;/p&gt;&lt;p&gt;过年时，为了省钱，我没有回国。翻朋友圈，所有人都在发年夜饭，一个比一个丰盛。我给自己做了一条鱼，就着两瓶啤酒吃完。&lt;/p&gt;&lt;p&gt;硕士毕业后，我回国准备找工作，可是对新的职业方向更加迷茫。&lt;/p&gt;&lt;p&gt;我发现，世界上是没有所谓的避风港的。之前存在的问题，现在依旧存在。这两年的时间里，只不过是我给人生按下了暂停键。&lt;img alt=&quot;4.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55680cf2b44.jpg&quot; width=&quot;640&quot; height=&quot;411&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;图 | 离开北京&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h1 style=&quot;text-align: center;&quot;&gt;5 考研是个孩子&lt;/h1&gt;&lt;p&gt;三年前，我是两家化妆品店的老板娘，和一个两岁男孩的母亲。&lt;/p&gt;&lt;p&gt;化妆品店就开在大学附近。每天清早，我带儿子到店里，一边照顾他一边看店，直到晚上10点才关店，带儿子回家。&lt;/p&gt;&lt;p&gt;春节后的开学季，店里顿时忙起来。我请一个女同学帮忙看着儿子，答应等会送她化妆品小样。看女同学满心欢喜地答应，我放心地去给另一个女孩子推荐化妆品。就一回头的功夫，我看到刚刚的女同学在试口红，而我儿子不见了。&lt;/p&gt;&lt;p&gt;我跑出店外，疯了一样的沿着路跑，最后在一家糖果屋，找到了正在吃棒棒糖的儿子。&lt;/p&gt;&lt;p&gt;寻找儿子的几分钟，像一生那么漫长。我再也不想把儿子放在这样嘈杂的环境里，当晚失眠到凌晨三点，我决定要考研。&lt;/p&gt;&lt;p&gt;我把两家店铺都转让了，找到村里一个闲置很久的院子。每天早上六点带着早餐去学习，中午回家吃饭，下午继续学习。12月份的山东已经开始下雪，院子里没有电，取暖全靠抖腿。&lt;/p&gt;&lt;p&gt;有时实在太冷了，我就去扫雪。晚上回到住处，再陪儿子讲故事，玩游戏。&lt;/p&gt;&lt;p&gt;走出考场，我有一种如释负重的感觉。我一遍遍地跟自己确定已经用了“洪荒之力”，结果怎样已经不重要了。&lt;/p&gt;&lt;p&gt;研究生入学后，儿子的幼儿园也开学了，我又开始边带孩子边读书的生活。&lt;/p&gt;&lt;p&gt;我读三年硕士，他读三年幼儿园。&lt;/p&gt;&lt;p&gt;考研是重新定义自己“最高学历”，甚至重新定义自己的一次机会。对已经工作的人来说尤其如此。&lt;/p&gt;&lt;p&gt;他们决定从琐碎的日常生活中走出来，进入一段井然有序又充满希望的生活。毕竟生活总在别处。&lt;/p&gt;&lt;p&gt;2018年，祝福这290万人。&lt;/p&gt;&lt;p&gt;＊按故事顺序，受访者依次为：咪咪、Moyo、西南吴彦祖、程浩、柚子。&lt;/p&gt;','1549101133','1549101133') [ RunTime:0.1600s ]
+
+[ 2019-02-02T17:52:14+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0540s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0600s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0530s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0590s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0640s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0500s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0760s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-02-02T18:04:20+08:00 ] 127.0.0.1 /Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0600s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: aid D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T18:06:01+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0950s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0440s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T18:06:15+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0650s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0450s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T18:06:27+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0400s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T18:06:48+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0520s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T18:07:04+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0840s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0390s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T18:07:06+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0590s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0840s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('明星安妮海瑟薇时尚造型，简约帅气，超强气场，化身甜酷女孩！','剁手萌','时尚','&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;爱看美剧的小伙伴，对于“安妮海瑟薇”这个名字并不陌生，因为主演《公主日记》而走红，有着奥黛丽·赫本式的优雅，也有朱迪·加兰式的明媚。&lt;/span&gt;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556b8903b21.jpg&quot; width=&quot;640&quot; height=&quot;796&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;近日，安妮·海瑟薇（Anne Hathaway）现身机场，身穿西装配牛仔裤，简约帅气，自带气场， 帮粉丝签名挥手尽显酷劲，化身甜酷女孩。&lt;/span&gt;&lt;img alt=&quot;2.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556b971ff81.jpg&quot; width=&quot;600&quot; height=&quot;1050&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;安妮海瑟薇身穿驼色大衣漫步纽约街头，内穿红色呢绒衫，脚蹬黑色短靴，时尚个性，大步流星，黑超遮面气场足，星范儿满满。&lt;/span&gt;&lt;img alt=&quot;3.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556ba3be594.jpg&quot; width=&quot;640&quot; height=&quot;979&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;一身粉色西装简直美得冒泡，深V衬衫凸显小性感，线条流畅勾勒完美身形，清新甜美中带着一丝霸气，让人觉得赏心悦目，飘逸长发尽情散发女王气质。&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;4.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556bb836a5d.jpg&quot; width=&quot;394&quot; height=&quot;604&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;一身裸色长裙尽显性感妩媚，修身设计完美凸显好身材，落落大方，成熟沉稳。长卷发披肩搭配一抹红唇，如梦幻精灵一般轻盈飘逸。&lt;/span&gt;&lt;img alt=&quot;5.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556bc81a8ca.jpg&quot; width=&quot;640&quot; height=&quot;960&quot;&gt;&lt;br&gt;&lt;/p&gt;','1549102026','1549102026') [ RunTime:0.0710s ]
+
+[ 2019-02-02T18:07:07+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0620s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0590s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0440s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.1130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-02-02T18:07:36+08:00 ] 127.0.0.1 /Admin/Blog/add/aid/48
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0800s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0590s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0600s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 48 LIMIT 1   [ RunTime:0.0510s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T18:12:01+08:00 ] 127.0.0.1 /Admin/Blog/add/aid/48
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0720s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 48 LIMIT 1   [ RunTime:0.0510s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T18:13:14+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/48
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0540s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0500s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0560s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `article` SET `title`='明星安妮海瑟薇时尚造型，简约帅气，超强气场，化身甜酷女孩！',`author`='剁手萌',`category`='时尚',`content`='&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;爱看美剧的小伙伴，对于“安妮海瑟薇”这个名字并不陌生，因为主演《公主日记》而走红，有着奥黛丽·赫本式的优雅，也有朱迪·加兰式的明媚。&lt;/span&gt;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556b8903b21.jpg&quot; width=&quot;640&quot; height=&quot;796&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;近日，安妮·海瑟薇（Anne Hathaway）现身机场，身穿西装配牛仔裤，简约帅气，自带气场， 帮粉丝签名挥手尽显酷劲，化身甜酷女孩。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;2.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556b971ff81.jpg&quot; width=&quot;600&quot; height=&quot;1050&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;安妮海瑟薇身穿驼色大衣漫步纽约街头，内穿红色呢绒衫，脚蹬黑色短靴，时尚个性，大步流星，黑超遮面气场足，星范儿满满。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;3.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556ba3be594.jpg&quot; width=&quot;640&quot; height=&quot;979&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;一身粉色西装简直美得冒泡，深V衬衫凸显小性感，线条流畅勾勒完美身形，清新甜美中带着一丝霸气，让人觉得赏心悦目，飘逸长发尽情散发女王气质。&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;4.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556bb836a5d.jpg&quot; width=&quot;394&quot; height=&quot;604&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;一身裸色长裙尽显性感妩媚，修身设计完美凸显好身材，落落大方，成熟沉稳。长卷发披肩搭配一抹红唇，如梦幻精灵一般轻盈飘逸。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;5.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556bc81a8ca.jpg&quot; width=&quot;640&quot; height=&quot;960&quot;&gt;&lt;br&gt;&lt;/p&gt;',`updatetime`='1549102394' WHERE `aid` = 48 [ RunTime:0.0520s ]
+
+[ 2019-02-02T18:13:15+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0540s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0540s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0380s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0680s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0760s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T18:13:51+08:00 ] 127.0.0.1 /Admin/Blog/add/aid/47
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0540s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0530s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 47 LIMIT 1   [ RunTime:0.0410s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T18:14:34+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/47
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.1010s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0620s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `article` SET `title`='考研中年人：30岁辞职，逃离现实的最后可能',`author`='真实故事计划',`category`='教育',`content`='&lt;p&gt;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5567caed24c.jpg&quot; width=&quot;640&quot; height=&quot;360&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;blockquote&gt;如果考研生是电饭锅中的一粒粒米饭，那么考上的人就是被盛出来那一碗。一锅米饭大概有29000粒，今年的考生有290万，是它的100倍。越来越多的年轻人，在工作之后决定考研，成为其中的一粒，而且是一粒回锅饭。工作意味着日常的琐屑、办公室政治以及KPI的颈箍咒。考研就像是不远处的诺亚方舟，可以暂时拯救这一切，逃离庸碌而疲惫的生活。这是人们在30多岁，毅然加入考研大军，虎口夺食的原因。&lt;/blockquote&gt;&lt;h1 style=&quot;text-align: center;&quot;&gt;01 考研是只猫&lt;/h1&gt;&lt;p&gt;2018年12月21日，晚上8点30分，距离第一科开考还有12小时。我放下手里的“政治红宝书”，抱起我的猫去宠物医院。&lt;/p&gt;&lt;p&gt;它已经连续三天不吃不喝了，这几天我们俩一个废寝，一个忘食。&lt;/p&gt;&lt;p&gt;我本来指望猫能够自然好起来，至少在我考研结束前再坚持一下。就像我现在这样，再坚持一下。但猫毕竟没有什么信念。&lt;/p&gt;&lt;p&gt;我只能把它抱起来，带到宠物医院检查身体。在此之前的几天，我都没有出过门，我家看起来更像是猫窝。&lt;/p&gt;&lt;p&gt;我是一个医学生。在复习毕业考试的一个晚上，我上厕所时翻看过期的《人物》杂志，被一篇标题为《北京零点后》的特稿击中了。读完，我在卫生间愣了两分钟，决定要转行。第一步就是考新闻系的研究生。&lt;/p&gt;&lt;p&gt;那一年我没考上，但依然决定留在北京。我在一家青旅住下，一边找房子，一边找工作。&lt;/p&gt;&lt;p&gt;北漂三年，我在工作中不断碰壁，换了三份工作，始终没有明确的职业方向，也没有攒下钱。直到今年六月，我发现自己怀孕了，而那时，我已经跟男朋友分手。我只好辞职，借钱做了手术。&lt;/p&gt;&lt;p&gt;手术后，我在家里躺了两个月，始终提不起劲来找工作。事到如今，我再想找工作几乎不可能。于是，我又有了考研的想法。为了省钱，我买了很多挂面和速冻饺子。我几乎没有社交，尽量不出门，每天逼自己学习，背书背到崩溃，只有这只猫陪着我。&lt;/p&gt;&lt;p&gt;我给它取了一个名字，叫“考得上”。&lt;/p&gt;&lt;p&gt;抽血化验后，医生怀疑考得上得了白血病。我要把在考场附近定的宾馆退掉，才有钱给考得上输液。&lt;/p&gt;&lt;p&gt;那个晚上，我只睡了两个小时。等待考得上看病的时间里，我一直在背政治。&lt;/p&gt;&lt;p&gt;第二天，也就是考研当天早上6点，闹钟并没有叫醒我。“考得上”跳上床，用小爪子拼命拍我的脸，把我拍醒了。&lt;/p&gt;&lt;p&gt;“考得上”好了，考得上就好了。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;2.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5567e553f29.jpg&quot; width=&quot;464&quot; height=&quot;352&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;作者图｜带考得上打针&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;h1 style=&quot;text-align: center;&quot;&gt;02 考研是牛角尖&lt;/h1&gt;&lt;p&gt;我的前两次考研都失败了。&lt;/p&gt;&lt;p&gt;我有点认命，听从家人的建议，找了份行政的工作。在公司，主管说我细心。认真就会细心，两年备战考研，我已经能每天列出计划，做好时间管理。&lt;/p&gt;&lt;p&gt;半年后，我还是厌倦了这份工作。在参加一次心理沙盘培训之后，我辞职报了考研辅导班，每天八点去图书馆学习。心里想，无论如何，这次是最后一次。&lt;/p&gt;&lt;p&gt;因为长期熬夜，脸上长了很多痘，研友每次见面，对话中都会有一句“你脸上痘又多了”，“how do you 痘”。&lt;/p&gt;&lt;p&gt;第三次考研，我终于成功了。因为来之不易，即使已经研二，我依然每天会在课余时间自学。&lt;/p&gt;&lt;p&gt;小时候每个假期，我都会在精神病院里写作业，妈妈在这里工作。&lt;/p&gt;&lt;p&gt;大铁门紧闭着，里面的病人们其实很温和。妈妈说，这些人只是想问题钻牛角尖出不来，所以来这里治疗。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;3.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5567fe64a7a.jpg&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;图 | 考研教室&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;h1 style=&quot;text-align: center;&quot;&gt;03 考研是不吃屎&lt;/h1&gt;&lt;p&gt;广告公司太屎了。&lt;/p&gt;&lt;p&gt;毕业后，我进了一家4A广告公司。我的职位是品牌战略规划，其实就是想尽办法满足客户的需求。但现在大部分广告从业者实际上和销售没什么区别。每天就是客户，打款。&lt;/p&gt;&lt;p&gt;当所有行业的实习生工资都在100-200的时候，我们这里还是50爱来不来。就这，这个行业就聚集不到什么聪明人。&lt;/p&gt;&lt;p&gt;在广告公司熬过了一年，我发现自己太想当老师了。这个职业能满足我对工作的一切想象：成就感，踏实。&lt;/p&gt;&lt;p&gt;完美。&lt;/p&gt;&lt;p&gt;回去之后压力太大了。同龄人都有条不紊的走在自己的路上，一想到自己还在这里没有出发，就觉得时间太重要了，现在这样太恐怖了。&lt;/p&gt;&lt;p&gt;我有比较严重的失眠，复习的时候也没什么规律的作息，醒来就看书。有时候10点累，有时候是一两点，有时候一直看到第二天早上8、9点。想啥时候睡就啥时候睡，感觉自己回到了婴儿时代。&lt;/p&gt;&lt;p&gt;昨天考完之后，我觉得自己肯定凉了。我考的专业今年刚好换了院长，题型都变了。&lt;/p&gt;&lt;p&gt;明天开始就找找教育机构的工作吧，教教英语、史地政啥的，我还是想当老师。&lt;/p&gt;&lt;h1 style=&quot;text-align: center;&quot;&gt;04 考研是暂停&lt;/h1&gt;&lt;p&gt;2013年的最后一天，北京的雾霾很严重。一个人坐在机场，零点整，耳机的广播里传来倒数新年的声音，我发了条微博：再见北京。&lt;/p&gt;&lt;p&gt;那年，媒体行业整体下行，我也碰到了职业天花板。身边很多行业内的朋友都就此转行，我有些心动，但直接转行对我来说非常困难。&lt;/p&gt;&lt;p&gt;我一边工作，一边申请新加坡国立大学的社会学研究生，想通过学习来过渡。面试很顺利，我打定主意离开北京，奔赴新生活，兴奋又忐忑。那个时候我还不知道，等待我的两年读研生活是什么样子。&lt;/p&gt;&lt;p&gt;事实上，读研期间课业很重，在新加坡的学费和生活费支出又高。我断了收入来源，经济压力非常大。&lt;/p&gt;&lt;p&gt;过年时，为了省钱，我没有回国。翻朋友圈，所有人都在发年夜饭，一个比一个丰盛。我给自己做了一条鱼，就着两瓶啤酒吃完。&lt;/p&gt;&lt;p&gt;硕士毕业后，我回国准备找工作，可是对新的职业方向更加迷茫。&lt;/p&gt;&lt;p&gt;我发现，世界上是没有所谓的避风港的。之前存在的问题，现在依旧存在。这两年的时间里，只不过是我给人生按下了暂停键。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;4.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55680cf2b44.jpg&quot; width=&quot;640&quot; height=&quot;411&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;图 | 离开北京&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h1 style=&quot;text-align: center;&quot;&gt;5 考研是个孩子&lt;/h1&gt;&lt;p&gt;三年前，我是两家化妆品店的老板娘，和一个两岁男孩的母亲。&lt;/p&gt;&lt;p&gt;化妆品店就开在大学附近。每天清早，我带儿子到店里，一边照顾他一边看店，直到晚上10点才关店，带儿子回家。&lt;/p&gt;&lt;p&gt;春节后的开学季，店里顿时忙起来。我请一个女同学帮忙看着儿子，答应等会送她化妆品小样。看女同学满心欢喜地答应，我放心地去给另一个女孩子推荐化妆品。就一回头的功夫，我看到刚刚的女同学在试口红，而我儿子不见了。&lt;/p&gt;&lt;p&gt;我跑出店外，疯了一样的沿着路跑，最后在一家糖果屋，找到了正在吃棒棒糖的儿子。&lt;/p&gt;&lt;p&gt;寻找儿子的几分钟，像一生那么漫长。我再也不想把儿子放在这样嘈杂的环境里，当晚失眠到凌晨三点，我决定要考研。&lt;/p&gt;&lt;p&gt;我把两家店铺都转让了，找到村里一个闲置很久的院子。每天早上六点带着早餐去学习，中午回家吃饭，下午继续学习。12月份的山东已经开始下雪，院子里没有电，取暖全靠抖腿。&lt;/p&gt;&lt;p&gt;有时实在太冷了，我就去扫雪。晚上回到住处，再陪儿子讲故事，玩游戏。&lt;/p&gt;&lt;p&gt;走出考场，我有一种如释负重的感觉。我一遍遍地跟自己确定已经用了“洪荒之力”，结果怎样已经不重要了。&lt;/p&gt;&lt;p&gt;研究生入学后，儿子的幼儿园也开学了，我又开始边带孩子边读书的生活。&lt;/p&gt;&lt;p&gt;我读三年硕士，他读三年幼儿园。&lt;/p&gt;&lt;p&gt;考研是重新定义自己“最高学历”，甚至重新定义自己的一次机会。对已经工作的人来说尤其如此。&lt;/p&gt;&lt;p&gt;他们决定从琐碎的日常生活中走出来，进入一段井然有序又充满希望的生活。毕竟生活总在别处。&lt;/p&gt;&lt;p&gt;2018年，祝福这290万人。&lt;/p&gt;&lt;p&gt;＊按故事顺序，受访者依次为：咪咪、Moyo、西南吴彦祖、程浩、柚子。&lt;/p&gt;',`updatetime`='1549102473' WHERE `aid` = 47 [ RunTime:0.1470s ]
+
+[ 2019-02-02T18:14:34+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.1100s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0890s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0690s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.1060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T18:14:51+08:00 ] 127.0.0.1 /Admin/Blog/add/aid/46
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0940s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 46 LIMIT 1   [ RunTime:0.0520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-02-02T18:15:01+08:00 ] 127.0.0.1 /Admin/Blog/add/aid/45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 45 LIMIT 1   [ RunTime:0.0750s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-02-02T18:15:28+08:00 ] 127.0.0.1 /Admin/Blog/add/aid/45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0600s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0390s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0540s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 45 LIMIT 1   [ RunTime:0.0720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2019-02-02T18:16:06+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0720s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0700s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `article` SET `title`='《巧克力杯子蛋糕》',`author`='大花花西瓜瓜',`category`='美食',`content`='&lt;p style=&quot;margin-left: 200px;&quot;&gt;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564493bc61.jpg&quot; width=&quot;490&quot; height=&quot;735&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;快过年了，为表欢快之心，做了些杯子蛋糕，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;用的黄油蛋糕底胚，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;顶层裱了些奶油奶酪霜，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;再用饼干、威化什么的装饰了一下，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;一下就网红蛋糕起来了。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;2.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55646a857b2.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;3.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55646f4de23.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黄油蛋糕底胚，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;大冬天的，还是偏干了些，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;如果天气不那么冷，应该口感不错的，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;杯子蛋糕，本身就比较偏这么厚重口感。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;4.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55648584e1a.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;img alt=&quot;5.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556488ba64a.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪霜，减少了些黄油量，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;相对加大淡奶油量，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;好造型，同时也比较适合冬天。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;6.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564b21a14f.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;img alt=&quot;7.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564b6c588c.jpg&quot; width=&quot;690&quot; height=&quot;459&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;后来，又做了戚风版的，在后记中也写的，没拍照。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;我们家还是更偏爱威风版的，&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;搭配的顶层奶油也要更清爽些。&lt;/span&gt;&lt;img alt=&quot;8.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564cbf2c08.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;材料：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;蛋糕体：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黄油：180克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;牛奶：270ML&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;鸡蛋：3个&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;低筋面粉：240克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖（应用糖粉）：200克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;可可粉：3大勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;泡打粉：1小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;小苏打：1/2小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;盐：1/2小勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;巧克力奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;无盐黄油：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;淡奶油：50克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;黑巧克力：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奥利奥奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奶油奶酪：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;无盐黄油：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;淡奶油：50克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;白糖：30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;奥利奥碎：20克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;（份量（油淋膜纸杯底5CM，高度4CM） ：&amp;nbsp;16个）&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;备注：方子偏干，修改见后记。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;9.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5564fdb242c.jpg&quot; width=&quot;689&quot; height=&quot;510&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、所有材料恢复室温。黄油室温软化，用打蛋器打发至颜色变白；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;2&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、加入白糖打发至体积变大且蓬松；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;3&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、鸡蛋分3-4次加入黄油中。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;4&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、搅打均匀再加下一次；&lt;br&gt;5、用刮刀刮下容器壁上的黄油，倒入牛奶；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;6&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、等待3分钟左右；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、筛入面粉、可可粉、泡打粉、小苏打粉的混合粉；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;8&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、拌至无颗粒；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;9&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、面糊装入模具7分满；&lt;br&gt;10、160度烤箱，中层，25分钟左右，后10分钟，可把上火调至150度。取出待凉。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;img alt=&quot;10.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55653a50f67.jpg&quot; width=&quot;490&quot; height=&quot;919&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;11&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、奶油奶酪、黄油提前室温软化；&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;12&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、加入白糖，打发均匀；&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;&lt;br&gt;13、加入淡奶油；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;14&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、继续打发均匀；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;15&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、做奥利奥奶油奶酪霜的，把奥利奥捏碎放入，拌均匀就可以了，待用；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;16&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、做巧克力奶油奶酪霜的，先重复以上1-4步，再加入隔热水化开的黑巧克力；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;17&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、打发均匀，待用；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;18&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、将巧克力奶油奶酪霜挤在完全冷却了的杯子蛋糕上；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;19&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、将奥利奥奶油奶酪霜挤在完全冷却了的杯子蛋糕上；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;20&lt;/span&gt;&lt;span style=&quot;font-size: 14pt; color: rgb(34, 34, 34);&quot;&gt;、在奶油奶酪霜上摆上喜欢的装饰就可以了。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img alt=&quot;12.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55656b681bf.jpg&quot; width=&quot;490&quot; height=&quot;735&quot;&gt;&lt;img alt=&quot;11.jpg&quot; src=&quot;/Uploads/2019-02-02/5c556547554b7.jpg&quot; width=&quot;490&quot; height=&quot;919&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;后记：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;感觉大冬天的用这个方子做的蛋糕，蛋糕口感都偏干。后来又做了一炉绵软的，改了一下平常戚风的方子；顶层也做了些修改，觉得还不错哈。记录一下第二炉的方子：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;蛋糕体：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;低筋面粉：150克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;牛奶：120克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;鸡蛋：&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;个(较大)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;糖：130克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;油：80克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;可可粉：3大勺&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧奶油奶酪霜：&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;奶油奶酪：&amp;nbsp;180克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;无盐黄油：&amp;nbsp;30克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;淡奶油：&amp;nbsp;100克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧克力：&amp;nbsp;40克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;白糖：40克&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;（淡奶油加白糖先打发7成；奶油奶酪、黄油另行打发均匀，加入融化的&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 14pt;&quot;&gt;黑巧打发均匀；奶油奶酪黄油黑巧克加入打发的淡奶油打发均匀就可以）&lt;/span&gt;&lt;/p&gt;',`updatetime`='1549102566' WHERE `aid` = 45 [ RunTime:0.2580s ]
+
+[ 2019-02-02T18:16:07+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0600s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0750s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0800s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0520s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0860s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0670s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.1560s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T18:16:12+08:00 ] 127.0.0.1 /Admin/Blog/add/aid/44
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 44 LIMIT 1   [ RunTime:0.0650s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-02-02T18:16:28+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/44
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0600s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0590s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `article` SET `title`='【大黄鱼烧年糕】年夜饭必备菜',`author`='随心煮意',`category`='美食',`content`='&lt;p&gt;&lt;font&gt;还有几天就年三十了，这几天大家一定都在忙着采购年货了吧。各种各样的年货怎么少得了年糕呀，&lt;/font&gt;&lt;font&gt;过年是一定要吃年糕的，年糕年糕，年年高。&lt;/font&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;接下来的两天，我会分享以年糕为主题的两道江浙风味年菜。这两道菜用到的年糕都是宁波的水磨年糕，其实跟我们广西的粉利外观和口感都非常像，都是用大米制作的，只是宁波年糕口感更有韧性更筋道一些。用&lt;/span&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;大黄鱼搭配水磨年糕一同烧制，年糕吸足了鱼肉的汤汁，口感软糯Q弹筋道，根本停不下口，年糕成了主角，大黄鱼肉质滑嫩味道鲜美。菜品大气，寓意吉祥，是年夜饭必备的一道菜哟！&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&lt;b&gt;用料&lt;/b&gt;：大黄鱼一条(约500g)、宁波水磨年糕125g、小葱3棵、姜1小块、大蒜半头、料酒20ml、生抽15ml、老抽2.5ml、淀粉5g、白糖2g、盐少许、油适量&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&lt;b&gt;做法:&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin-left: 18pt; text-align: left;&quot;&gt;&lt;font&gt;1、&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;大黄鱼去鳞、去鳃、去除内脏并冲洗干净，在鱼身两面剞上一字刀，抹上盐和料酒腌制入味；&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin-left: 18pt; text-align: left;&quot;&gt;&lt;font&gt;2、&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;小葱洗净，两棵打成葱结，留一棵切碎，姜切片，大蒜去皮；&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin-left: 18pt; text-align: left;&quot;&gt;&lt;font&gt;3、&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;锅中倒入适量清水烧开，放入年糕煮软，捞出泡入冷水中备用；&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin-left: 18pt; text-align: left;&quot;&gt;&lt;font&gt;4、&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;锅中倒入适量油加热，在鱼身两面拍上一层薄薄的干淀粉，油温7成热时，将黄鱼放入油锅炸至两面金黄后捞出；&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin-left: 18pt; text-align: left;&quot;&gt;&lt;font&gt;5、&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;将炸鱼的油倒出，锅入底油，下葱结、姜片和蒜瓣小火煸香，放入炸好的大黄鱼，烹入料酒、生抽、老抽、白糖调味，倒入开水和黄鱼持平，大火烧开后转小火焖煮5分钟；&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin-left: 18pt; text-align: left;&quot;&gt;&lt;font&gt;6、&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;最后放入煮好的年糕，煮至汤汁浓稠即可出锅，最后撒上葱花即可。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;img alt=&quot;2.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55636044ecb.jpg&quot; width=&quot;687&quot; height=&quot;942&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&lt;b&gt;随心得&lt;/b&gt;：&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;**大黄鱼可油煎也可油炸，如果觉得大黄鱼不好煎炸，也可以换小黄鱼。如果用普通锅煎鱼，在煎之前锅头最好做一下防粘处理，先把锅彻底刷洗干净，空锅烧热后，用生姜切面擦几下锅内，再倒入油，油热后再放入鱼，这样煎鱼会好很多。同时煎鱼的油温可以高一些，这样鱼下锅表皮可以快速定型，煎的过程中千万不要急于翻动，必须要等一面煎至足够时间定型了，才能翻另一面再煎。&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;**大黄鱼在烧煮的过程中尽量不要翻动太多，否则鱼肉很容易碎，一般中途翻个面就可以了。&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: left;&quot;&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55638a1e412.jpg&quot; width=&quot;550&quot; height=&quot;825&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;',`updatetime`='1549102587' WHERE `aid` = 44 [ RunTime:0.1340s ]
+
+[ 2019-02-02T18:16:28+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0610s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0740s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0540s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.1170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T18:17:22+08:00 ] 127.0.0.1 /Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0640s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0500s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0650s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: aid D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp64\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T18:44:11+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0440s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T18:44:31+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0540s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T18:44:53+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0430s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T18:45:37+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0960s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0430s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T18:45:56+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.1110s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0590s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T18:46:17+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0640s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0440s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T18:46:48+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0860s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T18:47:12+08:00 ] 127.0.0.1 /Admin/Blog/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0550s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2019-02-02T18:47:25+08:00 ] 127.0.0.1 /Admin/Blog/save/aid/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0620s ]
+NOTIC: [8] Undefined index: auto D:\wamp64\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('迪丽热巴又穿糖果色装扮，搭配可爱发型，秒变美少女！','剁手萌','时尚','&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;迪丽热巴是典型的新疆美女，五官立体精致，但她与众不同的一点就是长相带点小帅气的同时，又格外甜美俏皮。小姐姐近段时间的造型也非常甜美，一起来看看热巴小姐姐的穿搭吧。&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;img alt=&quot;1.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55747b3a61a.jpg&quot; width=&quot;640&quot; height=&quot;852&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;明黄色的卫衣微微宽松，设计比较简约。但脖子上的剪口设计却很个性，小秀锁骨尽显小女人味儿，格外好看。不过，这件卫衣的衣摆设计却比较挑身材，收腰设计对于腰部不够纤细，胯骨有点宽的姑娘来说，格外显胖。&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;img alt=&quot;2.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55748f9d0e2.jpg&quot; width=&quot;640&quot; height=&quot;853&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;身材中段不够纤细的姑娘尽量挑选衣摆宽松的设计，更显瘦哟。迪丽热巴充分展示了身材优势，简单搭配一条黑色紧身牛仔裤，就能格外好看了。&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;img alt=&quot;3.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5574a5b8b52.jpg&quot; width=&quot;640&quot; height=&quot;853&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;热巴还穿了一双黑色尖头靴子，更是显腿长了。要是能搭配一双小白鞋，更加清新甜美哟。这回搭配可爱发型格外少女感十足，有弧度的空气刘海能让侧颜更加美丽，搭配个性十足的编发丸子头，格外俏皮可人，超甜美。&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;img alt=&quot;4.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5574d1df2a8.jpg&quot; width=&quot;640&quot; height=&quot;853&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;迪丽热巴穿这身黄黑配色的造型，非常适合身材稍微苗条的一点儿的姑娘。身材不够苗条的姑娘则么穿，别着急，在来看看热巴的其他糖果色穿搭造型，显瘦不挑身材。&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;img alt=&quot;5.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5574e4918bd.jpg&quot; width=&quot;640&quot; height=&quot;853&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;回顾迪丽热巴以往的糖果色穿搭造型，简直是甜美系穿搭的典范。一直都说紫色是超级难驾驭的颜色，但迪丽热巴却能搭配得非常得体，甜美少女感立显。&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;img alt=&quot;6.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5574f971dae.jpg&quot; width=&quot;640&quot; height=&quot;854&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;紫色面包服针织衫搭配白色高腰热裤，微胖身材也能驾驭，还格外清新俏皮哟。雪花点设计的毛衣也少了几分老气，格外时髦。要是我们冬季穿搭，只需要搭配肉色保暖袜和宽松大衣，就能格外时尚甜美了。&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;img alt=&quot;7.jpg&quot; src=&quot;/Uploads/2019-02-02/5c55751854bed.jpg&quot; width=&quot;640&quot; height=&quot;853&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;设套运动风的活动造型也非常减龄，宽松休闲的白色卫衣搭配百褶裙，外搭浅粉色小外套，配色清新养眼，格外养眼。迪丽热巴还梳了编发搭配披肩长发，更添甜美俏皮感。对于腿型不够又美的姑娘，可以穿浅色牛仔裤，照样清新甜美哟。&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;img alt=&quot;8.jpg&quot; src=&quot;/Uploads/2019-02-02/5c5575302c4e8.jpg&quot; width=&quot;640&quot; height=&quot;853&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;&lt;span style=&quot;color: rgb(34, 34, 34); font-size: 14px;&quot;&gt;迪丽热巴的糖果色系装扮也太甜了吧，再搭配比较俏皮可爱的发型，26岁的她立马嫩回甜美少女。学她这样穿，你也能秒变美少女，快学起来吧。&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;','1549104445','1549104445') [ RunTime:0.1970s ]
+
+[ 2019-02-02T18:47:26+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0540s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0530s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0450s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.1110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-02T22:28:31+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0630s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.1010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0820s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.1120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-02-02T22:28:32+08:00 ] 127.0.0.1 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0820s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0410s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0700s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0520s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0520s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.1630s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

@@ -1,0 +1,481 @@
+[ 2018-08-13T00:44:34+08:00 ] 52.53.201.78 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005303s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0452s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0026s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0242s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.0412s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.0110s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001194s ]
+
+[ 2018-08-13T01:02:28+08:00 ] 106.11.155.214 /Home/Index/read/aid/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0289s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0224s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 32 LIMIT 1   [ RunTime:0.0059s ]
+SQL: UPDATE `article` SET `view`=view+1 WHERE `aid` = 32 [ RunTime:0.0020s ]
+NOTIC: [2] preg_match_all() expects parameter 2 to be string, array given /www/users/HA531660/WEB/Application/Common/Common/function.php 第 4 行.
+NOTIC: [8] Undefined offset: 0 /www/users/HA531660/WEB/Application/Common/Common/function.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003006s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003176s ]
+
+[ 2018-08-13T04:07:21+08:00 ] 106.11.154.209 /Home/Index/read/aid/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 11 LIMIT 1   [ RunTime:0.0014s ]
+SQL: UPDATE `article` SET `view`=view+1 WHERE `aid` = 11 [ RunTime:0.0017s ]
+NOTIC: [2] preg_match_all() expects parameter 2 to be string, array given /www/users/HA531660/WEB/Application/Common/Common/function.php 第 4 行.
+NOTIC: [8] Undefined offset: 0 /www/users/HA531660/WEB/Application/Common/Common/function.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001186s ]
+
+[ 2018-08-13T04:17:40+08:00 ] 182.138.158.2 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0243s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0023s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0244s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.0416s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.0128s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2018-08-13T09:26:41+08:00 ] 106.11.152.209 /Home/Index/read?aid=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001785s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0242s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 10 LIMIT 1   [ RunTime:0.0232s ]
+SQL: UPDATE `article` SET `view`=view+1 WHERE `aid` = 10 [ RunTime:0.0025s ]
+NOTIC: [2] preg_match_all() expects parameter 2 to be string, array given /www/users/HA531660/WEB/Application/Common/Common/function.php 第 4 行.
+NOTIC: [8] Undefined offset: 0 /www/users/HA531660/WEB/Application/Common/Common/function.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001117s ]
+
+[ 2018-08-13T10:20:21+08:00 ] 123.179.12.213 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001732s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0229s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0238s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.0341s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.0069s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000951s ]
+
+[ 2018-08-13T11:09:03+08:00 ] 106.11.156.222 /index.php/Home/Index/education
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0252s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `article` WHERE ( category='教育' ) ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0335s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.0121s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 137 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 137 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 137 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 137 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 137 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 137 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 137 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 137 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 165 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 165 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 165 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 165 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 165 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 165 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 233 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 233 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 233 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 233 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 233 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 233 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 233 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/28af3cbf496e6769a54c4cf4bfe418ea.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.426997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.427174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001478s ]
+
+[ 2018-08-13T16:21:50+08:00 ] 113.206.176.96 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0247s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0244s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.0326s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.0084s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018691s ]
+
+[ 2018-08-13T20:59:43+08:00 ] 14.204.69.182 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001808s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0266s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0223s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.0307s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.0058s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000857s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001787s ]
+
+[ 2018-08-13T23:31:16+08:00 ] 1.30.24.82 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005278s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0400s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0231s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.0346s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.0090s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004417s ]
+
+[ 2018-08-13T23:48:22+08:00 ] 123.126.113.249 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0219s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0311s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.0338s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.0052s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 140 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' /www/users/HA531660/WEB/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001034s ]
+

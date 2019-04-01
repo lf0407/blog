@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博客管理</title>
+    <link rel="stylesheet" href="/Public/bootstrap-3.3.7/css/bootstrap.css" />
+    <script src="/Public/jquery-3.1.1.js"></script>
+    <script src="/Public/bootstrap-3.3.7/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <include file="./Application/Admin/View/nav.inc.html" />
+        <h2>博客管理<small class="pull-right"><a class="btn btn-default" href="/Admin/Blog/add">添加博客</a></small></h2>
+        <table class="table">
+            <tr>
+                <th>aid</th>
+                <th>标题</th>
+                <th>作者</th>
+                <th>创建时间</th>
+                <th>修改时间</th>
+                <th>管理</th>
+            </tr>
+
+            <foreach name="articles" item="article">
+            <tr>
+                <td>{$article['aid']}</td>
+                <td>{$article['title']}</td>
+                <td>{$article['author']}</td>
+                <td>{$article['createtime']|date='Y-m-d H:i:s',###}</td>
+                <td>{$article['updatetime']|date='Y-m-d H:i:s',###}</td>
+                <td>
+                    <a href="/Admin/Blog/add/aid/{$article['aid']}">修改</a>
+                    <a href="/Admin/Blog/delete?aid={$article['aid']}">删除</a>
+                </td>
+            </tr>
+            </foreach>
+        </table>
+        {$show}
+    </div>
+</body>
+</html>

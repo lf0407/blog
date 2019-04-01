@@ -1,0 +1,973 @@
+[ 2018-07-08T00:34:27+08:00 ] 127.0.0.1 /index.php/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-07-08T00:34:33+08:00 ] 127.0.0.1 /index.php/Admin/Login/index?act=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `user` WHERE `username` = '123456' AND `password` = '123456' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-07-08T00:34:33+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-08T00:34:35+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-08T00:34:38+08:00 ] 127.0.0.1 /index.php/Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: aid D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-08T00:37:07+08:00 ] 127.0.0.1 /index.php/Admin/Blog/save?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('山大学长写给学弟学妹的毕业致辞：别为自己不是名校出身自卑','王言虎','教育','&lt;p&gt;毕业是一个沉重的话题，但我不想沉重。先说一则我与高考的轶事。&lt;/p&gt;&lt;p&gt;高考前，我姑姑为保我金榜题名，找我们县一神婆算命祈福。一顿操作猛如虎，神婆得出喜人结论——这小子能上山大。&lt;/p&gt;&lt;p&gt;然后，我就来到了山西大学。故事从此开始。&lt;/p&gt;&lt;p&gt;我是山东人，大学期间，在老家怎么称呼我的大学，就成了一件尴尬的事——在山西，我们可以毫不犹疑地称学校为山大，但在山东，山大只能是山东大学。当然，在全国其他地方，也是如此。&lt;/p&gt;&lt;p&gt;所以当别人问我在哪个学校上学时，我总是不太好意思地说是山西大学，而不能理直气壮地自称山大。而我的父亲，为了不落人下风，又能跟山大扯上点关系，跟别人介绍我的学校时，说的是有些不伦不类的“山西大”。&lt;/p&gt;&lt;p&gt;我想，这可能也是诸位的烦恼。因为我们不是外界公认的山大，不是名校，所以，我们总是觉得矮人一截。&lt;/p&gt;&lt;p&gt;但我今天想跟你们说的是，抛掉这无畏的顾虑，不要为外界的标签所束缚，更不要因我们不是公认的山大，就不敢称自己是“山大人”。因为这名副其实。&lt;/p&gt;&lt;p&gt;对于现在学校的处境，我们当然只能说“祖上也曾阔过”——她有着116年的历史，与京师大学堂、北洋大学堂并称中国最早的三所国立大学。但后来，因为全国院系调整与地理位置的原因，她确实没落了。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://5b0988e595225.cdn.sohucs.com/images/20180628/83646f6beffa4472a007230f56a46449.jpeg&quot; alt=&quot;山大学长写给学弟学妹的毕业致辞：别为自己不是名校出身自卑&quot;&gt;&lt;/p&gt;&lt;p&gt;仿建的山西大学牌坊。&lt;/p&gt;&lt;p&gt;不过我们该相信底蕴，就像世界杯赛场上那些纸面实力不太强的球队，因为有底蕴加持的凝聚力与感召力，他们依然会取得不错战绩。&lt;/p&gt;&lt;p&gt;山大的底蕴体现在哪里？体现在学校一棵棵古朴的梧桐树上，体现在一排排有年代感的小红楼上，更体现在那些沾溉学林的老教授与优良校风上。正是这样的底蕴，训练了我们良好的专业能力与健全人格。&lt;/p&gt;&lt;p&gt;我们不是名校，但非名校也不会让我们空入宝山。如果把大学比作一个兵器库，我认为兵器谱上的每一样武器山大一应俱全。而且老师傅们可以教会我们行走江湖的十八般武艺。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://5b0988e595225.cdn.sohucs.com/images/20180628/01b371ff4511477c9a2726b4829875d2.jpeg&quot; alt=&quot;山大学长写给学弟学妹的毕业致辞：别为自己不是名校出身自卑&quot;&gt;&lt;/p&gt;&lt;p&gt;就当没人给作者拍照吧。&lt;/p&gt;&lt;p&gt;在这所普通的校园里，老师勤勤恳恳传道授业，我们认认真真汲取知识，锻炼健康体魄，没有什么理由不自信。&lt;/p&gt;&lt;p&gt;非名校出品的学生，一样可以做出杰出的事业，一样可以媲美一流大学的毕业生。&lt;/p&gt;&lt;p&gt;所以，同学们，当别人问及你的母校时，不必自卑，大声告诉他，“我毕业于山大，山西大学！”因为，我们在山西大学所受到的训练，足以让我们游刃有余地面对每一段人生。&lt;/p&gt;&lt;p&gt;一个甲子前，钱穆在他的《新亚校歌》里鼓励学生，“千斤担子两肩挑，趁青春，结队向前行。”那时候，新亚只是一个小书院，当然不是名校，但师生们却有着无比的自信。&lt;/p&gt;&lt;p&gt;我们也应如此，牢记“中西汇通，求真至善，登崇俊良，自强报国”的校训，昂起首，“趁青春，结队向前行。”&lt;/p&gt;','1530981427','1530981427') [ RunTime:0.0030s ]
+
+[ 2018-07-08T00:37:07+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-08T00:37:15+08:00 ] 127.0.0.1 /index.php/Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: aid D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-08T00:38:41+08:00 ] 127.0.0.1 /index.php/Admin/Blog/save?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('武书连2018中国大学艺术学排行榜','武书连','教育','&lt;p&gt;&lt;span style=&quot;color: red;&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp;中国管理科学研究院《中国大学评价》课题组组长武书连主持的《2018中国大学评价》课题，于2018年2月结题。2018年3月中国统计出版社出版发行了武书连根据《2018中国大学评价》课题，撰写的《挑大学 选专业--2018高考志愿填报指南》。&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;《2018中国大学评价》主要评价指标排行榜有：中国大学综合实力排行榜，自然科学、社会科学排行榜，理学、工学、农学、医学、哲学、经济学、法学、教育学、文学、历史学、管理学、艺术学等12个学科门类排行榜，494个本科专业排行榜；中国大学择校顺序排行榜、本科毕业生质量排行榜、本科毕业生升学率排行榜、教师平均学术水平排行榜、教师绩效排行榜、新生质量排行榜。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;以下是武书连《2018中国大学评价》中的中国758所普通本科高校自然科学、社会科学排行榜，理学、工学、农学、医学、哲学、经济学、法学、教育学、文学、历史学、管理学、艺术学等12个学科门类排行榜。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;艺术学包括艺术学理论、音乐与舞蹈学、戏剧与影视学、美术学、设计学等5个专业类，33个本科专业。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;据国务院学位办公室2015年发表的统计数据，我国当年毕业的艺术学学士占学士总数的8.87%，艺术学硕士占硕士总数的3.28%，艺术学博士占博士总数的0.81%。另据各大学发布的博士生导师资料统计，在全国大学53885名博士生导师中，有645名是艺术学博导，占博导总数的1.20%。在本文中，开设艺术学专业的大学共623所。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;2018中国大学艺术学排行榜采用百分比法，用A++、A+、A、B+、B、C+、C、D+、D、E+、E，共5等11级表示。各等级定义如下：&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;A等：前10%为A等；其中得分最高的前2%是A++级，介于2%～5%（含，以下同）之间的是A+级，5%~10%为A级。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;B等：介于10%～30%之间为B等，占20%；其中 10%~20%为B+级，20%~30%为B级。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;C等：介于30%～50%之间为C等，占20%；其中 30%~40%为C+级，40%~50%为C级。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;D等：介于50%～70%之间为D等，占20%；其中50%~60%为D+级，60%~70%为D级。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;E等：最后的30%为E等；其中70%～85%为E+级，85%~100%为E级。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;数据来源：武书连著、中国统计出版社2018年3月出版的《挑大学 选专业---2018高考志愿填报指南》。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;一、武书连2018中国大学艺术学排行榜&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;font color=&quot;#000000&quot;&gt;下表是武书连2018中国大学艺术学排行榜（本表未列出的大学艺术学排名和等级见分省排行榜）。&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;&lt;img src=&quot;http://s2.sinaimg.cn/mw690/001nlWTIzy7lCgyqdbz51&amp;amp;690&quot; width=&quot;476&quot; height=&quot;1217&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;武书连&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;中国&lt;/span&gt;&lt;/b&gt;&lt;b&gt;758&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;所大学艺术学分省排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;艺术学B+级及其以下只列等级不列排名，等级相同排名不分先后&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: blue;&quot;&gt;（一）&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: blue;&quot;&gt;中国华北地区各省大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;华北地区包括北京市、天津市、河北省、山西省、内蒙古自治区，共&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;5&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;个省级行政区。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;1&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;、&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;北京市大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;北京市面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;1.68&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2171&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;106034&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;54&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学，教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;56820&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;55343&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;169443&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;440843&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s15.sinaimg.cn/mw690/001nlWTIzy7kfxlaPZY6e&amp;amp;690&quot; width=&quot;538&quot; height=&quot;705&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;2&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;、&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;天津市大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;天津市面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;1.1305&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;1547&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;106908&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;18&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;19931&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;8080&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;41553&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;245416&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;img src=&quot;http://s6.sinaimg.cn/mw690/001nlWTIzy7kfxlNy85e5&amp;amp;690&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;、&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;河北省大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;河北省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;18.77&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;7425&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;40143&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;33&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;32479&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2378&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;33903&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;385383&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s14.sinaimg.cn/mw690/001nlWTIzy7kfxmNDVH0d&amp;amp;690&quot; width=&quot;539&quot; height=&quot;524&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;、&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;山西省大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;山西省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;15.63&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;3664&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;34842&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;22610&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2292&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;24449&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;300255&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s7.sinaimg.cn/mw690/001nlWTIzy7kfxnrJZAd6&amp;amp;690&quot; width=&quot;539&quot; height=&quot;344&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;5&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;、&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;内蒙古自治区大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;内蒙古自治区面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;118.3&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2511&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;71012&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;13&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;15172&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;1108&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;15505&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;215317&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s1.sinaimg.cn/mw690/001nlWTIzy7kfxoiHQY10&amp;amp;690&quot; width=&quot;539&quot; height=&quot;218&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: blue;&quot;&gt;（二）&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: blue;&quot;&gt;中国东北地区各省大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;东北地区包括辽宁省、吉林省、黑龙江省，共&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;个省级行政区。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;1&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;、&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;辽宁省大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;辽宁省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;14.59&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;4382&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;65419&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;39&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;41118&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;12762&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;76545&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;524497&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s11.sinaimg.cn/mw690/001nlWTIzy7kfxoT5Kaaa&amp;amp;690&quot; width=&quot;539&quot; height=&quot;560&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;2&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;、&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;吉林省大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;吉林省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;18.74&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2753&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;51077&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;24&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;26482&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;9267&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;46935&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;331166&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s11.sinaimg.cn/mw690/001nlWTIzy7kfxpwVFE2a&amp;amp;690&quot; width=&quot;539&quot; height=&quot;362&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;、&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;黑龙江省大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;黑龙江省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;45.4&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;3812&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;39572&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;26&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;31410&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;10552&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;48746&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;422497&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s8.sinaimg.cn/mw690/001nlWTIzy7kfxq2VNl07&amp;amp;690&quot; width=&quot;539&quot; height=&quot;363&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: blue;&quot;&gt;（三）&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: blue;&quot;&gt;中国华东地区各省大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;华东地区包括上海市、江苏省、浙江省、安徽省、福建省、江西省、山东省，共&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;个省级行政区。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;1&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;、&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;上海市大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;上海市面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;0.634&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2415&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;104019&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;29&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;35444&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;25945&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;99559&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;323636&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s15.sinaimg.cn/mw690/001nlWTIzy7kfxqJvUaee&amp;amp;690&quot; width=&quot;539&quot; height=&quot;344&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;2&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;、&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;江苏省大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;江苏省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;10.26&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;7976&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;87906&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;43&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;58680&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;24824&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;119657&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;670225&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s8.sinaimg.cn/mw690/001nlWTIzy7kfxrcsPZf7&amp;amp;690&quot; width=&quot;539&quot; height=&quot;687&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;3&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;、&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;浙江省大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;浙江省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;10.2&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;5539&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;77426&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;28&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;31625&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;10027&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;47360&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;357799&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;img src=&quot;http://s8.sinaimg.cn/mw690/001nlWTIzy7kfxrIN5t07&amp;amp;690&quot; width=&quot;539&quot; height=&quot;434&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;4&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;、&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;安徽省大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;安徽省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;13.97&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;6144&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;35819&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;29&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;29007&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;4799&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;39827&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;475668&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，留学生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;997&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;img src=&quot;http://s2.sinaimg.cn/mw690/001nlWTIzy7kfxsr92V61&amp;amp;690&quot; width=&quot;539&quot; height=&quot;434&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;5&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;、&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;福建省大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;福建省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;12.13&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;3839&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;67673&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;19&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;23270&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;5061&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;32205&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;314836&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s7.sinaimg.cn/mw690/001nlWTIzy7kfxsQg6276&amp;amp;690&quot; width=&quot;539&quot; height=&quot;326&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;6&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;、&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;江西省大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;江西省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;16.7&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;4566&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;36630&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;22&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;26138&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;938&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;25444&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;336536&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s7.sinaimg.cn/mw690/001nlWTIzy7kfxtsuZEf6&amp;amp;690&quot; width=&quot;539&quot; height=&quot;398&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;7&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;、&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;山东省大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;山东省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;15.38&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;9847&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;63980&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;43&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;57478&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;8199&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;64031&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;809435&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s12.sinaimg.cn/mw690/001nlWTIzy7kfxu5Z9h8b&amp;amp;690&quot; width=&quot;539&quot; height=&quot;668&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: blue;&quot;&gt;（四）&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: blue;&quot;&gt;中国中南地区各省大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;中南地区包括河南省、湖北省、湖南省、广东省、广西壮族自治区、海南省，共&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;6&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;个省级行政区。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;1&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;、&lt;/span&gt;&lt;/b&gt;&lt;b&gt;2018&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;河南省大学艺术学排行榜&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;河南省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;16.7&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;9480&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;39032&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;33&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;46802&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;1427&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;31857&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;700780&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s3.sinaimg.cn/mw690/001nlWTIzy7kfxvg0pQ52&amp;amp;690&quot; width=&quot;539&quot; height=&quot;560&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2&lt;/span&gt;&lt;/b&gt;&lt;b&gt;、&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;湖北省大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;湖北省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;18.59&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;5852&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;50500&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;34&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;45705&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;21139&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;89994&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;574995&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s1.sinaimg.cn/mw690/001nlWTIzy7kfxvEGL660&amp;amp;690&quot; width=&quot;539&quot; height=&quot;597&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;3&lt;/span&gt;&lt;/b&gt;&lt;b&gt;、&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;湖南省大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;湖南省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;6783&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;42610&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。截止&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2006&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年，共有&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;30&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;32261&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;10692&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;53411&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;486376&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s13.sinaimg.cn/mw690/001nlWTIzy7kfxwx5lGec&amp;amp;690&quot; width=&quot;538&quot; height=&quot;488&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;4&lt;/span&gt;&lt;/b&gt;&lt;b&gt;、&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;广东省大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;广东省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;18&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;10849&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;67115&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;36&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;47822&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;13533&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;69326&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;639478&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s4.sinaimg.cn/mw690/001nlWTIzy7kfxx6oVBd3&amp;amp;690&quot; width=&quot;539&quot; height=&quot;542&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-size: 9pt; color: red;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;5&lt;/span&gt;&lt;/b&gt;&lt;b&gt;、&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;广西壮族自治区大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;广西壮族自治区面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;23.6&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;4796&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;35036&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;20351&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;855&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;23927&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;250630&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s7.sinaimg.cn/mw690/001nlWTIzy7kfxxCuDYa6&amp;amp;690&quot; width=&quot;539&quot; height=&quot;326&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;6&lt;/span&gt;&lt;/b&gt;&lt;b&gt;、&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;海南省大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;海南省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;3.4&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;911&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;40653&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;3949&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;177&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;3721&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;66608&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s3.sinaimg.cn/mw690/001nlWTIzy7kfxybuUi82&amp;amp;690&quot; width=&quot;539&quot; height=&quot;74&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;（五）&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: blue;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;中国西南地区各省大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;西南地区包括重庆市、四川省、贵州省、云南省、西藏自治区，共&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;5&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;个省级行政区。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;1&lt;/span&gt;&lt;/b&gt;&lt;b&gt;、&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;重庆市大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;重庆市面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;8.24&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;3017&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;52103&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;16&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;21097&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;5398&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;42286&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;322623&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s16.sinaimg.cn/mw690/001nlWTIzy7kfxyMdwH5f&amp;amp;690&quot; width=&quot;539&quot; height=&quot;254&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2&lt;/span&gt;&lt;/b&gt;&lt;b&gt;、&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;四川省大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;四川省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;48.76&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;8204&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;36632&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;33&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;44096&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;12848&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;72112&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;575743&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s3.sinaimg.cn/mw690/001nlWTIzy7kfxzwdzAa2&amp;amp;690&quot; width=&quot;539&quot; height=&quot;488&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;3&lt;/span&gt;&lt;/b&gt;&lt;b&gt;、&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;贵州省大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;贵州省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;17.6&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;3530&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;29757&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;18&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;14531&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;364&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;13520&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;190892&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s13.sinaimg.cn/mw690/001nlWTIzy7kfxA9WGMdc&amp;amp;690&quot; width=&quot;539&quot; height=&quot;290&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;4&lt;/span&gt;&lt;/b&gt;&lt;b&gt;、&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;云南省大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;云南省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;39.4&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;4742&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;28722&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;20&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;18607&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2081&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;27524&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;258445&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s12.sinaimg.cn/mw690/001nlWTIzy7kfxANAgPfb&amp;amp;690&quot; width=&quot;539&quot; height=&quot;344&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;5&lt;/span&gt;&lt;/b&gt;&lt;b&gt;、&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;西藏自治区大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;西藏自治区面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;122.84&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;324&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;31682&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;1518&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;21&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;1206&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;16768&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s3.sinaimg.cn/mw690/001nlWTIzy7kfxBzQtkc2&amp;amp;690&quot; width=&quot;539&quot; height=&quot;56&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;（六）&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: blue;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;中国西北地区各省大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;西北地区包括陕西省、甘肃省、青海省、宁夏回族自治区、新疆维吾尔自治区，共&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;5&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;个省级行政区。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;1&lt;/span&gt;&lt;/b&gt;&lt;b&gt;、&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;陕西省大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;陕西省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;20.56&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;3793&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;47513&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;34&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;39554&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;16372&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;78694&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;499377&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s2.sinaimg.cn/mw690/001nlWTIzy7kfxCmdq1d1&amp;amp;690&quot; width=&quot;539&quot; height=&quot;579&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2&lt;/span&gt;&lt;/b&gt;&lt;b&gt;、&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;甘肃省大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;甘肃省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;45.43&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2600&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;26121&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;16&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;15736&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;3185&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;24678&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;229834&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s3.sinaimg.cn/mw690/001nlWTIzy7kfxD3bEK02&amp;amp;690&quot; width=&quot;539&quot; height=&quot;272&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;3&lt;/span&gt;&lt;/b&gt;&lt;b&gt;、&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;青海省大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;青海省面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;72.12&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;588&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;41076&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。专任教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2683&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;48&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;om&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2704&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;29338&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s11.sinaimg.cn/mw690/001nlWTIzy7kfxDMMGu9a&amp;amp;690&quot; width=&quot;539&quot; height=&quot;56&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;4&lt;/span&gt;&lt;/b&gt;&lt;b&gt;、&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;宁夏回族自治区大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;宁夏回族自治区面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;6.64&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;668&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;43597&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;4&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;3744&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;97&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;3828&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;43648&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;img src=&quot;http://s13.sinaimg.cn/mw690/001nlWTIzy7kfxEh4TO2c&amp;amp;690&quot; width=&quot;539&quot; height=&quot;74&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;5&lt;/span&gt;&lt;/b&gt;&lt;b&gt;、&lt;/b&gt;&lt;b&gt;&lt;span style=&quot;color: red;&quot;&gt;2018&lt;/span&gt;&lt;/b&gt;&lt;b&gt;新疆维吾尔自治区大学艺术学排行榜&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;新疆维吾尔自治区面积&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;166.04&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万平方公里，人口&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2360&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;万，人均&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;GDP&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;：&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;39516&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;元。&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;2018&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;年共评价&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;12&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;所普通本科大学。教师&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;10881&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，在校博士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;867&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，硕士生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;15170&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人，普通本科生&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;131754&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;人。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s13.sinaimg.cn/mw690/001nlWTIzy7kfxFci7idc&amp;amp;690&quot; width=&quot;539&quot; height=&quot;182&quot; alt=&quot;武书连2018中国大学艺术学排行榜&quot;&gt;&lt;br&gt;&lt;/p&gt;','1530981521','1530981521') [ RunTime:0.0100s ]
+
+[ 2018-07-08T00:38:41+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-08T00:38:49+08:00 ] 127.0.0.1 /index.php/Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: aid D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-08T00:39:41+08:00 ] 127.0.0.1 /index.php/Admin/Blog/save?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('我为什么怀念八十年代的大学','冰川思想库','教育','&lt;p&gt;&lt;img src=&quot;http://dingyue.nosdn.127.net/N0YJt0aDAUfCDEjPXPdudJeV57azvlKozcOAi=DwiYVfB1530407572736transferflag.png&quot; alt=&quot;我为什么怀念八十年代的大学&quot;&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;现在的大学里普遍存在的对学生过于关心并且过于宽容的现象，其实是让学生“返老还童”，把他们“幼稚化”了。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;冰川思想库特约撰稿 | 张生&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;　　有人说，我们这个社会是个消费社会，人们存在的意义就在于占有商品的符号价值而并不在乎具体的商品有什么用，所以，我们总是为消费而消费。&lt;/p&gt;&lt;p&gt;　　有人说我们这个社会是个景观社会，大家都在各种影像的生产和交易中获得价值和刷出自己的存在感，而整个世界也都因此变成了各种影像的堆积，这从微信朋友圈里每天层出不穷的自拍照就可看出一斑。&lt;/p&gt;&lt;p&gt;　　&lt;img src=&quot;http://dingyue.nosdn.127.net/CwFtuOPG5mh5lBkkj6ilRlWFUVyYf8ll53xbCY92akTXN1530407572738transferflag.png&quot; alt=&quot;我为什么怀念八十年代的大学&quot;&gt;&lt;/p&gt;&lt;p&gt;　　图/图虫创意&lt;/p&gt;&lt;p&gt;　　还有人说，我们生活的社会是个犹如全景敞视监狱那样的社会，因为不管是在大街上还是在电梯里，举目可见的像麻雀一样密集像独眼的猫头鹰一样专注的探头随时提醒我们，这个社会中的我们已经变得比照相机的镜头还要透明。&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;我觉得他们说的都对，可我很想再补充一句，我们现在所生活的社会，还是一个呵护过度的社会。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　在这个社会里，每一个人都被过度的看顾，过度的保护，因而在失去自我的同时，也失去了犯错误的权利，这使得我们每一个人都变得弱不禁风，变得幼稚，软弱，变得奴性，甚至卑琐。&lt;/p&gt;&lt;p&gt;　　这背后的原因值得让人深思。&lt;/p&gt;&lt;p&gt;　　1&lt;/p&gt;&lt;p&gt;　　前一阵子，我所工作的大学的某个学院的老师发现有几个学生经常缺课，我本来以为只要找这些学生谈谈提醒一下就可以了。如果他们缺课是有合理的原因的，并且不违反学校规定就算了，如果是故意缺课并且违反了学校规定，那就按规定取消该生这门课的成绩就是。&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;大学生都是二十岁左右的成年人了，他们应该也必须为自己的行为负责。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　我一直觉得，大学生在大学里的学习，不仅是上课考试这么简单，遵守学校的学习纪律乃至违反纪律后承担由此造成的处分，也就是自由的犯错误和自由的纠正自己的错误，也是大学生活的一部分，因为这一过程本身也是一种学习，甚至是一种更重要的学习。&lt;/p&gt;&lt;p&gt;　　&lt;img src=&quot;http://dingyue.nosdn.127.net/PQne5=4HYxFsAnE9u911IKkh6YHotbpu08aiiSf2rTiWy1530407572739transferflag.png&quot; alt=&quot;我为什么怀念八十年代的大学&quot;&gt;&lt;/p&gt;&lt;p&gt;　　图/图虫创意&lt;/p&gt;&lt;p&gt;　　但没想到负责的老师们却如临大敌，又是找这几个学生苦口婆心的谈话，又是动员他们的家长连线学生直接训话，同时也来做任课老师的工作，希望能够给予旷课的学生宽宥以不使其没有成绩等等，可谓呵护备至，不一而足。&lt;/p&gt;&lt;p&gt;　　但知道这个情况后，我却有点哭笑不得。一方面，我为本校的老师们对待学生的真心爱护感到钦佩，可另一方面，我觉得他们无意中也在某种程度上娇纵了这几个学生，让其得以堂而皇之的逃避自我应该担负的责任，并对自己的行为负责。&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;我觉得，现在的大学里普遍存在的这种对学生过于关心并且过于宽容的现象，在某种意义上其实是让学生“返老还童”，把他们“幼稚化”了。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　我记得很久以前读过一篇关于清华的陈岱孙先生在西南联大任教时的轶事。一次，有个学生因为考试不及格，托陈先生的一个朋友写了封信，然后拿着这封求情信去找陈先生，试图让陈先生放他一马，给个及格分。谁知陈先生看也不看一句话不说就把这封信当着学生的面撕掉了。那个学生从陈先生的这一举动中，也知道自己做错了事，不敢再纠缠，转身老老实实地离开了。&lt;/p&gt;&lt;p&gt;　　&lt;img src=&quot;http://dingyue.nosdn.127.net/wMuJhnDwI0Q7ldjop9Blff3UzP2UK3pkHyVGw9DsfmV0p1530407572739transferflag.png&quot; alt=&quot;我为什么怀念八十年代的大学&quot;&gt;&lt;/p&gt;&lt;p&gt;　　陈岱孙先生&lt;/p&gt;&lt;p&gt;　　这其实也不是什么神话，即使在上世纪八十年代，我们读大学的那个时代，同学们考试该不及格就不及格，该留级就留级，甚至该退学就退学。好像没有哪个同学不及格了，自己还敢去找老师理论，并且还有老师去为其代言，以让其通过的。&lt;/p&gt;&lt;p&gt;　　2&lt;/p&gt;&lt;p&gt;　　现在，经常有学生以出国或工作为由，来向老师索取更高的分数，我自己就不止一次收到这样的信息，每次我都感到很惊讶，难道你出国不是更应该好好学习吗？而且，你的考试成绩不好的责任为什么要老师来承担而不是自己承担呢？&lt;/p&gt;&lt;p&gt;　　这也许是很多人怀念八十年代的大学的原因，尽管那时候的大学没有宏伟的教学楼和图书馆，也没有舒适的宿舍，更没有这么多对学生关怀备至的老师，可那个时候的大学把大学生当成大学生来看待的。&lt;strong&gt;学生在学业上出了问题，只要不是根本性的要死要活的问题，都是由学生自己独立承担的。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　&lt;img src=&quot;http://dingyue.nosdn.127.net/SNmHQGu=uEzuvRYFK6ZtjdmotMUcqan6Sp7Nshb96JBHT1530407572739transferflag.png&quot; alt=&quot;我为什么怀念八十年代的大学&quot;&gt;&lt;/p&gt;&lt;p&gt;　　图/图虫创意&lt;/p&gt;&lt;p&gt;　　那时绝大多数同学家里没有电话，更没有微信，所以老师有什么事也不会去找家长，现在的大学，却把大学生当成了小学生，大学老师也动不动像对待小学生那样一有事就去找家长“告状”，很多家长也把大学当成一所呵护自己子女的幼儿园，却忘记了自己的孩子早该“断奶”了。&lt;/p&gt;&lt;p&gt;　　大学生们因此也真的变成了小学生，甚至变成了幼儿园里动辄流鼻涕拉大便都要哭着喊着让老师来给自己擤鼻子擦屁股的小孩。&lt;strong&gt;这也是让我感到多少有点不可理喻的一件事。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　对于大学的教育，我很喜欢胡适在哥伦比亚大学的老师杜威先生的教育思想。&lt;/p&gt;&lt;p&gt;　　1919年，胡适在《实验主义》这篇文章里介绍了这位“教师的教师”对于学校的观点，那就是学校就是社会，学生在学校里学习的不仅是所谓的书本上的知识，更重要的是要开始学习生活的方方面面，因此，“简单说来，教育即是生活，并不是将来生活的预备”。&lt;/p&gt;&lt;p&gt;　　也就是说，一个人念大学不是为了将来谋生学个本领那么简单，从踏进大学的那一天起，他就已经开始“谋生”了。&lt;/p&gt;&lt;p&gt;　　3&lt;/p&gt;&lt;p&gt;　　当然，大学只是社会的缩影而已，我们现在的社会也同样处于这种过度呵护的状态。我们的社会就是一个呵护过度的社会，只要稍微有点风吹草动就紧张不已，唯恐有什么变化和动静。而且如今这种情况愈演愈烈，整个社会好像总是处在一种让人精神紧张的状态之中。&lt;/p&gt;&lt;p&gt;　　法国思想家卢梭在《忏悔录》里曾经讲过自己的一个真实的段子。他有阵子因为生了个小病，对医学产生了兴趣，就开始狂读医书。可是他看着看着，逐渐开始怀疑乃至相信自己也得了医书上所描述的那些五花八门的疾病：&lt;/p&gt;&lt;p&gt;　　我每读到一种疾病时，就认为这里说的正是我的病。我深信，即使我本来没有什么病，研究了这门不幸的学问，我也会成为一个病人的。由于我在每一种病症中都发现和我的病相同的症状，我就认为自己什么病都有。除此以外，我又得了一种我原以为自己没有的更为严重的病，那就是：治病癖。&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;我觉得，从卢梭的这段话里可以找到我们当下的社会和大学的问题所在，那就是得了“治病癖”。&lt;/strong&gt;其实学生也好，社会也好，本来是没有那么多病的，即使真的有什么小病，大多是不治疗也可以痊愈的小病，哪怕就是大病，也没什么大不了的，治疗一下就可以了。&lt;/p&gt;&lt;p&gt;　　&lt;img src=&quot;http://dingyue.nosdn.127.net/8lbDd3ROrrYstfVCW5Qq7rHjlboTc06TDLbf3bHG9Pp2B1530407572739transferflag.png&quot; alt=&quot;我为什么怀念八十年代的大学&quot;&gt;&lt;/p&gt;&lt;p&gt;　　卢梭&lt;/p&gt;&lt;p&gt;　　可是，现在我们的大学也好，老师也好，社会有关的管理部门也好，就像卢梭所说的那样，因为有点小病看了太多的医书而不知不觉得了“治病癖”。大家总是疑神疑鬼不说，本来没病的也会想出病来以至于生产出病来去治疗，以满足自己的“治病癖”。&lt;/p&gt;&lt;p&gt;　　这就像卢梭一样，他甚至怀疑自己的病的根源是源自心上长了一个肉瘤。最后，冷静下来后，他自己也对此感到荒诞不已。&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;所以，我认为，这其中的关键并不在于大学生和社会，而在于我们的大学和社会的机制与文化得了卢梭说的“治病癖”。&lt;/strong&gt;而我们的大学也好，社会也好，将来很有可能不是败坏于可能的疾病，倒是十有八九可能受损于过度治疗甚至是没病找病式的治疗，也就是卢梭所说的“治病癖”。&lt;/p&gt;&lt;p&gt;　　其实，之所以大学和社会会发展到这一步，问题还是我们的文化和社会机制不相信人有自己抵抗疾病的能力和权利所致。我总觉得，一个人应该有生病的自由和生病后治疗的自由，甚至有不治疗的自由，真不需要防患于未然式的治疗，更不需要卢梭讲的“治病癖”式的治疗。&lt;/p&gt;&lt;p&gt;　　4&lt;/p&gt;&lt;p&gt;　　一个人的健康成长，实际上是离不开疾病的，但不能因为怕得病就不让人生病，或者为了满足自己的“治病癖”就让健康的人胡乱吃药。因为不得病没有抵抗力，反而更容易得更大的病，以至于很有可能有病时一命呜呼。胡乱给人吃药，更是可能把没病的人“治死”。&lt;/p&gt;&lt;p&gt;　　鲁迅1925年在自己的随笔《看镜有感》里谈到，中国的文化在汉唐时代因为心胸开阔，魄力雄健，非常“闳放”。&lt;strong&gt;所以，高度自信，是勇于吸收和接纳国外的文化的，&lt;/strong&gt;比如铜镜上的装饰花纹就有很多就直接采自海外的动植物，如汉代装饰有洋马和蒲桃的“海马葡萄镜”等。可到了宋以后，因为国力衰颓，开始谨小慎微，怯于吸收海外及异族的文化，铜镜上各种“藻饰”就少多了。&lt;/p&gt;&lt;p&gt;　　&lt;img src=&quot;http://dingyue.nosdn.127.net/Uzqas5OuYQbYe9Xw864IFwKw0kLb90WwU80PISOgH3sMe1530407572739transferflag.png&quot; alt=&quot;我为什么怀念八十年代的大学&quot;&gt;&lt;/p&gt;&lt;p&gt;　　因此，他特别谈到不同时代的人对于外来文化的态度，像汉唐那样国家强悍时对外来的东西是“自由驱使，绝不介怀”的，可是当国家沦落比如像宋以后那样没有自信的时候，就有点病态了。&lt;/p&gt;&lt;p&gt;　　一到衰弊陵夷之际，神经可就衰弱过敏了，每遇外国东西，便觉得彷佛彼来俘我一样，推拒，惶恐，退缩，逃避，抖成一团，又必想一篇道理来掩饰，而国粹遂成为孱王和孱奴的宝贝。&lt;/p&gt;&lt;p&gt;　　他更是把这种对于外来文化的态度比做人对于食物的态度：&lt;/p&gt;&lt;p&gt;　　无论从哪里来的，只要是食物，壮健者大抵就无需思索，承认是吃的东西。惟有衰病的，却总常想到害胃，伤身，特有许多禁条，许多避忌；还有一大套比较利害而终于不得要领的理由，例如吃固无妨，而不吃尤稳，食之或当有益，然究以不吃为宜云云之类。但这一类人物总要日见其衰弱的，因为他终日战战兢兢，自己先已失了活气了。&lt;/p&gt;&lt;p&gt;　　我想，国家如此，文化如此，学生也如此。反过来，学生如此，文化如此，国家也会如此。而显然，一个人也好，一种文化也好，一个国家也好，没有一个好胃口，没有一个开放的好胃口，没有真正的自信，是不可能有真正的活力的。&lt;/p&gt;','1530981580','1530981580') [ RunTime:0.1080s ]
+
+[ 2018-07-08T00:39:41+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-08T00:40:07+08:00 ] 127.0.0.1 /index.php/Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: aid D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-08T00:41:25+08:00 ] 127.0.0.1 /index.php/Admin/Blog/save?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('读博回忆：导师一句话，吓得我三年不敢随便回家','冰川思想库','教育','&lt;p&gt;&lt;img src=&quot;http://dingyue.nosdn.127.net/64D7vb9le=o2vi7Q0Uzvx7Ozvr00htcAoM0GPACUX33Mn1529294269319transferflag.png&quot; alt=&quot;读博回忆：导师一句话，吓得我三年不敢随便回家&quot;&gt;&lt;/p&gt;&lt;p&gt;　　高瑞泉，哲学博士，华东师范大学终身教授，2018年荣休。主要研究中国哲学、中国现代思想文化史。著有《天命的没落——中国近代唯意志论思潮研究》、《中国现代精神传统——中国现代性观念的谱系》、《从历史中发现价值》、《智慧之境》、《平等观念史论略》等。（图：图虫创意）&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;冰川思想库特约撰稿 |&lt;/strong&gt;&lt;strong&gt;吴先伍&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　高瑞泉先生今年七十了，而且也要光荣退休了，从此不再招收学生了。在这样一个特殊的年份，我忍不住想写点什么，以记录我与先生之间的点点滴滴。&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;生命往往具有某种机缘巧合。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　当年高考，我的第一志愿是华东师范大学，结果落选后被安徽师范大学录取。在安徽师范大学读硕士期间，臧宏先生是我们的老师，臧先生对冯契先生推崇备至，经常给我们讲华东师范大学的学术传统，讲华东师范大学各位老师的学术特点，从而引起了报考华东师范大学中国哲学博士的念头。&lt;/p&gt;&lt;p&gt;　　&lt;img src=&quot;http://dingyue.nosdn.127.net/8ku4O9d4ndh4DxWUEjP4d31gsyhMv4g9b8td57NH2m38k1529294269321transferflag.png&quot; alt=&quot;读博回忆：导师一句话，吓得我三年不敢随便回家&quot;&gt;&lt;/p&gt;&lt;p&gt;　　安徽师范大学（图：图虫创意）&lt;/p&gt;&lt;p&gt;　　在报考之前，高瑞泉先生、陈卫平先生、杨国荣先生的书我基本上都读过，尤其是在读了高瑞泉先生的《走出后经学时代》一文时，深深为文中所显露的高度、广度、深度，乃至才情所折服，因此决定选择报考他的博士。&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;面试的时候才第一次见到高瑞泉先生。他留着平头，穿一件黑色的皮夹克，帅气当中透着一股威严。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　先生问我读过哪些书，我说读过牟宗三先生的大部分著作，结果先生紧接着追问，“请你用一句话概括一下牟宗三的主要思想”。记得我当时大脑中有一股气血上涌的感觉，头脑有点发蒙，因为以前我从来也没有想过这个问题。&lt;/p&gt;&lt;p&gt;　　好在牟宗三的书我真的认真拜读过，所以，我迅速地让自己平静下来，大脑迅速运转，答以“内圣开出新外王”，因为当时太过紧张，我也没有注意先生对我回答的反应，不知先生对我的回答是否满意，反正我是被顺利的录取了。&lt;/p&gt;&lt;p&gt;　　我能被录取，大概还有一个重要原因，就是我当时的英语听说能力还不错。记得当时是由童世骏先生专门面试外语，我们用英语进行了将近有十分钟左右的对话。后来读博士的时候，先生曾经和我说起，在面试时，他问我，“如果你被录取了，你准备研究什么”，我回答说：“如果有机会读博士，我觉得自己做什么都可以。”&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;先生对于这个回答非常不满，虽然这个回答表面上看自信满满，实际上说明我对博士论文选题从来就没有认真思考过。&lt;/strong&gt;不能不说，先生的目光太过犀利，他一眼就洞穿了我自信外衣下所掩藏的浅薄。不过鉴于我其它方面还行，我就幸运地成了漏网之鱼，得以在丽娃河边生活了三年时间。&lt;/p&gt;&lt;p&gt;　　&lt;img src=&quot;http://dingyue.nosdn.127.net/G2C4w6Iatb5PlVnRHt=Oj9Qi0Mcy10W3vyH832Ri2eiol1529294269322transferflag.png&quot; alt=&quot;读博回忆：导师一句话，吓得我三年不敢随便回家&quot;&gt;&lt;/p&gt;&lt;p&gt;　　华东师范大学校园内的丽娃河（图：图虫创意）&lt;/p&gt;&lt;p&gt;　　我和毛文凤是先生自己开始招的首届博士生。毛文凤是在职的，我是全日制的，因此先生对于我读书非常关心，经常找我聊聊天。&lt;/p&gt;&lt;p&gt;　　记得有一次，先生打电话找我，碰巧我回芜湖了，从电话中我听出了先生的不快，先生说：“下次回家要跟我请假。”吓得我在后来三年时间里，从来没有在节假日之外回过家。&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;我读硕士的时候，做的是中国哲学方向，但硕士点是马克思主义哲学，因此，受到马克思主义哲学的影响比较深，加上对马克思主义哲学的理解也很肤浅，分析问题动不动就是唯物唯心、辩证法形而上学之类。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　有一次在与先生聊天的时候，先生大概实在是忍无可忍，对我说：“你最好能忘记过去所学的东西，否则你没办法开始中国哲学研究。”&lt;/p&gt;&lt;p&gt;　　讲到聊天，不能不说我的普通话，先生对于我的普通话经常是一声叹息。虽然我的学术基础不扎实，对中国哲学的理解也很肤浅，但因为读书过程中所经历的诸多坎坷，以及在此过程中对于人生的不断反思，我对读书非常认真投入。&lt;/p&gt;&lt;p&gt;　　记得刚入学不久，我就写了一篇文章请先生指导，结果先生说了一句：“就你这个水平还写文章？”放在现在，这个话对那些充满学术情怀的年轻博士，大概算得上是沉重的致命打击，不过对我来说倒没有什么。&lt;/p&gt;&lt;p&gt;　　一方面，上学之后，一直就听到各种有关先生特别严厉的传闻，另一方面，我本身就经历过一些打击的淬炼。因此，我并没有因为先生的这番言论倍感挫折，而是去思考先生为什么会这么说，他这么说的目的是什么。&lt;/p&gt;&lt;p&gt;　　&lt;img src=&quot;http://dingyue.nosdn.127.net/W2F9Yh2r0AKUl9gkkqRUvoANEq8UH7bOlhLATSs=p7by71529294269323transferflag.png&quot; alt=&quot;读博回忆：导师一句话，吓得我三年不敢随便回家&quot;&gt;&lt;/p&gt;&lt;p&gt;　　左二为高瑞泉教授，左三为本文作者（作者供图）&lt;/p&gt;&lt;p&gt;　　在经过一番思考后，觉得先生的目的是让我多读书，增加学术积累。从此，在华东师大读博的三年时间里，我开始不再写文章，而是静下心来读书。不过也得感谢华东师范大学当时的政策，不发表两篇C刊论文居然也能顺利毕业，这对于现在的博士生简直就是天方夜谭。&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;毕业以后，我特别怀念那段不问收获，只管读书的日子，这大概就是做学问所需要的一种“贵族精神”，在现代社会，这种精神越来越稀缺了。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　先生的严厉在哲学系中是享有盛名的。&lt;/p&gt;&lt;p&gt;　　进校以后，我经常听人说，无论是在论文答辩的时候，还是在学术会议上，也不论是对方是学生，还是老师，先生在学术上都不会给对方留情面，以至有些学术不扎实的人，都不敢轻易在先生面前谈论学术问题。虽然这些传闻中的场景我都没见过，但我见过先生对自己学生的批评，那绝对是疾风暴雨式，就连女弟子们，也有被先生批评得鼻涕一把、眼泪一把的时候。&lt;/p&gt;&lt;p&gt;　　不过好在师母性格温和，先生前面批评，师母后面出来安慰一番。那个时候，学生的承受能力都比较强，不会像现在的学生那样，动不动觉得自信心遭受了打击，要寻死觅活之类。&lt;/p&gt;&lt;p&gt;　　&lt;img src=&quot;http://dingyue.nosdn.127.net/s6lDqoMa6yd4nvTVeYcoDFaHW7XBCz27oNB6J2=3PayOw1529294269323transferflag.png&quot; alt=&quot;读博回忆：导师一句话，吓得我三年不敢随便回家&quot;&gt;&lt;/p&gt;&lt;p&gt;　　华东师范大学（图：图虫创意）&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;甚感欣慰的是，先生对我真正的批评只有一次。&lt;/strong&gt;先生曾经跟我说，现在学术已经世界化了，做学问要有世界眼光，因此希望我去学二外，争取以后出国。&lt;/p&gt;&lt;p&gt;　　我回答说，自己的学术基础比较薄弱，因此想把有限的精力化在专业课学习上。结果先生脸色突变，声音陡然高了起来，批评我说，“我当时没有条件，外语都靠自学；你们现在条件这么好，还不去好好学外语。”虽然遭受先生的严厉批评，但我还是在错误的道路上越走越远，后来还因此而丧失了去法国访学的机会，现在想来，后悔晚矣。&lt;/p&gt;&lt;p&gt;　　大概考虑到我的基础比较薄弱，入学不久，先生就指定我去研究柏格森哲学在中国近代的传播。实际上，我在入学之前，心里想的是去做现代新儒家，对这个选题多少还是有点抵触，不过既然先生让我去做，那就一定有他的道理，因此就硬着头皮去做。&lt;/p&gt;&lt;p&gt;　　当时遇到的第一个问题是柏格森的书读起来特别困难。柏格森的书以前我从来没读过，而且他的语言系统、思想与我以前读过的哲学家的语言系统、思想之间存在重大差别，因此理解起来特别困难。&lt;/p&gt;&lt;p&gt;　　好在我有股不服输的劲头，既然接受了这个选题，我就必须要读懂柏格森，一遍不行两遍。大概读了五遍之后，我突然发现，过去国内讲柏格森哲学的著作或多或少都有问题，他们都不太符合柏格森哲学的本来面目。&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;现在经常有学生向我诉苦，说书读不懂，我就告诉他们，先读五遍，如果五遍还不懂，就可以退学了。&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;　　因为在柏格森著作上花费了太多的精力，因此，对国内学者相关著作的研读就很不够，再加上那个时候，出版业还没现在这么发达，中国近代的很多学术成果都还没有整理出版，只能到学校图书馆和上海图书馆，对着报纸和缩微胶卷去抄，有关中国哲学家讨论柏格森的文献，我抄录了几本笔记本。&lt;/p&gt;&lt;p&gt;　　缘此之故，直到博士论文开题，虽然我知道自己准备写哪些东西，但是这些东西要用什么问题贯穿起来，一直都没有想清楚。因此开题前，一直生活都高度规律的我，开始变得生活没有规律，经常倒在床上垂头丧气，经常不看书，在丽娃河边瞎转悠，当时甚至动了坚持不了、想要放弃的念头。&lt;/p&gt;&lt;p&gt;　　现在经常有学生跟我说做论文太痛苦，坚持不了，我就告诉他们，没什么了不起，你经历过的我都经历过。&lt;/p&gt;&lt;p&gt;　　好在这个时候，先生展现了宽容的一面，说没问题，题先开着，问题慢慢找。因为准备比较充分，论文写作非常快，大概是2002年6月动手写，到9月底，写了十几万字，但要解决的问题一直没有着落。&lt;/p&gt;&lt;p&gt;　　&lt;strong&gt;那个时候，做论文已经有点走火入魔，在哪都想论文。&lt;/strong&gt;记得国庆节乘坐绿皮火车回上海，从芜湖到上海需要七个多小时。在火车上反正没事，就在脑子里开始胡思乱想，突然灵光一闪，想到一个可以将全部论文贯穿起来的问题。当时也没带纸，就找了一张别人看过的旧报纸，赶快将这个想法记了下来。回到上海向先生汇报了想法，先生予以首肯，论文久拖未决的问题就这样解决了。&lt;/p&gt;&lt;p&gt;　　毕业之后，我到安徽师范大学工作，后来又到南京师范大学工作，虽然很少再回到丽娃河边，与先生见面机会不多，但我对于先生的学术与生活都非常了解，先生也经常会关心我的发展。&lt;/p&gt;&lt;p&gt;　　与当年读书期间相比，过去先生是一名严师，现在则是一位慈祥的长者，无论如何，我始终对先生都充满敬畏之情，因为对先生的敬畏，实际上某种程度上也是对学术的敬畏。&lt;/p&gt;&lt;p&gt;　　先生的人生是一种学术的人生，先生的威严乃是一种学术的威严，面对学术，我们始终只能保持谦卑。&lt;/p&gt;','1530981685','1530981685') [ RunTime:0.0010s ]
+
+[ 2018-07-08T00:41:25+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-08T00:41:57+08:00 ] 127.0.0.1 /index.php/Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: aid D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-08T00:42:36+08:00 ] 127.0.0.1 /index.php/Admin/Blog/save?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('90后过得好不好，都在游戏里了','冰川思想库','教育','&lt;p&gt;分类：&amp;nbsp;冰川观察&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;img src=&quot;http://p0.ifengimg.com/pmop/2018/0330/58F648F90181342206FD5BB29E057ACFD46FBB61_size41_w600_h337.jpeg&quot; alt=&quot;90后过得好不好，都在游戏里了&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;网络游戏正如当下社会抛起的一枚硬币，但我们需要的不是其一面光明一面黑暗式的存在，而是让它以更为良性的模式在公众生活与商业生态中旋转。&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;冰川思想库特约撰稿 |&amp;nbsp;李清末&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;不用谦虚，中国又取得了一个世界第一的成绩。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;全球游戏市场情报公司Newzoo调查显示，2017年中国取得了275亿美元的游戏市场收入，成为全球最大游戏市场。其中遥遥领先的是手机游戏市场，2017年5月份App Annie公布的一份全球手游榜单也显示，全球手游收入榜前十名的游戏，中国游戏就占据了9款之多。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;img src=&quot;http://d.ifengimg.com/w600/p0.ifengimg.com/pmop/2018/0330/E5DC8E8A150C8E0326EEA6D75A7CE852F709301B_size55_w1080_h608.jpeg&quot; alt=&quot;90后过得好不好，都在游戏里了&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;Newzoo公布的2017全球游戏市场占比&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;但是，在游戏经济高歌猛进的同时，则是中国媒体与公众长久以来对于游戏，尤其是网络游戏的复杂心态。&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;《安徽少年沉迷网游，26万存款“蒸发”》、《17岁少年沉迷网游，烧死弟弟后继续打游戏》、《16岁少年为了筹钱打网游 一月盗窃11家店铺》……这些网络文章，即使你没有点开认真看过任何一篇，但长久以来的信息印象，你对此类新闻传递出来的信息也一定不陌生：“游戏易上瘾，上瘾导致行为失控”这样的案例非常普遍。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;从传播角度讲，借助恐惧心理，媒体有意识的议程设置让网络游戏成为社会不安定的重要因素，而且经由许多案例报道，让这种印象成为社会公众的一种普遍共识。这也使得网络游戏成为众矢之的，引发大量家长和社会人士的攻讦。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;然而，对网络游戏的讨论，除了口诛笔伐以外，更应从公共政策入手，推动和提高网络游戏在资本市场、公众娱乐、社会服务等多方面的共识。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;img src=&quot;http://p0.ifengimg.com/pmop/2018/0330/1D2E3BF0F540031A6CEBD235C77507C51C5CA19A_size11_w382_h287.jpeg&quot; alt=&quot;90后过得好不好，都在游戏里了&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;飞速壮大的网游人群与市场，更是中国当下某些社会现实的折射&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;在我看来，网络游戏的盛行，只不过是中国斑斓社会的光谱之一。&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;为什么90后最爱网游？&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;与人们的刻板印象不同，中国如今网络游戏市场的主体玩家并非未成年人与男生。根据中国互联网络信息中心调查数据，中国手机网络游戏玩家以20-29岁的90后群体为主，且体现出男女均衡的现象。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;为什么90后最爱打网络游戏？&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;社会压力反应是一个重要的原因。近几十年，中国社会虽然取得巨大的经济成就，但在90后的现实生活感知中，成绩与实际并不匹配。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;无论是一线城市的房价、户籍限制、公共服务门槛，还是作为社会核心的市场个体，都把资本、社会关系薄弱的群体与个体参与者排除在外。90后作为近年新晋的社会就业人口，没有70后、80后其时拥有的经济、市场红利。在这社会背景下，玩游戏很容易成为90后的一种心理满足模式。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;img src=&quot;http://d.ifengimg.com/w600/p0.ifengimg.com/pmop/2018/0330/99177C68858B0FD661B782B49EE6AB645257C0D7_size66_w900_h500.jpeg&quot; alt=&quot;90后过得好不好，都在游戏里了&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;复旦大学传播与国家治理研究中心发布的《中国网络社会心态报告(2014)》曾指出，90后是压力最大的群体&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;其中比较典型的现象，就是游戏中的竞争关系与现实世界竞争关系的互为映射。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;现实社会中，无论是职业竞争还是婚姻竞争，其竞争成本都相当之高，且多数不可逆。但网络游戏中，虽然没有完善的社会竞争环境，但它塑造了现实生活中人与人 、人与团体或团体与团体之间存在的相互竞争的形态 ，所不同的是，较现实社会而言 ，网络游戏具有可重复性以及低成本性。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;以2017年最火的两款游戏《王者荣耀》与《绝地求生》为例，其游戏元素包涵技能熟练度、发展策略、资本投入与机遇，都可以作为现实职场竞争的某种投射，能够极大地满足游戏参与者的竞争心理。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;这两款游戏的竞争成本都限制在30多分钟，即使失败，也可以迅速开始，比起现实世界中高昂的竞争成本，虚拟世界中的网络游戏能以最小的时间、精力成本， 满足人们在现实世界中的最大追求。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;而从竞争结果来看，游戏的等级则更可以作为现实世界社会阶层的代表。与现实阶层不同，游戏世界的等级跃升相对要简单得多，且其上升渠道也更为单一与便捷。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;一款游戏的参与者通过投入时间与精力，提高自身的游戏熟练度与经验，并能通过一定的金钱购买装备，最终以等级提升作为努力的结果。这要比现实中通过多年时间掌握一个生存技能，或是通过巨额投资获取生存资本——例如买房卖车——来实现阶层证明要容易得多。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;img src=&quot;http://p0.ifengimg.com/pmop/2018/0330/8748D18F6E2EBBE8E31EDA0762B2597E14A87EF6_size24_w553_h269.jpeg&quot; alt=&quot;90后过得好不好，都在游戏里了&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;一局《绝地求生》对垒，熟练者只需要付出半小时的时间与精力就能获得满足&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;此外，较大的社会竞争压力下，竞争的参与者也面临自身性格的压抑困境。&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;以公众较为熟悉的“自我、本我、超我”概念为例，游戏为其参与者提供了进入更为自由与舒适的“本我”状态的途径。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;例如有过游戏体验的人都知道，在竞争较为激烈的游戏中，比如《魔兽世界》和《王者荣耀》等，游戏参与者的言语中，说脏话的频率要远高于日常生活，这即“本我”状态的一种体现。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;而在游戏之外，人们往往要面临现实社会规范的束缚，当离开网络游戏回归现实生活的“自我 ”状态时，无论是来自于公司还是家庭、学校，都有作为面临规则监督者——领导、父母与老师的管控压力。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;外在的约束力与内在对自由的向往，同样是有自我呈现人群选择网络游戏的重要原因。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;作为原子化社会“黏合剂”的游戏&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;原子化社会正成为中国社会的一个表征，主要表现为：人际关系疏离，个人与公共世界疏离，规范失灵、社会道德水准下降等。在当下以90后为代表的青年群体中，社会原子化的特征更为明显。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;以当下流行的“佛系”文化为例，其强调个体对亲密关系及集体的疏离状态以及自身的低欲望与要求。例如以佛系冠名的群体中，“佛系粉丝”排斥自发创作和群体性行为，“佛系买家”则仅在最低限度参与交易规则。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;但人类作为群体性动物的社交冲动与社会参与的协作需要，佛系文化只能理解为当下青年人对此的一种无奈选择。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;网络游戏世界在一定程度上满足了年轻人对人际关系的实现需求。&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;当代青年之间人际交流 、互动的纽带已不再局限于血缘 、亲缘与地缘等传统社会关系 ，而是依赖于“网缘”这一新型的人际关系，即使现实之间的人际关系，也能通过网络去缝合与提升。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;例如两个毕业后各奔东西的大学室友，能通过相约打游戏实现沟通和协作。而下班后独处一室的年轻白领，则能通过游戏实现娱乐与社交的双重需求。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;img src=&quot;http://p0.ifengimg.com/pmop/2018/0330/E3AA14F77059FF6E550C6E6F366EEC8226563F4D_size42_w312_h399.jpeg&quot; alt=&quot;90后过得好不好，都在游戏里了&quot;&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;更具有原子化社会特征的日本，早在2014年就提出了“佛男子”的概念，与当下中国佛系文化内涵基本一致。与此同时，日本则是全球第三大游戏市场&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;近年网络游戏的流行模式，则更是这一新型人际互动关系的体现。&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;例如十多年前风靡中国的《梦幻西游》《QQ堂》《劲舞团》《跑跑卡丁车》等网络游戏，其游戏模式以个体的技能操作及成绩获取为主。而近些年流行的《英雄联盟》《王者荣耀》《阴阳师》等则更强调团队的协作与配合。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;&lt;strong&gt;从另一方面来讲，群体的互动也会对个体的每一次选择产生影响。&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;例如玩家获得胜利，多建立在队友相互配合的基础之上 ，不再单纯追求自身利益最大化。这一举动同样能满足游戏参与者在现实世界中，希望逃离孤立化状态的需求。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;网络游戏通过虚拟世界的架构，模拟现实的人际参与和社会关系，并重新进行组织，从而实现社会人际互动。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;从个体参与的角度讲，网络游戏的普遍流行，并非游戏本身散发着美杜莎式的邪典光芒，而是个体在社会参与中，某种心态与行为选择的结果。&lt;/p&gt;&lt;p style=&quot;text-align: justify;&quot;&gt;网络游戏正如当下社会抛起的一枚硬币，但我们需要的不是其一面光明一面黑暗式的存在，而是让它以更为良性的模式在公众生活与商业生态中旋转。&lt;/p&gt;','1530981756','1530981756') [ RunTime:0.0020s ]
+
+[ 2018-07-08T00:42:36+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-08T00:44:59+08:00 ] 127.0.0.1 /index.php/Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: aid D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-08T00:52:48+08:00 ] 127.0.0.1 /index.php/Admin/Blog/save?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('酷热夏季，如何选择控油产品？','张瀚一','时尚','&lt;p&gt;&lt;b&gt;&lt;img src=&quot;http://s5.sinaimg.cn/mw690/001nPtAvzy6UdzP4JYE54&amp;amp;690&quot; width=&quot;600&quot; height=&quot;375&quot; alt=&quot;酷热夏季，如何选择控油产品？&quot;&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font&gt;&lt;br&gt;&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font&gt;Q1：无论是油性肌肤，还是中性、混合性肌肤，到了闷热的夏季，出油问题好像都会更加严重了，肌肤油脂分泌旺盛的原因有哪些？&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;首先跟我们自己的身体代谢规律有关，因为在夏天，人们的活动排汗量、新陈代谢都会加快，导致分泌油脂较多。其次会受到气候炎热，强烈紫外线照射及环境的影响。&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;还有最重要的，夏季大家都会涂防晒产品，涂抹防晒后的肌肤也更易出油。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s12.sinaimg.cn/mw690/001nPtAvzy6UdzRz1ADfb&amp;amp;690&quot; width=&quot;600&quot; height=&quot;800&quot; alt=&quot;酷热夏季，如何选择控油产品？&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;br&gt;&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;【清洁】&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font&gt;Q2：酷热夏季，什么类型的面膜适合油性肌肤？&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;分为两种不同类型：1）习惯涂抹多层保养品让肌肤营养丰富的女生，适合在夜间敷带有补水及镇静效果的面膜。&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;2）面部护肤步骤较少的女生，适合一周两次，白天敷补水面膜，晚上敷一片控油面膜。不建议油性肌肤敷用深层清洁型面膜，可以在油脂分泌旺盛的局部，选择去角质啫喱。&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font&gt;Q3：控油面膜的使用频率如何控制？使用时要注意些什么？&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;控油面膜使用时应顺应肌肤的变化，白天皮肤油脂分泌旺盛，可以选择在晚上敷一片控油面膜，但需注意，使用完控油面膜后一定要加强补水，随后添加一款水分含量高的乳液帮助锁水。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;贴片式的控油面膜，适合针对整个面部大油田的肌肤，如果是T区偏油的皮肤，建议涂抹类的控油面膜局部使用即可。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;img src=&quot;http://s9.sinaimg.cn/mw690/001nPtAvzy6UdzT6VHWa8&amp;amp;690&quot; width=&quot;600&quot; height=&quot;450&quot; alt=&quot;酷热夏季，如何选择控油产品？&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font&gt;【保养】&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font&gt;Q4：闷热高温的夏季，保养不能过于复杂黏腻，但又要让肌肤喝饱水，如何简化保养步骤？&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;在夏季为保养步骤做减法，如果你使用的是滋养粘腻的精华，流动性强的乳液，省去精华的部分直接用乳液；如果精华较清薄搭配的是滋润乳液，则将精华代替乳液，但是对于化妆的女生需加上妆前乳，不化妆的人群推荐保湿气垫CC。根据自身的肌肤状态，也可用补水面膜代替精华，再用乳液锁水。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font&gt;Q5：夏季，油性肌肤适合使用哪些产品？哪些成分或质地有助于控油？&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;选择产品时，避免含有甘油、卡波姆等成分，具有增稠作用，会给肌肤带来粘腻感，令油性肌易分泌更多油脂。将乳液或精华在干燥的两颊做一个测试，如果质地流动性较强，亲肤水分单一，油脂含量低，涂抹在双颊被迅速吸收，肌肤表层清爽顺滑，产品即适合油性肌肤使用。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;font&gt;Q6：控油产品会对肌肤产生刺激吗？&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;控油产品是否会对肌肤产生刺激需看肤质和成分。如果你是油性皮肤偏敏感的，建议你放弃控油的工作。但如果角质层较厚需要控油，又或者产品内添加了薄荷，清凉剂这类具有短暂控油效果成分的产品对皮肤产生的刺激就不会太大。&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;建议大家慎做控油，过于抑制油脂分泌，不仅只有短暂的控油效果，之后还会水油失衡分泌更多的油脂来保护肌肤变得更油。&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s14.sinaimg.cn/mw690/001nPtAvzy6UdA3VWpL4d&amp;amp;690&quot; width=&quot;600&quot; height=&quot;904&quot; alt=&quot;酷热夏季，如何选择控油产品？&quot;&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;b&gt;【上妆】&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;b&gt;Q7：闷热夏季您推荐使用哪些底妆产品？你认为最持妆控油的底妆组合是什么？&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;夏季建议选择防水抗汗型的产品，它具备一些控油功效，会在皮肤表层形成一层保护膜，但又不是专门用来控油的。持妆控油底妆组合为粉底液喷雾，推荐UrbanDecay裸妆粉底液、MAKE UP FOR EVER水凝粉底霜、UrbanDecay定妆喷雾&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;b&gt;【吸油】&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;b&gt;Q8：到底该不该使用吸油纸？如何使用？&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;可以选择非常轻薄的纸质类吸油纸，使用前在面部喷一层保湿喷雾，静待几分钟再去吸油，避免把妆吸掉，也不会直接接触肌肤吸走更多的油脂。但不建议用像含有胶质过于强劲的吸油纸产品。&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;b&gt;Q9：还有哪些小妙招可以随时随地控油？&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;细腻的肌肤随身携带干湿两用粉饼有定妆、控油的效果，对于粗糙的油性肌，建议使用气垫CC霜，便于遮瑕补妆，抑制油脂保持面部自然光泽。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;其实不建议大家随时随地都去想着控油，可以做一些急救护理，视觉上让面部看起来不油光满面就好，因为油脂分泌有一定的好处，说明肌肤代谢较快，帮助延缓衰老，不易长皱纹。外油内干的肌肤在护肤彩妆防晒品的选择上，尽量避免给肌肤造成过多负担，一定要注意清洁，这样才能更好的做控油。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;','1530982368','1530982368') [ RunTime:0.0010s ]
+
+[ 2018-07-08T00:52:48+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-08T00:52:51+08:00 ] 127.0.0.1 /index.php/Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: aid D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-07-08T00:52:54+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-08T00:52:56+08:00 ] 127.0.0.1 /index.php/Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: aid D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-08T00:54:02+08:00 ] 127.0.0.1 /index.php/Admin/Blog/save?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('私房话：像米月一样有男人缘','水果严虹','时尚','&lt;p&gt;&lt;img src=&quot;http://s9.sinaimg.cn/mw600/001llLYZzy6YsWbrCQ0c8&amp;amp;690&quot; alt=&quot;私房话：像米月一样有男人缘&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;看《米月传》，让人艳羡的不是最终成为称霸六国的大秦太后，而是她的男人缘。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;长达81集的电视剧，上演的是米月一生中与三个真心爱慕她的男人痴缠纠结的旷世情缘。米月的初恋是战国四君子之一的春申君黄歇，情人是为她赴汤蹈火的义渠王翟骊，丈夫是智勇双全的秦国第一王秦惠王。米月与黄歇是青梅竹马的懵懂之爱，米月与秦惠王是亦父亦兄的呵护之爱，米月与义渠王是荷尔蒙爆发的男女之爱。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;一个女子一生的情感脉络，由这样几个男子贯穿始终。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;少女时期，她的生命里出现的第一个男子，在他身上，集合了女孩对异性所有的想象。他带给她美好的体验和爱情的幻想。这是一种蜻蜓点水似的恋情，无法深入情感的内核，宛如烟花，瞬间绽放，稍纵即逝，没有生命力。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;试问：哪一对男女在回忆自己情窦初开时没有过这样的喟叹：初恋时，我们不懂爱情。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;进入青春期，她会遇到一个和她一样生机蓬勃的男子。呼唤的和被呼唤的，相互应答，爱与被爱，一拍即合。相同的志向，共同的语言，一起携手走过一段人生的旅程，一起感悟生命的成长。期间会经历分分合合、死去活来、林林种种，酸、甜、苦、辣、涩，五味俱全。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;这样激烈的爱情注定不会长久，因为年轻，个性太强，即使生活在一起，相互碰撞，矛盾对恃，伤痕累累，也不会长久。相爱容易相处难，愈是极端的爱，愈是伤得深，结局均以分手告终。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;进入成熟期，她会爱上在各方面修炼得很完善的男子。他站在人生的第一百步，她站在人生的第五十步。他是她内心仰慕渴望的男子，她还会情不自禁地陷入爱情，甚至爱得比以往任何一次都更加疯狂。因为她知道这才是她一直想要找寻的爱情。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;爱要爱的旗鼓相当，势均力敌。走不进灵魂的爱，再激烈也不长久。他是她的一面镜子，让她照见另一个自己。他的出现重新激活了她的生命，成就一个全新的她。这样的男人带给她积极昂扬的动力，令她的生命焕发飞扬的火花。真正地爱上一个人，是一次重生。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s3.sinaimg.cn/mw690/001llLYZzy6YsWfhuIW82&amp;amp;690&quot; alt=&quot;私房话：像米月一样有男人缘&quot; width=&quot;550&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;理想中的爱情是强强联手，珠连璧合。两个棋鼓相当的人相遇在一起，如同高手过招，双方都有一种棋逢对手的快感。彼此欣赏，彼此懂得，彼此付出，彼此珍惜。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;一个生命体验丰富的成年女子，不可避免地要经历凤凰涅磐的阶段。一个女子只有经历了凤凰涅磐的蜕变后，生命才开始走向丰盈。她会在心里重新建造一座海市蜃楼，一边抵挡现实的风风雨雨，一边自食其力学会苦中作乐，这样的女子内心强大，能把痛苦和磨难当作糖果一样有滋有味地咀嚼咽下去，然后用自己的方式消化吸收。她表面看上去平静柔和，内心却波澜壮阔。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;看一个女子的美，不懂的人只会盯着看她的五官和身材是否标准，懂的人会看她的眼睛，看她的笑容，看她的表情，就能判断出她是活在哪个层面的女子。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;一个人的眼睛最能泄露真实的内心。幸福的标签可以随便往脸上贴，但真正发自内心的笑脸装不出来。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;成年女子的优雅气质和慧黠心智是年龄赐予她的财富。她已经成熟，不再年轻气盛，也不再刁蛮任性，更不会故意伤害爱自己的人。时间和经历已经把她装订成一本可供阅读的书。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;会有一个同样内心强大慧眼识珠的男子，他已经走过了千山万水，历经人世坎坷。他是有担当的男子，从翻开这本书的第一页，就被字里行间流露出来的内容所吸引。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;他是真正懂她的人，能够读懂她脸上每一条细小皱纹潜藏的智慧。他阅人无数，独欣赏她，包容她。她亦如此。这样的两个男女历经艰辛走在一起，因为懂得，所以慈悲。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;一个成熟的女子，她的一生会出现这样的几个男子，贯穿她生命的始终，构成一个有故事的女子一生的情感脉络。&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font&gt;——选自随笔集《我的光阴嫁给了一个影子》&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s2.sinaimg.cn/mw690/001llLYZzy6YsWidIxH51&amp;amp;690&quot; alt=&quot;私房话：像米月一样有男人缘&quot;&gt;&lt;/p&gt;','1530982442','1530982442') [ RunTime:0.0020s ]
+
+[ 2018-07-08T00:54:02+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-08T00:54:33+08:00 ] 127.0.0.1 /index.php/Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: aid D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-08T01:00:53+08:00 ] 127.0.0.1 /index.php/Admin/Blog/save?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('没有裙子的秋天是不完整的！25 套裙装穿搭 打造满分的秋季温柔感！','米娜','时尚','&lt;p&gt;没有裙子的秋天是不完整的，今天小编就来给大家分享&lt;b&gt;&lt;font color=&quot;#C893EB&quot;&gt;25 套秋天裙装look&lt;/font&gt;&lt;/b&gt;，教你打造满分的温柔感！&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/41a6be99783a730445f147c97a232c14&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;黑tee 粉色飘逸长裙，外搭一件短款牛仔外套，营造秋季般浪漫的淑女氛围。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/3f70f57f0417ae26b626bad20e522636&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;一袭优雅的黑色碎花长裙，外搭灰色的针织衫，简直不能更温柔～&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/c1a4356001e3e2bb8edde701945ca63e&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;三色拼接连衣裙，简约又大方，很有小名媛的味道。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/86acb2079d5778712ba5ed0f07027ab7&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;粉色连衣裙外搭一件黑色小开衫，配合帆布包，充满学生感。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/f83f95ad97da849081a82b7a3c15f890&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;蓝色针织衫 灰色格纹短裙，清新又甜美。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/ec1b2dc6cfb0acc1da18f75e6281c9a0&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;很有居家味道的T恤裙，搭配运动鞋出街，打造随性又休闲的整体look。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/e88f29b83a52c3d3332fb7b2d286cf03&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;棕色连衣裙 深色牛仔外套，充满清甜的氧气少女感。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/d029c72ba5f01a5ee6f8ef6e4177cf4c&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;条纹衬衫 荷叶边短裙，清爽优雅的配色令人赏心悦目！&lt;br&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/acf7b006fc74eb9f9efe994d16b3e8eb&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;棕色雪纺连衣裙，腰间的不规则设计充满轻熟女味道。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/e9cacad6b18bd0b59c687e08e134df69&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;豆沙红色雪纺衬衫 黑色鱼尾包臀裙，知性十足。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/036e46123148cbf9828c46386d3af8f4&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;白色针织衫 碎花长裙，温柔又优雅。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/8e6e1ab58c09148299e15d14bf19baa3&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;焦糖色的毛衣裙，勾勒完美曲线，同时女子力爆棚。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/652556b04ca329e36b178fde35ede511&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;秋天正适合这种简约的灰色调，清新的香芋紫、藕粉色、灰紫色……简直不能更柔情！&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/945bceced70bfdbd4476fc27cc02ed85&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;衬衫裙系列，搭配淑女风十足的小拎包和丝巾配饰，迷人十足。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/d08ec3ef9e8a7a0af04a0c7940d7bda7&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;雪纺衬衫 长裙系列，打造温柔如水般的职场OL装。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/420f10fa0392d2cb4dbc9ccf008c42af&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;绿色针织衫 米色连衣裙 皮夹克，潮潮的fashion girl风格。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/60134f9969ffc965b21287ccec762728&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;格子衬衫 包臀鱼尾裙，充满英伦复古风。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/c473f6095ad3817f5948080020f38cc4&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;紫色衬衫 格子长裙 黑色小开衫，清新又软糯。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/8633fd3bc1fa8c867c6f5a94d60016c0&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;左：红色长tee 格纹吊带裙，只戴一边的穿法，显得潮范十足。&lt;/p&gt;&lt;p&gt;右：蓝色衬衫 碎花裙，喇叭袖设计和不规则的裙摆，充满法式浪漫感。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/d57197d964728a860e84087582f413f7&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;左：条纹衬衫 A字裙 过膝长袜，充满甜美味道。&lt;/p&gt;&lt;p&gt;右：绿色碎花衬衫 棕色长裙，搭配黑色贝雷帽，打造满分的温柔感。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;https://r.sinaimg.cn/large/article/f65e83f3356b76c4060c2cf64fe3733d&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#D24A35&quot;&gt;学会了这些淑女风的裙装look，这个秋天最美的小仙女就是你哦！&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font color=&quot;#D24A35&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;','1530982853','1530982853') [ RunTime:0.0010s ]
+
+[ 2018-07-08T01:00:53+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-08T01:00:54+08:00 ] 127.0.0.1 /index.php/Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: aid D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-08T01:02:51+08:00 ] 127.0.0.1 /index.php/Admin/Blog/save?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('今夏大热的6双平底鞋，哪款更适合你？','hisGirl','时尚','&lt;p&gt;&lt;img src=&quot;http://simg.sinajs.cn/blog7style/images/blog_editor/blog_jian.gif&quot; width=&quot;17&quot; height=&quot;32&quot; alt=&quot;荐&quot;&gt;&lt;/p&gt;&lt;h1&gt;今夏大热的6双平底鞋，哪款更适合你？&lt;/h1&gt;&lt;p&gt;&lt;a&gt;转载&lt;/a&gt;2017-07-28 10:58:35&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(153, 153, 153);&quot;&gt;标签：&lt;/span&gt;&lt;a href=&quot;http://search.sina.com.cn/?c=blog&amp;amp;q=%C6%BD%B5%D7%D0%AC&amp;amp;by=tag&quot;&gt;平底鞋&lt;/a&gt;&lt;a href=&quot;http://search.sina.com.cn/?c=blog&amp;amp;q=%C2%DE%C2%ED%C1%B9%D0%AC&amp;amp;by=tag&quot;&gt;罗马凉鞋&lt;/a&gt;&lt;a href=&quot;http://search.sina.com.cn/?c=blog&amp;amp;q=%D2%BB%D7%D6%B4%F8%C1%B9%D0%AC&amp;amp;by=tag&quot;&gt;一字带凉鞋&lt;/a&gt;&lt;a href=&quot;http://search.sina.com.cn/?c=blog&amp;amp;q=%C4%C2%C0%D5%D0%AC&amp;amp;by=tag&quot;&gt;穆勒鞋&lt;/a&gt;&lt;/p&gt;&lt;p&gt;即便高跟鞋再怎么性感女人味，咱们也不得不承认，需要暴走的时候，还是平底鞋最能释放双足。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s14.sinaimg.cn/mw690/002aC6rizy7cZvdUGq96d&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;而且平底鞋并不代表不时髦，你瞧，Icon们穿着平底鞋照样气场爆棚！&lt;/p&gt;&lt;p&gt;当然，要把平底鞋穿的不输气场，确实需要一些小技巧▼&lt;/p&gt;&lt;p&gt;|||— ❶ —|||&lt;/p&gt;&lt;p&gt;Mini短裤/裙&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s4.sinaimg.cn/mw690/002aC6rizy7cZvepY9tb3&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;为了确保穿平底鞋时，也能有大长腿的既视感，聪明的姑娘们会选择迷你短裙或者短裤，让腿部更多的露出来，即显腿长又性感清凉！&lt;/p&gt;&lt;p&gt;|||— ❷ —|||&lt;/p&gt;&lt;p&gt;高腰显腿长&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s4.sinaimg.cn/mw690/002aC6rizy7cZvePSZd53&quot; alt=&quot;&quot;&gt;&lt;a&gt;&amp;nbsp;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;如果你腿型不够美，没关系，时尚编辑们告诉你，用阔腿裤和A字裙遮肉就好，但是，别忘了选择高腰款来配平底鞋，才不至于显矮。&lt;/p&gt;&lt;p&gt;接下来看看，今年夏天有哪些时髦与舒适兼备的平底鞋▼&lt;/p&gt;&lt;p&gt;|||— ❸ —|||&lt;/p&gt;&lt;p&gt;一字带凉鞋&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s11.sinaimg.cn/mw690/002aC6rizy7cZvfiWoy9a&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;一字带凉鞋几乎就是凉鞋中的基础款，穿在脚上几乎等于没穿鞋，百搭到无需动脑，同时也要求脚型比较好看，才撑得起这样的“足上比基尼”；&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s6.sinaimg.cn/mw690/002aC6rizy7cZvhnrkF25&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;另外呀，如果你小腿和脚踝比较粗，建议选择很细的一字带，或者裸色鞋！&lt;/p&gt;&lt;p&gt;|||— ❹ —|||&lt;/p&gt;&lt;p&gt;罗马凉鞋&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s3.sinaimg.cn/mw690/002aC6rizy7cZvjiqga52&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;肉肉脚或者脚型不好看也别灰心，这双怀旧味道的罗马凉鞋不仅超级显脚瘦，还利用绑带、水钻、铆钉、流苏等设计，让脚上充满看点。&lt;/p&gt;&lt;p&gt;哪怕搭配基础款的纯色连衣裙，都可以很时髦！​&lt;/p&gt;&lt;p&gt;|||— ❺ —|||&lt;/p&gt;&lt;p&gt;穆勒凉拖&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s15.sinaimg.cn/mw690/002aC6rizy7cZvsUScK4e&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;夏天当然少不了一双自然的凉拖鞋，但是正因为它的不羁感，恰恰不要去搭配破洞牛仔短裤之类的休闲单品，会像澡堂拖鞋！穿出高级感的办法是，搭配极简Normcore风格的单品，反而有种洒脱感。&lt;/p&gt;&lt;p&gt;|||— ❻ —|||&lt;/p&gt;&lt;p&gt;草编底凉鞋&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s9.sinaimg.cn/mw690/002aC6rizy7cZvv5MvK98&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;一眼望去就是度假风既视感，想要穿出法式度假气息，只需要T恤、牛仔裤，再加一双草编底凉鞋就足以，如果是绑带设计，或者条纹图案会更棒！&lt;/p&gt;&lt;p&gt;|||— ❼ —|||&lt;/p&gt;&lt;p&gt;后跟挖空的尖头鞋&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s10.sinaimg.cn/mw690/002aC6rizy7cZvwuioh99&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;平底鞋中最显腿长的一定是具有延伸效果的尖头鞋，如果你觉得日常的单鞋太闷脚，不妨选择后跟挖空的款，最好侧面还带有今年大热的织带装饰，一点小心机就可以告别老气！&lt;/p&gt;&lt;p&gt;|||— ❽ —|||&lt;/p&gt;&lt;p&gt;帆布小白鞋&lt;/p&gt;&lt;p&gt;小白鞋是四季都能穿的好物，清爽的感觉更是合适夏日！不过这么热的天，就别再穿那种厚重感的运动鞋了，不妨换上轻便的帆布鞋，透气又好穿。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s1.sinaimg.cn/mw690/002aC6rizy7cZvxniEwd0&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;其实夏天可以穿的时髦平底鞋还有很多，比如少女气质的玛丽珍鞋，以及性感的绑带鞋▼&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s12.sinaimg.cn/mw690/002aC6rizy7cZvO75P5bb&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;在搭配时除了注意“高腰线”和“ Mini短裤/裙 ”显腿长，还可以记住以下两点：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s2.sinaimg.cn/mw690/002aC6rizy7cZvJavUB11&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;搞清楚鞋子是主角还是配角，分清要突出的重点才不会出错；&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s2.sinaimg.cn/mw690/002aC6rizy7cZvK0plTf1&quot; alt=&quot;&quot;&gt;&lt;/p&gt;','1530982971','1530982971') [ RunTime:0.0020s ]
+
+[ 2018-07-08T01:02:51+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-08T01:04:37+08:00 ] 127.0.0.1 /index.php/Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: aid D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-07-08T01:05:06+08:00 ] 127.0.0.1 /index.php/Admin/Blog/save?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('夏天穿什么去上班？时尚编辑们给你10个答案！','hisGirl','时尚','&lt;p&gt;时尚编辑拥有比时尚博主更敏锐的时尚敏感度，比很多女明星有更强的搭配功力，并且还有着职业女性的干练……&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s10.sinaimg.cn/mw690/002aC6rizy7cTj8vilz69&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;So，如果你想知道怎样在职场穿的时髦干练，不妨从时尚女编辑们的街拍找找灵感！&lt;/p&gt;&lt;p&gt;|||— ❶ —|||&lt;/p&gt;&lt;p&gt;衬衫裙Mix时髦腰带&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s16.sinaimg.cn/mw690/002aC6rizy7cTj9ilNd9f&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;如果你要在职场穿裙子，没什么比衬衫裙更适合了，比衬衫有女人味，比普通连衣裙干练。&lt;/p&gt;&lt;p&gt;只要搭配一条设计感腰带勾勒出高腰线，就可以成为不挑身材的裙子，而且轻松变时髦！&lt;/p&gt;&lt;p&gt;|||— ❷ —|||&lt;/p&gt;&lt;p&gt;时髦配件点睛基础款包臀裙&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s16.sinaimg.cn/mw690/002aC6rizy7cTj9UUzBaf&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;修身包臀裙，展现女性成熟自信的形象，也是职场女性衣橱常备单品，黑/白/灰/驼色/藏青色等中性色调经典大气，为打破沉闷感，你需要一款时髦的鞋子和设计感的饰品……&lt;/p&gt;&lt;p&gt;|||— ❸ —|||&lt;/p&gt;&lt;p&gt;衬衫Mix铅笔裙&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s8.sinaimg.cn/mw690/002aC6rizy7cTjaM3Yz37&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;无论衬衫还是铅笔裙都是职场属性的单品，为免太形象太严肃，不妨试试印花款。对于下半身偏胖的梨型身材，还可以利用上浅下深的配色进行视线转移，达到显瘦效果。&lt;/p&gt;&lt;p&gt;|||— ❹ —|||&lt;/p&gt;&lt;p&gt;衬衫Mix高腰A字裙&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s16.sinaimg.cn/mw690/002aC6rizy7cTjbFEv5ef&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;搭配A字裙要比铅笔裙浪漫温柔，短款俏皮，长款优雅，一款设计感的A字裙就可以让你时髦起来。&lt;/p&gt;&lt;p&gt;因为衬衫本身不修身，A字裙裙摆也很宽松，所以高腰款设计才不容易显矮胖。&lt;/p&gt;&lt;p&gt;|||— ❺ —|||&lt;/p&gt;&lt;p&gt;衬衫+西装短裤&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s13.sinaimg.cn/mw690/002aC6rizy7cTjeWTCYbc&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;不爱太柔弱的女人味，不妨将半裙换成西装短裤，打造帅气男友风，短裤的阔腿裤管还可以无敌显腿细长。要时髦有范儿，一条色彩绚丽的西装短裤就可以搞定！&lt;/p&gt;&lt;p&gt;|||— ❻ —|||&lt;/p&gt;&lt;p&gt;无袖衫+直筒裤&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s8.sinaimg.cn/mw690/002aC6rizy7cTjfpgaP67&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;喜欢帅气感必然少不了直筒裤装，阔腿裤或者修饰腿型的吸烟裤都不错，搭配长袖衬衫太热、搭配T恤太随意，换上设计感的无袖衬衫好了，时髦、干练和清凉都有了。&lt;/p&gt;&lt;p&gt;|||— ❼ —|||&lt;/p&gt;&lt;p&gt;西装+短裤/裙&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s6.sinaimg.cn/mw690/002aC6rizy7cTjgcUKh15&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;夏天也可以穿西装啊，尤其在空调房中，搭配短裤or短裙款就可以干练又不失活泼，内搭一件纯色白T，增加轻松休闲气息。&lt;/p&gt;&lt;p&gt;|||— ❽ —|||&lt;/p&gt;&lt;p&gt;西装马甲穿出层次感&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s3.sinaimg.cn/mw690/002aC6rizy7cTjkMR1g42&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;嫌长袖西装太热，摘掉两袖管变成收腰的西装马甲，立马时髦进阶，而且可以增加搭配的层次感，可以直接穿西装马甲，也可以敞开内搭T恤。&lt;/p&gt;&lt;p&gt;|||— ❾ —|||&lt;/p&gt;&lt;p&gt;polo衫替代衬衫&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s9.sinaimg.cn/mw690/002aC6rizy7cTjjapQI68&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;衬衫领设计的polo衫，即有衬衫的干练沉稳感，又有T恤的休闲属性，很适合作为职场衬衫的替代品，略修身的属性，还让它非常容易搭配下装。&lt;/p&gt;&lt;p&gt;|||— ❿ —|||&lt;/p&gt;&lt;p&gt;连体直筒裤&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s16.sinaimg.cn/mw690/002aC6rizy7cTjloNlldf&quot; alt=&quot;&quot;&gt;&lt;a&gt;&amp;nbsp;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;比连衣裙帅气，比其他衣服好搭配，连体裤就是可以不费事儿穿时髦。直筒裤管的连体裤看起来更利落干练，会更适合职场。腰带之类的细节都是加分选项。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s7.sinaimg.cn/mw690/002aC6rizy7cTjm3S8m86&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;看完时尚编辑们的街拍，你会发现，打造时髦的职场look，无非是选择一件有设计感的职场单品，或者利用印花来点亮搭配！&lt;/p&gt;','1530983106','1530983106') [ RunTime:0.0010s ]
+
+[ 2018-07-08T01:05:07+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-08T01:05:51+08:00 ] 127.0.0.1 /index.php/Admin/Blog/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: aid D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 41 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 45 行.
+NOTIC: [8] Undefined index: author D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 51 行.
+NOTIC: [8] Undefined index: category D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 57 行.
+NOTIC: [8] Undefined index: content D:\wamp\www\tpblog\Application\Runtime\Cache\Admin\0e7ff0edb6d9c52ac063b910dfc30b8c.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-08T01:06:44+08:00 ] 127.0.0.1 /index.php/Admin/Blog/save?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`author`,`category`,`content`,`createtime`,`updatetime`) VALUES ('自己没穿对，还说人家土？维西格纹明明人人皆可穿 ','大饼穿搭札记','时尚','&lt;p&gt;&amp;nbsp;本 期 导 读&lt;/p&gt;&lt;p&gt;① 维希格纹今年正当时&amp;amp;什么是维希格纹&lt;/p&gt;&lt;p&gt;② 维希格纹历史小记&lt;/p&gt;&lt;p&gt;③ 维希格纹怎么搭？饼视频做示范&lt;/p&gt;&lt;p&gt;④ 维希格纹应该如何选？&lt;/p&gt;&lt;p&gt;”&lt;/p&gt;&lt;p&gt;前不久，饼告诉大家近来的潮流趋势越来越趋向于没有潮流，只要你觉得好看的单品、搭配都可以穿！！！于是，咱们这花篇幅和时间刚写了一篇这个夏天可以买的一些“乱七八糟”的潮流元素。&lt;/p&gt;&lt;p&gt;在那次安利中，不知道姑娘们是否还记得维西格纹？&lt;/p&gt;&lt;p&gt;超链接：&lt;a href=&quot;http://www.toutiao.com/i6424355619775447554/&quot;&gt;不知道今夏穿什么？最值得买的7件在这儿了！｜潮流趋势&lt;/a&gt;&lt;/p&gt;&lt;p&gt;所谓维西格纹（Gingham/ Vichy / ギンガム /朝阳格），其实就是由双色经纬交错而成的格子图案，并没有所谓的上下、正反之分，算的上是各种色彩斑斓的格纹图案中的清流。而规律就是白底为基础，最常见的不过是黑白、蓝白、红白，三大类啦~&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c360001a546d865409d&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;BTW，为了做个区分，这里说个时尚冷知识：红黑配交叉的经纬图案的格纹叫做Buffalo plaid，风格完全不同，并不属于维希哦～大致做个区别是，一个更夏日清新，一个更秋冬厚重。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c300001a6805083554c&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;说到维希格纹的“火爆度”？在今年，它几乎被运用在了各类单品上，囊括了快品牌、商业品牌、设计师品牌们……，攻占了相当大的市场，可见一斑：&lt;/p&gt;&lt;p&gt;比如说，house of holland、 pringle of scotland、mrissa webb……秀场就都出现了它的身影；&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p9.pstatp.com/large/2c370001e9a06c8f8047&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;而国内设计师也有很多把眼光放向了这一元素，比如Shushutong就为它奉上了卖的很不错的一大系列；&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c350001d92cd13b37d4&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;更不用说，Mango、Topshop、Zara、H&amp;amp;M……的几乎全品类、大面积的普及了。具体有多火，姑娘们必然是感同身受的体验过！&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c400001895a2799cd71&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;但卖的多，未必就能代表着容易穿。毕竟，说到这元素的时候，不少姑娘还是会找饼捶胸顿足的说：&lt;/p&gt;&lt;p&gt;这货忒土气，不够“洋”&lt;/p&gt;&lt;p&gt;（X）&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c360001a547f78abdde&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;没错，但之所以会让维希格纹造成这种视觉映像，咱们还得从它的历史说起：&lt;/p&gt;&lt;p&gt;一&lt;/p&gt;&lt;p&gt;维希格纹历史小梳理&lt;/p&gt;&lt;p&gt;Gingham一词其实来源于马来语“genggang”，在17世纪，Gingham其实是一种色织条纹布，这种面料从当时荷兰殖民地马来西亚、印尼先后传入欧洲和美国。19世纪受英格兰格纹的影响，才形成了现有的格子布。&lt;/p&gt;&lt;p&gt;而另一个名字vichy（说的并不是薇姿），相传是因为这种织物就是产自于法国一个名叫Vichy的小镇子里，正是源于法语的Vichy。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c300001a6825e7d81fd&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;Whatever，无论它的来源为何，从大趋势的发展上看，维希格纹从不落伍，还几经发展：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;20世纪初，受维多利亚时代服装色彩单一的限制性，色彩相对亮丽的维希格纹成为了女童服装和校服的代名词（所以，清新、活泼）。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c370001e9a1e0c95a51&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;看过《绿野仙踪》的你一定也知道，长相有些成熟的小女孩多萝茜打造出俏皮、可爱的形象也有维希格纹的功劳。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c350001d92f285f8f71&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;而在一战结束之后，经济衰退、物资匮乏，维希格纹因为便于生产、成本低廉、图案经典且实用耐造，慢慢大受欢迎，被大范围的运用到了生活之中。这一时期，它在大量的泳装、家居服、围裙中存在（家居感）～&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;http://p9.pstatp.com/large/2c3f0001dcf788a3e16d&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;紧接着因为各种广告、音乐、影视剧的渲染，维希格纹慢慢形成“主妇”标签，一旦需要“主妇”形象，总会用它做代表～&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c3f0001dcf6646d05f0&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;这种习之以常的运用，还让二战以后的维希格纹成为了“幸福”的标签，不停演绎维希格的Brigitte Bardo就穿着它在1959年结了婚（图右），还让这条格纹裙名声大噪（时尚追捧）。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c370001e9a2879eba26&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;维希格单品也曾见证了戴妃“幸福时光”，扮演好妻子角色的戴妃也总是选择不同的这类单品。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c300001a6846fd44490&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;如是的，还有美国夫人期间的杰奎琳.肯尼迪。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c370001e9a36fab4399&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;总的说来，维希格纹是五六十年代真正的大流行，奥黛丽·赫本、格蕾丝·凯利、伊丽莎白·泰勒、……打住！这一类，让维希格大红大紫的星星们饼可以写上一整辑。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c3f0001dcf92082428d&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;除了服装上，维希格纹各种运用和发展呀，还值得饼一提的是：因为在家居装饰方面也极具性价比，它在欧洲、美国都被与乡村风格联系在一起。维希格纹成了牛仔、野餐、边疆、桌布、窗帘……的代名词。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c360001a54a644a305c&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;So，到这儿～咱们要来做个总结啦：正因为如此，你会发现维希格纹慢慢有了乡村、清晰、法式优雅、复古的风格属性，看起来与新锐的时髦难以挂勾。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c350001d930a909508a&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;而想要它容易驾驭并且时髦起来？那么自然又落到了选与搭的问题上！咱们从搭说起吧～&lt;/p&gt;&lt;p&gt;二&lt;/p&gt;&lt;p&gt;维希格纹应该如何搭？&lt;/p&gt;&lt;p&gt;作为特色单品，维希格纹完全可以穿出它原本的风格风貌。于是，拿到这种印花单品时，早已熟知各种穿搭规律的粉饼姑娘们，将维希格纹用做亮点的搭法根本就是手到擒来：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;大家都会用简单的黑白与之搭配，突出格纹单品，就是清新、干净的样子。&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c400001895c83da9ecc&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;温柔的妹子穿出来，大抵都是关关听话、干净的邻家模样。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c300001a689ffc8eda9&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;也可以用同样中性的草编元素（草帽、草编包、草编底鞋……）来驾驭，基本就是回归最初的乡村田园风～&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c3f0001dcfa3153af53&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;这一搭，谁穿好像都可以，但穿成什么效果，考验的是你的驾驭力是否匹配了！&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c350001d9327e38faef&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;无需动脑的，甚至用咱们万能的裸色鞋包就能在夏季混荡……&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;http://p9.pstatp.com/large/2c300001a68b5c829cdf&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;总的说来，这几种基础、不出错的搭法，其实就是法式优雅最简单的样子。的确是不出错的入门搭法。但实质上，法式风太需要自身的气质来匹配、凸显，以及对选品要求其实极高，一样不对味儿，基本毁全部，想要出彩所以才会觉得更难！&lt;/p&gt;&lt;p&gt;也正是因为这样的看似的风格限制，所以很多姑娘才会觉得维希格纹难以驾驭，不好搭配吧～其实并不然，搭配对了，维希格纹谁都可以穿。&lt;/p&gt;&lt;p&gt;除了本身就是清新风格（文艺、田园、法式）的妹子，热衷于混搭的饼这里还奉上一只“做作，嘴一嘟噜就把格纹说成条纹”的7日搭视频。励志要为你，示范一番在饼这儿，更偏好的维希格纹的样子：&lt;/p&gt;&lt;p&gt;视频稍后放上，有福利哦~&lt;/p&gt;&lt;p&gt;没错！在饼看来，给维希格纹一些“碰撞”就是很不错的方法：&lt;/p&gt;&lt;p&gt;1）基础的黑白法式搭配，用中性单品比甜美风更容易不腻味儿的做驾驭。比如衬衫、T恤、中性的包、乐福鞋、牛津鞋、运动鞋……都是不错的选择。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p9.pstatp.com/large/2c3d0001e0df2f48d785&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;于是搭配复古感的格纹连衣裙，我用了乐福鞋、Leboy做搭配，毕竟不腻味儿才是更适合我，让自己状态更舒适的样子。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c350001d933e6325d68&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;裙子：淘宝 | 鞋子：Tod’s | 包包：CHANEL leboy | 手表：MK&lt;/p&gt;&lt;p&gt;2）这种碰撞还可以更猛烈些，打破格纹的田园风，来些牛仔、摇滚、机车、朋克、……等风格更劲的不同类型单品做匹配。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c3d0001e0e15273929d&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;于是，饼自己就选择了基础但又中性风突出的军装夹克外套，在冷气十足、要求不严苛办公室里穿也正正好。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p9.pstatp.com/large/2c300001a68cddd9b276&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;外套：Topshop | T恤：H&amp;amp;M | 鞋子：Joe’s | 包包：Marc Jacobs | 手镯：vintage | 耳环：Marni X H&amp;amp;M&lt;/p&gt;&lt;p&gt;3）而色彩上也无需完全的局限于黑白灰，毕竟双色拼色为主色调的格纹，完全可以与彩色玩搭起来：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c300001a68d74c44cd4&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;彩色的维希格纹可以玩转同色系或撞色，黑白配的格纹那就更没得挑了～&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c4000018960581adab6&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;这是饼自己比较钟爱的“玩色”搭法啦，所以，相对于简单的黑白的清新干净，看起来也不错？&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c370001e9a6d023d193&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;裤子：zara | 上衣：abosio | 鞋子：chinchin | 包包：Anteprima&lt;/p&gt;&lt;p&gt;但，我更爱丰富与热烈……于是，同样的格纹阔腿裤，饼自己就用了自己最爱的大红与格纹做碰撞～&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c300001a68eb0272cbf&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;裤子：Zara | 包包：泽尚ZESH | 吊带：mango | 耳环：vintage | 衬衫：vintage&lt;/p&gt;&lt;p&gt;综合以上两点的搭配小套路，饼这里还有一组运用了衬衫、阔腿裤，完全可以职场穿的，田园维希不田园的搭配！&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p9.pstatp.com/large/2c370001e9a7bb5632e9&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;衬衫：Zara | 裤子：lily | 鞋子：boden | 包包：Michael Kors | 腰带：Topshop | 抹胸：Mango&lt;/p&gt;&lt;p&gt;4）除了以上，维希格纹其实还完全可以做为基础配色搭印花！掌握好色彩的匹配套路，印花的图案就完全可以根据自己喜好选择～&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p9.pstatp.com/large/2c3f0001dcfc06ad8e77&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;而饼自己的嗜好？比起搭配田园风小印花，我当然更爱对比鲜明的花朵儿们，不多说，搭配也直接奉上：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p9.pstatp.com/large/2c360001a54ded4e3878&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;衬衫：H&amp;amp;M | 裤子：Zara | 鞋子：STEVEN MADDEN&lt;/p&gt;&lt;p&gt;5）在Icon们的共同选择中，条纹+格纹其实也是一组好搭档，你需要考虑的只是好同色系、或是撞色，这俩就是最好的匹配方式。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c370001e9a83087fc66&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;这一组的借鉴，饼自己呢用来搭配了条纹衬衫裙，在腰部做了折叠，并且用腰封加以固定，可以改变半裙的长度。当然，这一组不算特别满意呢～换个蓝白配的小格子？或许能更让自己兴奋。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c4000018961a9ea7d70&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;衬衫：H&amp;amp;M | 裙子：Zara | 鞋子：Steve Madde | 草编包：淘宝&lt;/p&gt;&lt;p&gt;6）关于搭配，自然格纹还可以小面积做点睛。格纹鞋和包包在今年也都有不少不错的选择～&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c370001e9a9a1d4e690&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;饼这里，也剖上一组自己的穿搭示范，&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c370001e9aa41780f59&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;T恤：H&amp;amp;M | 裤子：Uniqlo | 鞋子：Stradivarius | 篮子：Freepeople | 腰带：Mo&amp;amp;Co&lt;/p&gt;&lt;p&gt;总的说来，讲究好碰撞感和基本的“不杂乱”，格纹真的可以风格多变起来！说了那么，其实符合的咱们穿搭规律的搭配，但效果时髦与否，自然还与你的选品有关，毕竟一件T恤也有优劣之分！&lt;/p&gt;&lt;p&gt;三&lt;/p&gt;&lt;p&gt;维希格纹的选择&lt;/p&gt;&lt;p&gt;1）关于格纹的大小，有点各花入各眼的意思。在饼看来呀，大格纹更知性容易驾驭，小格纹更甜美田园，所以具体怎么选，完全看你能驾驭的风格以及偏好！&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c300001a691ae625bff&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;当然格纹也不能太小！还是格纹清晰可辨，对比鲜明更好～&lt;/p&gt;&lt;p&gt;这些都符合&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c400001896294a2ecb8&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;2）开篇我们就说过，其实作为“制作方便、性价比”的面料，的确看起来容易有廉价感，很难高级！所以，格纹最怕的莫过于“舍不得用料”的样子，也就是手给点量感就精彩～&lt;/p&gt;&lt;p&gt;有余量、不紧绷的设计往往更不挑人&lt;/p&gt;&lt;p&gt;紧绷的格纹其实会显胖&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c3f0001dcff46e48b09&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;特色款的上衣也比基础的合身格纹衬衫更容易出彩&lt;/p&gt;&lt;p&gt;余量感除了size，可以通过特殊设计来增加&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c3f0001dd011a387993&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;而大面积的维希格纹单品除了整体廓形要更讲究，有些小设计的细节更加分&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p1.pstatp.com/large/2c3f0001dd020ab2c185&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;此外，如果黑白格纹驾驭不好？姑娘们完全可以尝试色彩的款式，让它完全变成搭配中的特色单品！&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://p3.pstatp.com/large/2c3d0001e0e3b7c645d0&quot; alt=&quot;自己没穿对，还说人家土？维西格纹明明人人皆可穿｜风格元素&quot;&gt;&lt;/p&gt;&lt;p&gt;好啦，说了那么多，你对维希格纹有了自己的认识吗？关于格纹咱们就到这儿啦？今天饼示范8套搭配，你更喜欢哪一组呢？留言告诉我～&lt;/p&gt;&lt;p&gt;注：所有原创内容未经允许，私自转载一律走法律途径决绝，欢迎姑娘们帮助大饼监督并检举告诉大饼，原创不易，感谢支持哦~&lt;/p&gt;','1530983204','1530983204') [ RunTime:0.0010s ]
+
+[ 2018-07-08T01:06:44+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-08T01:26:12+08:00 ] 127.0.0.1 /index.php//Admin/Blog/add?aid=39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 39 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-08T01:26:26+08:00 ] 127.0.0.1 /index.php/Admin/Blog/save?aid=39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: auto D:\wamp\www\tpblog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `article` SET `title`='今夏大热的6双平底鞋，哪款更适合你？',`author`='hisGirl',`category`='时尚',`content`='&lt;p&gt;即便高跟鞋再怎么性感女人味，咱们也不得不承认，需要暴走的时候，还是平底鞋最能释放双足。&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s14.sinaimg.cn/mw690/002aC6rizy7cZvdUGq96d&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;而且平底鞋并不代表不时髦，你瞧，Icon们穿着平底鞋照样气场爆棚！&lt;/p&gt;&lt;p&gt;当然，要把平底鞋穿的不输气场，确实需要一些小技巧▼&lt;/p&gt;&lt;p&gt;|||— ❶ —|||&lt;/p&gt;&lt;p&gt;Mini短裤/裙&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s4.sinaimg.cn/mw690/002aC6rizy7cZvepY9tb3&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;为了确保穿平底鞋时，也能有大长腿的既视感，聪明的姑娘们会选择迷你短裙或者短裤，让腿部更多的露出来，即显腿长又性感清凉！&lt;/p&gt;&lt;p&gt;|||— ❷ —|||&lt;/p&gt;&lt;p&gt;高腰显腿长&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s4.sinaimg.cn/mw690/002aC6rizy7cZvePSZd53&quot; alt=&quot;&quot;&gt;&lt;a&gt;&amp;nbsp;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;如果你腿型不够美，没关系，时尚编辑们告诉你，用阔腿裤和A字裙遮肉就好，但是，别忘了选择高腰款来配平底鞋，才不至于显矮。&lt;/p&gt;&lt;p&gt;接下来看看，今年夏天有哪些时髦与舒适兼备的平底鞋▼&lt;/p&gt;&lt;p&gt;|||— ❸ —|||&lt;/p&gt;&lt;p&gt;一字带凉鞋&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s11.sinaimg.cn/mw690/002aC6rizy7cZvfiWoy9a&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;一字带凉鞋几乎就是凉鞋中的基础款，穿在脚上几乎等于没穿鞋，百搭到无需动脑，同时也要求脚型比较好看，才撑得起这样的“足上比基尼”；&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s6.sinaimg.cn/mw690/002aC6rizy7cZvhnrkF25&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;另外呀，如果你小腿和脚踝比较粗，建议选择很细的一字带，或者裸色鞋！&lt;/p&gt;&lt;p&gt;|||— ❹ —|||&lt;/p&gt;&lt;p&gt;罗马凉鞋&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s3.sinaimg.cn/mw690/002aC6rizy7cZvjiqga52&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;肉肉脚或者脚型不好看也别灰心，这双怀旧味道的罗马凉鞋不仅超级显脚瘦，还利用绑带、水钻、铆钉、流苏等设计，让脚上充满看点。&lt;/p&gt;&lt;p&gt;哪怕搭配基础款的纯色连衣裙，都可以很时髦！​&lt;/p&gt;&lt;p&gt;|||— ❺ —|||&lt;/p&gt;&lt;p&gt;穆勒凉拖&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s15.sinaimg.cn/mw690/002aC6rizy7cZvsUScK4e&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;夏天当然少不了一双自然的凉拖鞋，但是正因为它的不羁感，恰恰不要去搭配破洞牛仔短裤之类的休闲单品，会像澡堂拖鞋！穿出高级感的办法是，搭配极简Normcore风格的单品，反而有种洒脱感。&lt;/p&gt;&lt;p&gt;|||— ❻ —|||&lt;/p&gt;&lt;p&gt;草编底凉鞋&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s9.sinaimg.cn/mw690/002aC6rizy7cZvv5MvK98&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;一眼望去就是度假风既视感，想要穿出法式度假气息，只需要T恤、牛仔裤，再加一双草编底凉鞋就足以，如果是绑带设计，或者条纹图案会更棒！&lt;/p&gt;&lt;p&gt;|||— ❼ —|||&lt;/p&gt;&lt;p&gt;后跟挖空的尖头鞋&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s10.sinaimg.cn/mw690/002aC6rizy7cZvwuioh99&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;平底鞋中最显腿长的一定是具有延伸效果的尖头鞋，如果你觉得日常的单鞋太闷脚，不妨选择后跟挖空的款，最好侧面还带有今年大热的织带装饰，一点小心机就可以告别老气！&lt;/p&gt;&lt;p&gt;|||— ❽ —|||&lt;/p&gt;&lt;p&gt;帆布小白鞋&lt;/p&gt;&lt;p&gt;小白鞋是四季都能穿的好物，清爽的感觉更是合适夏日！不过这么热的天，就别再穿那种厚重感的运动鞋了，不妨换上轻便的帆布鞋，透气又好穿。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s1.sinaimg.cn/mw690/002aC6rizy7cZvxniEwd0&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;其实夏天可以穿的时髦平底鞋还有很多，比如少女气质的玛丽珍鞋，以及性感的绑带鞋▼&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s12.sinaimg.cn/mw690/002aC6rizy7cZvO75P5bb&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;在搭配时除了注意“高腰线”和“ Mini短裤/裙 ”显腿长，还可以记住以下两点：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s2.sinaimg.cn/mw690/002aC6rizy7cZvJavUB11&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;搞清楚鞋子是主角还是配角，分清要突出的重点才不会出错；&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s2.sinaimg.cn/mw690/002aC6rizy7cZvK0plTf1&quot; alt=&quot;&quot;&gt;&lt;/p&gt;',`updatetime`='1530984386' WHERE `aid` = 39 [ RunTime:0.0010s ]
+
+[ 2018-07-08T01:26:26+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-08T01:27:21+08:00 ] 127.0.0.1 /index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

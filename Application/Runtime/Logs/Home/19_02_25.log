@@ -1,0 +1,1248 @@
+[ 2019-02-25T13:47:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0340s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0360s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0550s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0350s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1730s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1100s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 203 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 203 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 203 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 203 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2019-02-25T13:49:25+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0320s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0850s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0340s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1710s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1150s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-25T13:49:29+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0350s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0380s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0530s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0310s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1750s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1170s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0380s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-25T13:50:03+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0330s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0310s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0520s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0310s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1650s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1120s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0310s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-02-25T13:51:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0320s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0520s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0350s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1710s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1220s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2019-02-25T13:51:43+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0530s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0340s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0530s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0340s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1830s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1110s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0380s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-02-25T13:51:44+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0360s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0550s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0390s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1750s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1130s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-02-25T13:51:46+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0360s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0750s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0370s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.2200s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1200s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0380s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2019-02-25T13:52:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0330s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0530s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0320s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1740s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1150s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0360s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-02-25T13:52:09+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0570s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0380s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0550s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0320s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1670s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1120s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-25T13:52:17+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0540s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0340s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0350s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0570s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0360s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1630s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1120s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-02-25T13:52:24+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0310s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0530s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0320s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1610s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1130s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2019-02-25T13:53:13+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0540s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0320s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0590s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0330s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1730s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1260s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-25T13:53:37+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0520s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0340s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0660s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0330s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1680s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1160s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 203 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 203 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 203 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 203 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-25T14:02:45+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0640s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0330s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0910s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0310s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1620s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1180s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 203 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 203 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 203 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 203 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-25T14:03:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0540s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0360s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0350s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0510s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0350s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1800s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1240s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0400s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2019-02-25T14:04:05+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0530s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0320s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0520s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0550s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.2140s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1160s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-25T14:04:30+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0320s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0500s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0320s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1810s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1300s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0340s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2019-02-25T14:05:51+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0540s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0330s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0560s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0310s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1780s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1200s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 178 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 207 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 274 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-25T14:07:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0320s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0510s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0350s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1640s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1160s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 203 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 203 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 203 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 203 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 270 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2019-02-25T15:57:14+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0310s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0570s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1710s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1180s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-02-25T15:57:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0410s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0540s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0330s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1680s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1230s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2019-02-25T15:57:42+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0580s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0340s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0730s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0370s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1890s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1280s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2019-02-25T15:57:54+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0610s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0380s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0530s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0380s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.2140s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1740s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2019-02-25T15:57:56+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0590s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0440s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0380s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0540s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0320s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1780s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1270s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0450s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2019-02-25T15:58:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0620s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0340s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0350s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0550s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0390s ]
+SQL: SELECT * FROM `article` WHERE ( category='旅游1' ) UNION (select * from article where category='时尚'order by aid desc limit 2) UNION (select * from article where category='旅游'order by aid desc limit 2) UNION (select * from article where category='美食'order by aid desc limit 2) UNION (select * from article where category='教育'order by aid desc limit 2) [ RunTime:0.1810s ]
+SQL: SELECT * FROM `article` ORDER BY view desc LIMIT 8   [ RunTime:0.1140s ]
+SQL: select sum(view) as view,author from article group by author order by view DESC limit 25  [ RunTime:0.0330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 175 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant utf8 - assumed 'utf8' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 204 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+NOTIC: [8] Use of undefined constant aid - assumed 'aid' D:\wamp64\www\tpblog\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 271 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+

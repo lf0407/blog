@@ -1,0 +1,538 @@
+[ 2018-07-18T22:18:18+08:00 ] 202.105.147.202 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000465s ]
+
+[ 2018-07-18T22:18:18+08:00 ] 202.105.147.202 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+
+[ 2018-07-18T22:18:19+08:00 ] 202.105.147.202 /admin/logi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001829s ]
+ERR: 无法加载控制器:Logi
+
+[ 2018-07-18T22:18:19+08:00 ] 202.105.147.202 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000972s ]
+
+[ 2018-07-18T22:18:20+08:00 ] 202.105.147.202 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001958s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001688s ]
+
+[ 2018-07-18T22:18:29+08:00 ] 202.105.147.202 /Admin/Login/index?act=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0229s ]
+SQL: SELECT * FROM `user` WHERE `username` = '123456' AND `password` = '123456' LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-07-18T22:18:30+08:00 ] 202.105.147.202 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0227s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001006s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001109s ]
+
+[ 2018-07-18T22:18:30+08:00 ] 202.105.147.202 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000666s ]
+
+[ 2018-07-18T22:18:37+08:00 ] 202.105.147.202 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009716s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2018-07-18T22:18:39+08:00 ] 202.105.147.202 /Admin/Blog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000140s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015198s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0286s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0300s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0226s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001144s ]
+
+[ 2018-07-18T22:18:39+08:00 ] 202.105.147.202 /Admin/Blog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000598s ]
+
+[ 2018-07-18T22:18:48+08:00 ] 202.105.147.202 /Admin/Blog/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000737s ]
+
+[ 2018-07-18T22:18:50+08:00 ] 202.105.147.202 /Admin/Blog/index/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001379s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0453s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0249s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0251s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 32,8   [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001509s ]
+
+[ 2018-07-18T22:18:50+08:00 ] 202.105.147.202 /Admin/Blog/index/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001512s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000648s ]
+
+[ 2018-07-18T22:18:51+08:00 ] 202.105.147.202 /Admin/Blog/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001426s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0239s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 16,8   [ RunTime:0.0121s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001519s ]
+
+[ 2018-07-18T22:18:52+08:00 ] 202.105.147.202 /Admin/Blog/index/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000684s ]
+
+[ 2018-07-18T22:18:54+08:00 ] 202.105.147.202 /Admin/Blog/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0251s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0277s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0037s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 8,8   [ RunTime:0.0349s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2018-07-18T22:18:54+08:00 ] 202.105.147.202 /Admin/Blog/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001514s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000690s ]
+
+[ 2018-07-18T22:18:58+08:00 ] 202.105.147.202 /Admin/Blog/delete?aid=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0223s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0229s ]
+SQL: DELETE FROM `article` WHERE `aid` = 28 [ RunTime:0.0017s ]
+
+[ 2018-07-18T22:18:59+08:00 ] 202.105.147.202 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001516s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0226s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0238s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0232s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0081s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001418s ]
+
+[ 2018-07-18T22:18:59+08:00 ] 202.105.147.202 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+
+[ 2018-07-18T22:19:09+08:00 ] 202.105.147.202 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000663s ]
+
+[ 2018-07-18T22:19:12+08:00 ] 202.105.147.202 /Admin/Blog/add/aid/39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0485s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0615s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 39 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-07-18T22:19:12+08:00 ] 202.105.147.202 /Admin/Blog/add/aid/39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001449s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000554s ]
+
+[ 2018-07-18T22:19:28+08:00 ] 202.105.147.202 /Admin/Blog/save/aid/39
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0221s ]
+NOTIC: [8] Undefined index: auto /www/users/HA531660/WEB/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `article` SET `title`='今夏大热的6双平底鞋，哪款更适合你？',`author`='hisGirl',`category`='时尚',`content`='&lt;p&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 24px;&quot;&gt;今夏大热的6双平底鞋，哪款更适合你？&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;a&gt;转载&lt;/a&gt;2017-07-28 10:58:35&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(153, 153, 153);&quot;&gt;标签：&lt;/span&gt;&lt;a href=&quot;http://search.sina.com.cn/?c=blog&amp;amp;q=%C6%BD%B5%D7%D0%AC&amp;amp;by=tag&quot;&gt;平底鞋&lt;/a&gt;&lt;a href=&quot;http://search.sina.com.cn/?c=blog&amp;amp;q=%C2%DE%C2%ED%C1%B9%D0%AC&amp;amp;by=tag&quot;&gt;罗马凉鞋&lt;/a&gt;&lt;a href=&quot;http://search.sina.com.cn/?c=blog&amp;amp;q=%D2%BB%D7%D6%B4%F8%C1%B9%D0%AC&amp;amp;by=tag&quot;&gt;一字带凉鞋&lt;/a&gt;&lt;a href=&quot;http://search.sina.com.cn/?c=blog&amp;amp;q=%C4%C2%C0%D5%D0%AC&amp;amp;by=tag&quot;&gt;穆勒鞋&lt;/a&gt;&lt;/p&gt;&lt;p&gt;即便高跟鞋再怎么性感女人味，咱们也不得不承认，需要暴走的时候，还是平底鞋最能释放双足。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s14.sinaimg.cn/mw690/002aC6rizy7cZvdUGq96d&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;而且平底鞋并不代表不时髦，你瞧，Icon们穿着平底鞋照样气场爆棚！&lt;/p&gt;&lt;p&gt;当然，要把平底鞋穿的不输气场，确实需要一些小技巧▼&lt;/p&gt;&lt;p&gt;|||— ❶ —|||&lt;/p&gt;&lt;p&gt;Mini短裤/裙&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s4.sinaimg.cn/mw690/002aC6rizy7cZvepY9tb3&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;为了确保穿平底鞋时，也能有大长腿的既视感，聪明的姑娘们会选择迷你短裙或者短裤，让腿部更多的露出来，即显腿长又性感清凉！&lt;/p&gt;&lt;p&gt;|||— ❷ —|||&lt;/p&gt;&lt;p&gt;高腰显腿长&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s4.sinaimg.cn/mw690/002aC6rizy7cZvePSZd53&quot; alt=&quot;&quot;&gt;&lt;a&gt;&amp;nbsp;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;如果你腿型不够美，没关系，时尚编辑们告诉你，用阔腿裤和A字裙遮肉就好，但是，别忘了选择高腰款来配平底鞋，才不至于显矮。&lt;/p&gt;&lt;p&gt;接下来看看，今年夏天有哪些时髦与舒适兼备的平底鞋▼&lt;/p&gt;&lt;p&gt;|||— ❸ —|||&lt;/p&gt;&lt;p&gt;一字带凉鞋&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s11.sinaimg.cn/mw690/002aC6rizy7cZvfiWoy9a&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;一字带凉鞋几乎就是凉鞋中的基础款，穿在脚上几乎等于没穿鞋，百搭到无需动脑，同时也要求脚型比较好看，才撑得起这样的“足上比基尼”；&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s6.sinaimg.cn/mw690/002aC6rizy7cZvhnrkF25&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;另外呀，如果你小腿和脚踝比较粗，建议选择很细的一字带，或者裸色鞋！&lt;/p&gt;&lt;p&gt;|||— ❹ —|||&lt;/p&gt;&lt;p&gt;罗马凉鞋&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s3.sinaimg.cn/mw690/002aC6rizy7cZvjiqga52&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;肉肉脚或者脚型不好看也别灰心，这双怀旧味道的罗马凉鞋不仅超级显脚瘦，还利用绑带、水钻、铆钉、流苏等设计，让脚上充满看点。&lt;/p&gt;&lt;p&gt;哪怕搭配基础款的纯色连衣裙，都可以很时髦！​&lt;/p&gt;&lt;p&gt;|||— ❺ —|||&lt;/p&gt;&lt;p&gt;穆勒凉拖&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s15.sinaimg.cn/mw690/002aC6rizy7cZvsUScK4e&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;夏天当然少不了一双自然的凉拖鞋，但是正因为它的不羁感，恰恰不要去搭配破洞牛仔短裤之类的休闲单品，会像澡堂拖鞋！穿出高级感的办法是，搭配极简Normcore风格的单品，反而有种洒脱感。&lt;/p&gt;&lt;p&gt;|||— ❻ —|||&lt;/p&gt;&lt;p&gt;草编底凉鞋&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s9.sinaimg.cn/mw690/002aC6rizy7cZvv5MvK98&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;一眼望去就是度假风既视感，想要穿出法式度假气息，只需要T恤、牛仔裤，再加一双草编底凉鞋就足以，如果是绑带设计，或者条纹图案会更棒！&lt;/p&gt;&lt;p&gt;|||— ❼ —|||&lt;/p&gt;&lt;p&gt;后跟挖空的尖头鞋&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s10.sinaimg.cn/mw690/002aC6rizy7cZvwuioh99&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;平底鞋中最显腿长的一定是具有延伸效果的尖头鞋，如果你觉得日常的单鞋太闷脚，不妨选择后跟挖空的款，最好侧面还带有今年大热的织带装饰，一点小心机就可以告别老气！&lt;/p&gt;&lt;p&gt;|||— ❽ —|||&lt;/p&gt;&lt;p&gt;帆布小白鞋&lt;/p&gt;&lt;p&gt;小白鞋是四季都能穿的好物，清爽的感觉更是合适夏日！不过这么热的天，就别再穿那种厚重感的运动鞋了，不妨换上轻便的帆布鞋，透气又好穿。&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s1.sinaimg.cn/mw690/002aC6rizy7cZvxniEwd0&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;其实夏天可以穿的时髦平底鞋还有很多，比如少女气质的玛丽珍鞋，以及性感的绑带鞋▼&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s12.sinaimg.cn/mw690/002aC6rizy7cZvO75P5bb&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;在搭配时除了注意“高腰线”和“ Mini短裤/裙 ”显腿长，还可以记住以下两点：&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s2.sinaimg.cn/mw690/002aC6rizy7cZvJavUB11&quot; alt=&quot;&quot;&gt;&lt;/p&gt;&lt;p&gt;搞清楚鞋子是主角还是配角，分清要突出的重点才不会出错；&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://s2.sinaimg.cn/mw690/002aC6rizy7cZvK0plTf1&quot; alt=&quot;&quot;&gt;&lt;/p&gt;',`updatetime`='1531923568' WHERE `aid` = 39 [ RunTime:0.0039s ]
+
+[ 2018-07-18T22:19:29+08:00 ] 202.105.147.202 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `user` WHERE `uid` = 0 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `setting` [ RunTime:0.0244s ]
+SQL: SELECT * FROM `setting`  [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 0,8   [ RunTime:0.0102s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2018-07-18T22:19:29+08:00 ] 202.105.147.202 /Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000397s ]
+
+[ 2018-07-18T22:27:51+08:00 ] 202.105.147.202 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001491s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001098s ]
+
